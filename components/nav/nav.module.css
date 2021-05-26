@@ -1,0 +1,38 @@
+.container {
+  overflow: hidden;
+  max-width: 1000px;
+  position: sticky;
+  top: 0;
+}
+/* .li > * {
+  color: black;
+  border-bottom: 1px solid transparent;
+  cursor: pointer;
+  user-select: none;
+}
+
+.li:nth-child(2):hover ~ .bottom_line {
+  left: 20%;
+}
+
+.li:nth-child(3):hover ~ .bottom_line {
+  left: 40%;
+}
+
+.li:nth-child(4):hover ~ .bottom_line {
+  left: 60%;
+}
+
+.li:nth-child(5):hover ~ .bottom_line {
+  left: 80%;
+} */
+
+
+.bottom_line {
+  height: 3px;
+  width: 20%;
+  background-color: orange;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}

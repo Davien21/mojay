@@ -1,15 +1,21 @@
 {
-  "name": "moj",
+  "name": "mojay",
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev -p 3100",
     "build": "next build",
     "start": "next start"
   },
   "dependencies": {
+    "@svgr/webpack": "^5.5.0",
+    "framer-motion": "^4.1.17",
     "next": "10.2.2",
+    "prop-types": "^15.7.2",
     "react": "17.0.2",
     "react-dom": "17.0.2"
+  },
+  "devDependencies": {
+    "next-images": "^1.7.0"
   }
 }
