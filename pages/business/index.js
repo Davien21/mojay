@@ -1,7 +1,5 @@
 import React from "react";
-import styles from "./business.module.css";
 
-import Nav from "../../components/nav";
 import { motion } from "framer-motion";
 
 function OurBusiness() {
