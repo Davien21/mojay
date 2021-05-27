@@ -1,23 +1,23 @@
 // import Link from "next/link";
 import style from "./side_nav.module.css";
-// import AboutUsDropDown from "../../dropdowns/aboutUs";
-
 import { motion, useCycle } from "framer-motion/dist/framer-motion.cjs";
+import { useDimensions } from './../../../utils/useDimensions';
+import { useRef } from 'react';
 
 const sidebar = {
   open: (height = 1000) => ({
     clipPath: `circle(${height * 2 + 200}px at 40px 40px)`,
     transition: {
+      duration: 10,
       type: "spring",
       stiffness: 20,
       restDelta: 2,
     },
   }),
   closed: {
-    clipPath: "circle(30px at 40px 40px)",
+    clipPath: "circle(30px at 256px 40px)",
     transition: {
-      // delay: 0.5,
-      duration: 0.002,
+      delay: 0.5,
       type: "spring",
       stiffness: 400,
       damping: 40,
@@ -26,10 +26,10 @@ const sidebar = {
 };
 
 const toggle = () => {
-  console.log('toggle menu button!')
-}
+  console.log("toggle menu button!");
+};
 
-const Path = props => (
+const Path = (props) => (
   <motion.path
     fill="transparent"
     strokeWidth="3"
@@ -41,15 +41,19 @@ const Path = props => (
 
 export default function SideNav() {
   const [isOpen, toggleOpen] = useCycle(false, true);
+  const containerRef = useRef(null);
+  const { height } = useDimensions(containerRef);
+  console.log(height)
   return (
     <motion.div
       initial={false}
       animate={isOpen ? "open" : "closed"}
-      className="d-block d-md-none"
+      custom={height}
+      ref={containerRef}
+      className="d-flex justify-content-end d-md-none"
     >
-      <motion.div className={style.background} animate={sidebar.open}>
-        <p>Hi this is just a test</p>
-        <button className={style.menu_svg_box} onClick={() => toggle()}>
+      <motion.div className={style.background} variants={sidebar}>
+        <button className={style.menu_svg_box} onClick={() => toggleOpen()}>
           <svg width="23" height="23" viewBox="0 0 23 23">
             <Path
               variants={{
@@ -82,8 +86,8 @@ export default function SideNav() {
           onClick={() => onDropDown()}
           className="pointer"
         /> */}
-      </motion.div>
       <p>Hi, this is side nav ✌</p>
+      </motion.div>
     </motion.div>
   );
 }
