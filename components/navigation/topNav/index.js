@@ -1,19 +1,16 @@
 import Link from "next/link";
-import style from "./nav.module.css";
-import { motion } from "framer-motion";
-import DropDownArrow from "./../dropDownArrow/index";
-export default function Nav() {
+import AboutUsDropDown from "../../dropdowns/aboutUs";
+import style from "./top_nav.module.css";
+
+export default function TopNav() {
   return (
-    <motion.nav className={`container ${style.container}`}>
+    <div className="container d-none d-md-block">
       <ul className={`row`}>
         <li className={`col text-center ${style.li}`}>
           <Link href="/">Home</Link>
         </li>
         <li className={`d-flex justify-content-center col ${style.li}`}>
-          <Link href="/about-us">About Us</Link>
-          <div className="px-1">
-            <DropDownArrow />
-          </div>
+          <AboutUsDropDown />
         </li>
         <li className={`col text-center ${style.li}`}>
           <Link href="/contact-us">Contact Us</Link>
@@ -26,6 +23,6 @@ export default function Nav() {
         </li>
         {/* <div className={`ml-3 ${style.bottom_line}`}></div> */}
       </ul>
-    </motion.nav>
+    </div>
   );
 }

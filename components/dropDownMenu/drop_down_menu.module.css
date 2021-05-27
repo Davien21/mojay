@@ -1,0 +1,7 @@
+.drop_section {
+  background-color: red;
+  padding: 50px 100px;
+  width: 100vw;
+  position: fixed;
+  left: 0;
+}

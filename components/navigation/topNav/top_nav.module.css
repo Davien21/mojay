@@ -1,6 +1,6 @@
 .container {
   overflow: hidden;
-  max-width: 1000px;
+  /* max-width: 1000px; */
   position: sticky;
   top: 0;
 }
@@ -28,11 +28,3 @@
 } */
 
 
-.bottom_line {
-  height: 3px;
-  width: 20%;
-  background-color: orange;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-}

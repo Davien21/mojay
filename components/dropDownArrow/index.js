@@ -1,26 +1,26 @@
+import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { downArrow } from "../../assets/imgs/svgs";
-// import { useEffect, useState } from "react";
-// let [isDropping, setIsDropping] = useState(false)
-const toggleClick = () => {
-  isDropping = !isDropping
-}
+
+const rotateUp = { rotate: 180, transition: { duration: 0 } };
+const rotateDown = { rotate: 0, transition: { duration: 0 } };
 
 const DropDownArrow = (props) => {
-//   useEffect(()=> {
-//     console.log(isDropping)
-//   })
-console.log(downArrow)
+  const { isDropping, onDropDown } = props;
+
   return (
-    <motion.img
-      src={downArrow}
-      alt=""
-      height={20}
-      width={12}
-      onClick={toggleClick}
-      className="pointer"
-    />
+    <div className="px-1">
+      <motion.img
+        src={downArrow}
+        alt=""
+        animate={isDropping ? rotateUp : rotateDown}
+        height={20}
+        width={12}
+        onClick={() => onDropDown()}
+        className="pointer"
+      />
+    </div>
   );
 };
 
-export default DropDownArrow
+export default DropDownArrow;

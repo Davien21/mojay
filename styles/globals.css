@@ -11,30 +11,60 @@ a {
   color: inherit;
   text-decoration: none !important;
 }
- 
 
 * {
   box-sizing: border-box;
-  -webkit-transition: 0.3s all ease-in-out;
+  /* -webkit-transition: 0.3s all ease-in-out;
   -o-transition: 0.3s all ease-in-out;
-  transition: 0.3s all ease-in-out;
+  transition: 0.3s all ease-in-out; */
 }
-
+ 
 ul {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .pointer {
   cursor: pointer;
   user-select: none;
 }
+ 
 
-.slide-in {
-  position: fixed;
-  top: 20px;
-  left: 0;
-  height: 100vh;
-  width: 100%;
-  /* background: #066bb8; */
-  /* transform-origin: left; */
+ul,
+li {
+  margin: 0;
+  padding: 0;
 }
+/* 
+ul {
+  padding: 25px;
+  position: absolute;
+  top: 100px;
+  width: 230px;
+}
+
+li {
+  list-style: none;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.icon-placeholder {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  flex: 40px 0;
+  margin-right: 20px;
+}
+
+.text-placeholder {
+  border-radius: 5px;
+  width: 200px;
+  height: 20px;
+  flex: 1;
+}
+
+  */
