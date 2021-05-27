@@ -7,7 +7,7 @@
   height: 100vh;
   /* background: #fff; */
   background: red;
-  padding: 50px 100px;
+  /* padding: 50px 100px; */
 }
 .menu_svg_box {
   outline: none;
@@ -17,7 +17,8 @@
   -moz-user-select: none;
   -ms-user-select: none;
   cursor: pointer;
-  position: absolute;
+  position: relative;
+  align-self: flex-end;
   top: 18px;
   right: 18px;
   width: 50px;
@@ -25,6 +26,7 @@
   border-radius: 50%;
   background: transparent;
   text-align: center;
+  z-index: 1;
 }
 
 .menu_svg_box:focus {
@@ -32,4 +34,29 @@
   outline: none;
   box-shadow: none;
   -webkit-box-shadow: none;
+}
+
+.side_li {
+  border-bottom: 1px solid #cbcbcb;
+  font-family: AvenirNext, Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 0.2px;
+  text-align: left;
+  display: flex;
+  align-items: center;
+}
+
+.side_li a {
+  cursor: pointer;
+  padding: 1.5rem 0;
+  padding-left: 1rem;
+  
+}
+
+@media (min-width: 1400px) {
+  
 }

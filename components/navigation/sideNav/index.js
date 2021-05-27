@@ -1,8 +1,9 @@
 // import Link from "next/link";
 import style from "./side_nav.module.css";
 import { motion, useCycle } from "framer-motion/dist/framer-motion.cjs";
-import { useDimensions } from './../../../utils/useDimensions';
-import { useRef } from 'react';
+import { useDimensions } from "./../../../utils/useDimensions";
+import { useRef } from "react";
+import Link from "next/link";
 
 const sidebar = {
   open: (height = 1000) => ({
@@ -25,10 +26,6 @@ const sidebar = {
   },
 };
 
-const toggle = () => {
-  console.log("toggle menu button!");
-};
-
 const Path = (props) => (
   <motion.path
     fill="transparent"
@@ -38,12 +35,38 @@ const Path = (props) => (
     {...props}
   />
 );
+const variants = {
+  open: {
+    transition: { staggerChildren: 0.07, delayChildren: 0.2 },
+  },
+  closed: {
+    transition: { staggerChildren: 0.05, staggerDirection: -1 },
+  },
+};
+
+const anim = {
+  open: {
+    y: 0,
+    opacity: 1,
+    transition: {
+      y: { stiffness: 1000, velocity: -100 }
+    }
+  },
+  closed: {
+    y: 50,
+    opacity: 0,
+    transition: {
+      y: { stiffness: 1000 }
+    }
+  }
+};
+
 
 export default function SideNav() {
   const [isOpen, toggleOpen] = useCycle(false, true);
   const containerRef = useRef(null);
   const { height } = useDimensions(containerRef);
-  console.log(height)
+
   return (
     <motion.div
       initial={false}
@@ -52,7 +75,10 @@ export default function SideNav() {
       ref={containerRef}
       className="d-flex justify-content-end d-md-none"
     >
-      <motion.div className={style.background} variants={sidebar}>
+      <motion.div
+        className={`d-flex flex-column ${style.background}`}
+        variants={sidebar}
+      >
         <button className={style.menu_svg_box} onClick={() => toggleOpen()}>
           <svg width="23" height="23" viewBox="0 0 23 23">
             <Path
@@ -77,16 +103,62 @@ export default function SideNav() {
             />
           </svg>
         </button>
-        {/* <motion.img
-          src={downArrow}
-          alt=""
-          animate={isDropping ? rotateUp : rotateDown}
-          height={20}
-          width={12}
-          onClick={() => onDropDown()}
-          className="pointer"
-        /> */}
-      <p>Hi, this is side nav ✌</p>
+        <div className="container ">
+          <motion.ul variants={variants} className={`row flex-column`}>
+            <motion.li
+              // whileHover={{ scale: 1.1 }}
+              variants={anim}
+              whileTap={{ scale: 0.95 }}
+              className={`col text-center ${style.side_li}`}
+            >
+              <Link className="p-4" href="/">
+                Home
+              </Link>
+            </motion.li>
+            <motion.li
+              // whileHover={{ scale: 1.1 }}
+              variants={anim}
+              whileTap={{ scale: 0.95 }}
+              className={`col text-center ${style.side_li}`}
+            >
+              <Link className="p-4" href="/about-us">
+                About Us
+              </Link>
+            </motion.li>
+            <motion.li
+              // whileHover={{ scale: 1.1 }}
+              variants={anim}
+              whileTap={{ scale: 0.95 }}
+              className={`col text-center ${style.side_li}`}
+            >
+              <Link className="p-4" href="/contact-us">
+                Contact Us
+              </Link>
+            </motion.li>
+            <motion.li
+              // whileHover={{ scale: 1.1 }}
+              variants={anim}
+              whileTap={{ scale: 0.95 }}
+              className={`col text-center ${style.side_li}`}
+            >
+              <Link className="p-4" href="/people">
+                People
+              </Link>
+            </motion.li>
+            <motion.li
+              // whileHover={{ scale: 1.1 }}
+              variants={anim}
+              whileTap={{ scale: 0.95 }}
+              className={`col text-center ${style.side_li}`}
+            >
+              <Link className="p-4" href="/values">
+                Values
+              </Link>
+            </motion.li>
+            {/* <div className={`ml-3 ${style.bottom_line}`}></div> */}
+          </motion.ul>
+        </div>
+
       </motion.div>
     </motion.div>
   );
