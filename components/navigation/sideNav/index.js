@@ -103,10 +103,10 @@ export default function SideNav() {
             />
           </svg>
         </button>
-        <div className="container ">
+        <div className="container">
           <motion.ul variants={variants} className={`row flex-column`}>
+            <li className={`col text-center ${style.side_li}`}></li>
             <motion.li
-              // whileHover={{ scale: 1.1 }}
               variants={anim}
               whileTap={{ scale: 0.95 }}
               className={`col text-center ${style.side_li}`}
@@ -116,7 +116,6 @@ export default function SideNav() {
               </Link>
             </motion.li>
             <motion.li
-              // whileHover={{ scale: 1.1 }}
               variants={anim}
               whileTap={{ scale: 0.95 }}
               className={`col text-center ${style.side_li}`}
@@ -126,7 +125,6 @@ export default function SideNav() {
               </Link>
             </motion.li>
             <motion.li
-              // whileHover={{ scale: 1.1 }}
               variants={anim}
               whileTap={{ scale: 0.95 }}
               className={`col text-center ${style.side_li}`}
@@ -136,7 +134,6 @@ export default function SideNav() {
               </Link>
             </motion.li>
             <motion.li
-              // whileHover={{ scale: 1.1 }}
               variants={anim}
               whileTap={{ scale: 0.95 }}
               className={`col text-center ${style.side_li}`}
@@ -146,7 +143,6 @@ export default function SideNav() {
               </Link>
             </motion.li>
             <motion.li
-              // whileHover={{ scale: 1.1 }}
               variants={anim}
               whileTap={{ scale: 0.95 }}
               className={`col text-center ${style.side_li}`}
