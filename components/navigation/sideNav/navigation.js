@@ -1,22 +1,35 @@
-import * as React from "react";
 import { motion } from "framer-motion";
-import { MenuItem } from "./MenuItem";
-
+import { MenuItem } from "./menuItem";
+import Link from "next/link";
 const variants = {
   open: {
-    transition: { staggerChildren: 0.07, delayChildren: 0.2 }
+    transition: { staggerChildren: 0.07, delayChildren: 0.2 },
   },
   closed: {
-    transition: { staggerChildren: 0.05, staggerDirection: -1 }
-  }
+    transition: { staggerChildren: 0.05, staggerDirection: -1 },
+  },
 };
 
 export const Navigation = () => (
-  <motion.ul variants={variants}>
-    {itemIds.map(i => (
-      <MenuItem i={i} key={i} />
-    ))}
-  </motion.ul>
+  <div className="container">
+    <motion.ul variants={variants} className={`row flex-column`}>
+      <MenuItem></MenuItem>
+      <MenuItem>
+        <Link href="/">Home</Link>
+      </MenuItem>
+      <MenuItem>
+        <Link href="/about-us">About Us</Link>
+      </MenuItem>
+      <MenuItem>
+        <Link href="/contact-us">Contact Us</Link>
+      </MenuItem>
+      <MenuItem>
+        <Link href="/people">People</Link>
+      </MenuItem>
+      <MenuItem>
+        <Link href="/values">Values</Link>
+      </MenuItem>
+      {/* <div className={`ml-3 ${style.bottom_line}`}></div> */}
+    </motion.ul>
+  </div>
 );
-
-const itemIds = [0, 1, 2, 3, 4];

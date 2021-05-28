@@ -1,13 +1,11 @@
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import { downArrow } from "../../assets/imgs/svgs";
+import { downArrow } from "../../assets/imgs";
 
 const rotateUp = { rotate: 180, transition: { duration: 0 } };
 const rotateDown = { rotate: 0, transition: { duration: 0 } };
 
-const DropDownArrow = (props) => {
-  const { isDropping, onDropDown } = props;
-
+const DropDownArrow = ({ isDropping, onDropDown }) => {
   return (
     <div className="px-1">
       <motion.img
