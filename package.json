@@ -9,11 +9,14 @@
   },
   "dependencies": {
     "@svgr/webpack": "^5.5.0",
+    "@zeit/next-sass": "^1.0.1",
     "framer-motion": "^4.1.17",
     "next": "10.2.2",
+    "node-sass": "^6.0.0",
     "prop-types": "^15.7.2",
     "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "react-dom": "17.0.2",
+    "react-intersection-observer": "^8.32.0"
   },
   "devDependencies": {
     "next-images": "^1.7.0"

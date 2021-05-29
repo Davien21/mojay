@@ -1,7 +1,7 @@
 .container {
   overflow: hidden;
   /* max-width: 1000px; */
-  position: sticky;
+  position: absolute;
   top: 0;
 }
 /* .li > * {

@@ -1,0 +1,32 @@
+.image_overlay::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  max-height: 90%;
+  min-height: 800px;
+  /* background-image: linear-gradient(120deg, #eaee44, #33d0ff); */
+  background: #c33764; /* fallback colour. Make sure this is just one solid colour. */
+  background: -webkit-linear-gradient(
+    rgba(29, 38, 113, 0.8),
+    rgba(195, 55, 100, 0.8)
+  );
+  background: linear-gradient(
+    rgba(29, 38, 113, 0.8),
+    rgba(195, 55, 100, 0.8)
+  ); /* The least supported option. */
+
+  opacity: 0.7;
+  /* background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)); */
+}
+
+.image_overlay img {
+  -o-object-fit: cover;
+  object-fit: cover;
+  position: absolute;
+  top: -24px;
+  width: 100%;
+  max-height: 90%;
+  min-height: 400px;
+}

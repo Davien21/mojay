@@ -1,6 +1,8 @@
-import "../styles/globals.css";
 import "../styles/bootstrap.css";
-// import "../styles/extra-responsive.css";
+// import "../styles.scss";
+import "../styles/globals.css";
+
+import "../styles/extra-responsive.css";
 import { AnimatePresence } from "framer-motion";
 import Header from './../components/header/index';
 

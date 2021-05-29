@@ -16,7 +16,7 @@ export default function TopNav() {
           <Link href="/contact-us">Contact Us</Link>
         </li>
         <li className={`col text-center ${style.li}`}>
-          <Link href="/people">People</Link>
+          <Link href="/about-us/people">People</Link>
         </li>
         <li className={`col text-center ${style.li}`}>
           <Link href="/values">Values</Link>
