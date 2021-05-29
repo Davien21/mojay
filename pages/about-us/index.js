@@ -8,6 +8,7 @@ import {
   aboutUsImage,
   aboutUsImage2,
 } from "../../assets/imgs";
+import Footer from "../../components/footer";
 
 const easing = [0.6, -0.05, 0.01, 0.99];
 const transition1 = {
@@ -49,22 +50,23 @@ const stagger = {
 
 function AboutUs() {
   return (
+    <>
     <motion.section
       exit={{ opacity: 0 }}
       initial="initial"
       animate="animate"
       className="def-container"
     >
-      <motion.div variants={fadeInUp} className="">
+      <motion.div variants={fadeInUp} className="my-4">
         <hr className="col dash" />
         <span className="col">About Us</span>
       </motion.div>
       <motion.div variants={stagger} className=" text-center text-md-left">
-        <motion.h1 variants={fadeInUp} className="py-3">
+        <motion.h2 variants={fadeInUp} className="py-3">
           We are Mojay Global Holding
-        </motion.h1>
+        </motion.h2>
         <motion.div className="row">
-          <motion.article className="col-md-7">
+          <motion.article className="col-lg-7">
             <motion.article variants={fadeInUp} className="def-line-height">
               Mojay Global holding limited is a value-driven organisation
               established in July 2020, to embrace several existing businesses
@@ -80,18 +82,18 @@ function AboutUs() {
               majorly focusing on 5 strategic verticals:
             </motion.article>
           </motion.article>
-          <motion.div className="col-md-5 d-flex align-items-center justify-content-center">
+          <motion.div className="col-lg-5 my-5 my-lg-0 d-flex align-items-start justify-content-center">
             <motion.img
               variants={slideInRight}
               src={aboutUsImage2}
               alt=""
-              className="img-fluid h-50"
+              className="img-fluid"
             />
           </motion.div>
         </motion.div>
         <motion.article className="text-center">
           <motion.h2 variants={fadeInUp}>Diverse Business sectors</motion.h2>
-          <motion.hr variants={fadeInUp} className="undertone" />
+          <motion.hr variants={fadeInUp} className="undertone ml-auto" />
         </motion.article>
         <motion.ul
           variants={fadeInUp}
@@ -122,6 +124,8 @@ function AboutUs() {
         </motion.ul>
       </motion.div>
     </motion.section>
+    <Footer/>
+    </>
   );
 }
 

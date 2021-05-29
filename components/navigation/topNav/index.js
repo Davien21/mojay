@@ -1,27 +1,32 @@
 import Link from "next/link";
+import { mojayLogo } from "../../../assets/imgs";
 import AboutUsDropDown from "../../dropdowns/aboutUs";
 import style from "./top_nav.module.css";
 
 export default function TopNav() {
   return (
-    <div className="container d-none d-md-block">
+    <div className="container-fluid d-none d-md-block bg-white py-3 w-100">
       <ul className={`row`}>
-        <li className={`col text-center ${style.li}`}>
-          <Link href="/">Home</Link>
+        <li className="col-3">
+          <Link href="/">Logo</Link>
+        
+          
         </li>
-        <li className={`d-flex justify-content-center col ${style.li}`}>
+        <li className={`d-flex justify-content-center col ml-auto ${style.li}`}>
           <AboutUsDropDown />
+        </li>
+        <li className={`col text-center ${style.li}`}>
+          <Link href="/business">Business</Link>
+        </li>
+        <li className={`col text-center ${style.li}`}>
+          <Link href="/investments">Investments</Link>
+        </li>
+        <li className={`col text-center ${style.li}`}>
+          <Link href="/ideas">Ideas</Link>
         </li>
         <li className={`col text-center ${style.li}`}>
           <Link href="/contact-us">Contact Us</Link>
         </li>
-        <li className={`col text-center ${style.li}`}>
-          <Link href="/about-us/people">People</Link>
-        </li>
-        <li className={`col text-center ${style.li}`}>
-          <Link href="/values">Values</Link>
-        </li>
-        {/* <div className={`ml-3 ${style.bottom_line}`}></div> */}
       </ul>
     </div>
   );

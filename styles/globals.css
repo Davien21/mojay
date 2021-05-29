@@ -178,3 +178,55 @@ hr.undertone {
 .def-line-height {
   line-height: 2rem;
 }
+
+input.default_style {
+  border: none;
+  border-bottom: 1px solid black;
+  display: block;
+  background-color: transparent;
+  width: 100%;
+  outline: none;
+}
+
+input.default_style:focus {
+  outline: none;
+}
+
+textarea.default_style {
+  border: none;
+  border-bottom: 1px solid black;
+  display: block;
+  background-color: transparent;
+  width: 100%;
+  outline: none;
+}
+
+textarea.default_style:focus {
+  outline: none;
+}
+
+.fancy-hover {
+  border: 2px solid transparent;
+}
+
+.fancy-hover:hover {
+  border: 2px solid rgba(0, 160, 80, 0);
+  /* color: #FFF; */
+}
+
+.def_hover {
+  color: #000;
+}
+
+.def_hover_2:hover .hover_target {
+  color: #ea543c !important;
+}
+
+.def_call-to-action {
+  border: 1px solid transparent;
+  color: #ea543c !important;
+}
+
+.def_call-to-action:hover {
+  border: 1px solid #ea543c;
+}

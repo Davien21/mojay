@@ -87,7 +87,7 @@ export default function SideNav() {
       animate={isOpen ? "open" : "closed"}
       custom={height}
       ref={containerRef}
-      className="d-none justify-content-end d-md-none bg-danger"
+      className="justify-content-end d-md-none bg-danger"
     >
       {/* <Overlay isOpen={isOpen} /> */}
       <div className="w-100 d-flex justify-content-between">

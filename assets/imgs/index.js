@@ -9,6 +9,7 @@ import fmgcIcon from "./svgs/fmgc.svg";
 import financeIcon from "./svgs/finance.svg";
 import leftArrowIcon from "./svgs/left-arrow.svg";
 import aboutUsImage from "./svgs/about-us.svg";
+import techIcon3 from "./svgs/techIcon3.svg";
 import aboutUsImage2 from "./about-us.png";
 import peopleImage2 from "./people-2.jpg";
 import sunilImage from "./sunil.png";
@@ -19,6 +20,8 @@ import arunImage from "./arun.png";
 import shahImage from "./shah.png";
 import deloitteLogo from "./svgs/deloitte_logo.svg";
 import callIcon from "./svgs/call.svg";
+import rightArrowIcon from "./svgs/right-arrow.svg";
+import hook from "./svgs/hook.svg";
 import emailIcon from "./svgs/email.svg";
 import locationIcon from "./svgs/location.svg";
 import almtLogo from "./almt.png";
@@ -54,4 +57,7 @@ export {
   callIcon,
   emailIcon,
   locationIcon,
+  techIcon3,
+  hook,
+  rightArrowIcon,
 };

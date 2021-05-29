@@ -3,6 +3,7 @@ import { InView } from "react-intersection-observer";
 import { callIcon, emailIcon, locationIcon } from "../../assets/imgs";
 
 import Footer from "./../../components/footer/index";
+import ContactForm from './../../components/form/contact/index.js';
 
 const easing = [0.6, -0.05, 0.01, 0.99];
 const transition1 = {
@@ -59,10 +60,10 @@ function ContactUs() {
       >
         <motion.div variants={fadeInUp} className="">
           <hr className="col dash" />
-          <span className="col">Our Businesses</span>
+          <span className="col">Contact Us</span>
         </motion.div>
-        <motion.div variants={stagger} className="row text-center text-md-left">
-          <motion.div className="col-md-6">
+        <motion.div variants={stagger} className="row">
+          <motion.div className="col-lg-6 py-5 px-4">
             <motion.h2 variants={fadeInUp} className="py-3">
               We Are Never Out of Reach
             </motion.h2>
@@ -71,36 +72,56 @@ function ContactUs() {
               with us here or leave us a message.
             </motion.article>
             <motion.ul variants={stagger} className="my-4">
-              <motion.li variants={fadeInUp} className="row py-2">
+              <motion.li variants={fadeInUp} className="row py-3">
                 <div className="col-auto ">
                   <img src={callIcon} />
                 </div>
                 <div className="d-flex col-auto flex-column">
                   <span>Call</span>
-                  <a className="pointer" tel="+01 222 5589">+01 222 5589, 658-789-4562</a>
+                  <a className="pointer" tel="+01 222 5589">
+                    +01 222 5589, 658-789-4562
+                  </a>
                 </div>
               </motion.li>
-              <motion.li variants={fadeInUp} className="row py-2">
+              <motion.li variants={fadeInUp} className="row py-3">
                 <div className="col-auto ">
                   <img src={emailIcon} />
                 </div>
                 <div className="d-flex col-auto flex-column">
                   <span>Email</span>
-                  <a className="pointer" mailto="info@mojay.ngtdev.xyz">info@mojay.ngtdev.xyz</a>
+                  <a className="pointer" mailto="info@mojay.ngtdev.xyz">
+                    info@mojay.ngtdev.xyz
+                  </a>
                 </div>
               </motion.li>
-              <motion.li variants={fadeInUp} className="row py-2">
-                <div className="col-auto ">
-                  <img src={emailIcon} />
+              <motion.li variants={fadeInUp} className="row flex py-3">
+                <div className="col ">
+                  <img className="pr-3" src={locationIcon} />
+                  <span className="col-auto">Location</span>
+                <div className="col-12 pl-5">
+                  <a target="_blank" className="pointer" href="https://goo.gl/maps/TvuRc2yJWk5LKTiVA">
+                    N 2001, Emirates Financial Towers, DIFC, Dubai, United Arab
+                    Emirates
+                  </a>
                 </div>
-                <div className="d-flex col-auto flex-column">
-                  <span>Location</span>
-                  <a className="pointer" mailto="info@mojay.ngtdev.xyz">info@mojay.ngtdev.xyz</a>
                 </div>
               </motion.li>
             </motion.ul>
           </motion.div>
+          <motion.div className="col-lg-6 mt-lg-4 pb-5 pt-lg-5 px-4">
+            <ContactForm className=""/>
+          </motion.div>
         </motion.div>
+      </motion.section>
+      <motion.section>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3609.998392050846!2d55.27721811474267!3d25.203276724480904!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f429202af274d%3A0x1ab1e076b585abcb!2sDubai%20International%20Financial%20Centre!5e0!3m2!1sen!2sng!4v1622286729968!5m2!1sen!2sng"
+          width="100%"
+          height="450"
+          style={{ border: 0 }}
+          allowfullscreen="true"
+          loading="lazy"
+        ></iframe>
       </motion.section>
       <Footer />
     </>

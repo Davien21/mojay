@@ -131,6 +131,8 @@ function OurBusiness() {
                   <motion.h4 animate={inView ? fadeInUp.animate : ""}>
                     Eternal Robotics
                   </motion.h4>
+                  <hr className="undertone"/>
+
                   <motion.div animate={inView ? fadeInUp.animate : ""}>
                     <motion.p className="def-line-height">
                       Eternal Robotics (ER), was acquired by our Group in August
@@ -158,6 +160,8 @@ function OurBusiness() {
               <motion.div ref={ref} variants={stagger} className="row bg-white align-items-center">
                 <motion.div className="col-md-7 p-5 order-2 order-lg-1">
                   <motion.h4 variants={fadeInUp}>Myro</motion.h4>
+                  <hr className="undertone"/>
+
                   <motion.div variants={fadeInUp}>
                     <motion.p className="def-line-height">
                       MYRO is the first product developed by Eternal Robotics.
