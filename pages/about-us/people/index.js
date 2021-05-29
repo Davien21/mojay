@@ -90,7 +90,7 @@ function People() {
               <motion.div
                 ref={ref}
                 className={`col-auto col-6 col-md-4 ${styles.people_card}`}
-                initial={fadeInUp.animate}
+                initial={fadeInUp.initial}
                 animate={inView ? fadeInUp.animate : ""}
               >
                 <Link href="/about-us/people/sunil-singh">
@@ -105,7 +105,7 @@ function People() {
                     <div className={`w-100`}>
                       <img src={sunilImage} alt="" className="img-fluid" />
                     </div>
-                    <div className="px-3 pt-3 pb-5 text-center">
+                    <div className="px-3 pt-3 pb-5 text-left">
                       <h4>Sunil Kumar Singh</h4>
                       <p>Founder &amp; Director</p>
                     </div>
@@ -134,7 +134,7 @@ function People() {
                     <div className={`w-100`}>
                       <img src={arunImage} alt="" className="img-fluid" />
                     </div>
-                    <div className="px-3 pt-3 pb-5 text-center">
+                    <div className="px-3 pt-3 pb-5 text-left">
                       <h4>S. R. Arun</h4>
                       <p>Chairman</p>
                     </div>
@@ -163,7 +163,7 @@ function People() {
                     <div className={`w-100`}>
                       <img src={raulImage} alt="" className="img-fluid" />
                     </div>
-                    <div className="px-3 pt-3 pb-5 text-center">
+                    <div className="px-3 pt-3 pb-5 text-left">
                       <h4>Raul Silva</h4>
                       <p>Managing Director &amp; CEO</p>
                     </div>
@@ -192,7 +192,7 @@ function People() {
                     <div className={`w-100`}>
                       <img src={candiImage} alt="" className="img-fluid" />
                     </div>
-                    <div className="px-3 pt-3 pb-5 text-center">
+                    <div className="px-3 pt-3 pb-5 text-left">
                       <h4>Candi Carrera</h4>
                       <p>Director</p>
                     </div>
@@ -221,7 +221,7 @@ function People() {
                     <div className={`w-100`}>
                       <img src={shahImage} alt="" className="img-fluid" />
                     </div>
-                    <div className="px-3 pt-3 pb-5 text-center">
+                    <div className="px-3 pt-3 pb-5 text-left">
                       <h4>Siddhant Shah</h4>
                       <p>Director</p>
                     </div>
@@ -250,7 +250,7 @@ function People() {
                     <div className={`w-100`}>
                       <img src={khanImage} alt="" className="img-fluid" />
                     </div>
-                    <div className="px-3 pt-3 pb-5 text-center">
+                    <div className="px-3 pt-3 pb-5 text-left">
                       <h4>Yasser Khan</h4>
                       <p>Director</p>
                     </div>

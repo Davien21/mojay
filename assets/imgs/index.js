@@ -17,6 +17,14 @@ import khanImage from "./khan.png";
 import raulImage from "./raul.png";
 import arunImage from "./arun.png";
 import shahImage from "./shah.png";
+import deloitteLogo from "./svgs/deloitte_logo.svg";
+import callIcon from "./svgs/call.svg";
+import emailIcon from "./svgs/email.svg";
+import locationIcon from "./svgs/location.svg";
+import almtLogo from "./almt.png";
+import pkfLogo from "./pkf.png";
+import preimo from "./preimo.png";
+import eternalRobotics from "./eternal-robotics.png";
 
 export {
   downArrow,
@@ -38,4 +46,12 @@ export {
   arunImage,
   shahImage,
   leftArrowIcon,
+  deloitteLogo,
+  almtLogo,
+  pkfLogo,
+  preimo,
+  eternalRobotics,
+  callIcon,
+  emailIcon,
+  locationIcon,
 };

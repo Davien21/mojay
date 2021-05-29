@@ -4,15 +4,15 @@ import style from "./drop_down_menu.module.css";
 const easing = [0.6, -0.05, 0.01, 0.99];
 const transition = { duration: 0.5, ease: easing };
 
-const fadeIn = { opacity: 1, y: 0, transition };
-const fadeOut = { opacity: 0, y: 60, transition };
+const fadeIn = { opacity: 1, y: 0, display: "block", transition };
+const fadeOut = { opacity: 0, y: 60, display: "none", transition };
 
 const DropDownMenu = (props) => {
   const { isDropping, children } = props;
 
   return (
     <motion.div
-      initial={{ opacity: 0, y: 60 }}
+      initial={{ opacity: 0, y: 60, display: "none" }}
       animate={isDropping ? fadeIn : fadeOut}
       className={style.drop_section}
     >
