@@ -223,10 +223,11 @@ textarea.default_style:focus {
 }
 
 .def_call-to-action {
-  border: 1px solid transparent;
+  border-bottom: 1px solid transparent;
   color: #ea543c !important;
+  cursor: pointer;
 }
 
 .def_call-to-action:hover {
-  border: 1px solid #ea543c;
+  border-bottom: 1px solid #ea543c;
 }

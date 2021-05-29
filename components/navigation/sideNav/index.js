@@ -117,64 +117,7 @@ export default function SideNav() {
           </svg>
         </button>
       </div>
-      <motion.div
-        className={`flex-column ${style.background}`}
-        variants={sidebar}
-      >
-        <button
-          className={`${style.menu_svg_box}`}
-          onClick={() => toggleOpen()}
-        >
-          <svg width="23" height="23" viewBox="0 0 23 23">
-            <Path
-              variants={{
-                closed: { d: "M 2 2.5 L 20 2.5" },
-                open: { d: "M 3 16.5 L 17 2.5" },
-              }}
-            />
-            <Path
-              d="M 2 9.423 L 20 9.423"
-              variants={{
-                closed: { opacity: 1 },
-                open: { opacity: 0 },
-              }}
-              transition={{ duration: 0.1 }}
-            />
-            <Path
-              variants={{
-                closed: { d: "M 2 16.346 L 20 16.346" },
-                open: { d: "M 3 2.5 L 17 16.346" },
-              }}
-            />
-          </svg>
-        </button>
-        <div className="container">
-          <motion.ul variants={variants} className={`row flex-column`}>
-            <motion.li
-              variants={anim}
-              whileTap={{ scale: 0.95 }}
-              className={`col text-center ${style.side_li}`}
-              className={`col text-center ${style.side_li}`}
-            ></motion.li>
-            <MenuItem isOpen={isOpen}>
-              <Link href="/">Home</Link>
-            </MenuItem>
-            <MenuItem isOpen={isOpen}>
-              <Link href="/about-us">About Us</Link>
-            </MenuItem>
-            <MenuItem isOpen={isOpen}>
-              <Link href="/contact-us">Contact Us</Link>
-            </MenuItem>
-            <MenuItem isOpen={isOpen}>
-              <Link href="/people">People</Link>
-            </MenuItem>
-            <MenuItem isOpen={isOpen}>
-              <Link href="/values">Values</Link>
-            </MenuItem>
-            {/* <div className={`ml-3 ${style.bottom_line}`}></div> */}
-          </motion.ul>
-        </div>
-      </motion.div>
+      
     </motion.div>
   );
 }

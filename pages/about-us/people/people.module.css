@@ -9,6 +9,6 @@
 
 @media (min-width: 920px) {
   .main_container {
-    height: calc(100vh - 24px);
+    height: calc(100vh - 56px);
   }
 }

@@ -37,7 +37,7 @@ const AboutUsDropDown = (props) => {
           <div className="col">
             <div className="row">
               <div className="py-1 col-lg-6">
-                <Link href="/">
+                <Link href="/business">
                   <motion.div
                     style={{ boxShadow: "0 2px 18px 0 rgb(0 0 0 / 10%)" }}
                     whileHover={{ scale: 1.05 }}
@@ -57,7 +57,7 @@ const AboutUsDropDown = (props) => {
                 </Link>
               </div>
               <div className="py-1 pl-lg-0 col-lg-6">
-                <Link href="">
+                <Link href="/">
                   <motion.div
                     style={{ boxShadow: "0 2px 18px 0 rgb(0 0 0 / 10%)" }}
                     whileHover={{ scale: 1.05 }}
@@ -77,7 +77,7 @@ const AboutUsDropDown = (props) => {
                 </Link>
               </div>
               <div className="py-1 col-lg-6">
-                <Link href="">
+                <Link href="/">
                   <motion.div
                     style={{ boxShadow: "0 2px 18px 0 rgb(0 0 0 / 10%)" }}
                     whileHover={{ scale: 1.05 }}
@@ -97,6 +97,26 @@ const AboutUsDropDown = (props) => {
                 </Link>
               </div>
               <div className="py-1 col-lg-6 pl-lg-0">
+                <Link href="/about-us/people">
+                  <motion.div
+                    style={{ boxShadow: "0 2px 18px 0 rgb(0 0 0 / 10%)" }}
+                    whileHover={{ scale: 1.05 }}
+                    whileTap={{ scale: 0.95 }}
+                    className="bg-white def_hover_2 p-3 "
+                  >
+                    <div className="">
+                      <span className="pr-2 hover_target">Our People</span>
+                      <img src={rightArrowIcon} height={12} width={12} />
+                    </div>
+                    <span style={{ fontSize: "0.7rem" }}>
+                      Meet the amazing people that make things happen at 
+                      Mojay Global Holding Limited
+                    </span>
+                    <div id=""></div>
+                  </motion.div>
+                </Link>
+              </div>
+              {/* <div className="py-1 col-lg-6 pl-lg">
                 <Link href="">
                   <motion.div
                     style={{ boxShadow: "0 2px 18px 0 rgb(0 0 0 / 10%)" }}
@@ -115,7 +135,7 @@ const AboutUsDropDown = (props) => {
                     <div id=""></div>
                   </motion.div>
                 </Link>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
