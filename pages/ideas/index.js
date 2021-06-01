@@ -3,7 +3,7 @@ import { InView } from "react-intersection-observer";
 import { callIcon, emailIcon, locationIcon } from "../../assets/imgs";
 
 import Footer from "./../../components/footer/index";
-import ContactForm from "./../../components/form/contact/index.js";
+import ContactForm from "./../../components/form/contact/index";
 import IdeaForm from "./../../components/form/ideas/index";
 
 const easing = [0.6, -0.05, 0.01, 0.99];

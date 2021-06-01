@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Joi from "joi-browser";
-import Form from "../index.js.jsx";
+import Form from "../index.jsx";
 
 class IdeaForm extends Form {
   state = {

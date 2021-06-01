@@ -3,19 +3,27 @@ import DropDownMenu from "../../dropDownMenu";
 import DropDownArrow from "../../dropDownArrow";
 import { useCycle, motion } from "framer-motion";
 import { rightArrowIcon } from "../../../assets/imgs/index";
-import { useState } from "react";
+import { useState, useRef } from "react";
 
 const AboutUsDropDown = (props) => {
-  const [isDropping, toggleIsDropping] = useCycle(false, true);
+  const [isDropped, setIsDropped] = useState(false);
+  const dropDownArrowRef = useRef();
 
-  
   return (
     <div>
       <div className="d-flex justify-content-center">
         <Link href="/about-us">About Us</Link>
-        <DropDownArrow isDropping={isDropping} onDropDown={toggleIsDropping} />
+        <DropDownArrow
+          ref={dropDownArrowRef}
+          isDropped={isDropped}
+          onDropDown={setIsDropped}
+        />
       </div>
-      <DropDownMenu isDropping={isDropping} >
+      <DropDownMenu
+        dropDownArrowRef={dropDownArrowRef}
+        isDropped={isDropped}
+        onDropDown={setIsDropped}
+      >
         <div className="row">
           <div className="col-lg-4">
             <h4>About</h4>
@@ -109,8 +117,8 @@ const AboutUsDropDown = (props) => {
                       <img src={rightArrowIcon} height={12} width={12} />
                     </div>
                     <span style={{ fontSize: "0.7rem" }}>
-                      Meet the amazing people that make things happen at 
-                      Mojay Global Holding Limited
+                      Meet the amazing people that make things happen at Mojay
+                      Global Holding Limited
                     </span>
                     <div id=""></div>
                   </motion.div>

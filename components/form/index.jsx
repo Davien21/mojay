@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Joi from "joi-browser";
-import Input from "../input/index.js";
-import TextArea from './../textArea/index';
+import Input from "../input/index.jsx";
+import TextArea from '../textArea/index';
 
 class Form extends Component {
   state = {
@@ -18,7 +18,7 @@ class Form extends Component {
     for (let errorDetail of error.details)
       errors[errorDetail.path[0]] = errorDetail.message;
 
-    console.log(errors)
+    // console.log(errors)
     return errors;
   };
 

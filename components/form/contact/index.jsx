@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Joi from "joi-browser";
-import Form from "../index.js";
+import Form from "../index.jsx";
 
 class ContactForm extends Form {
   state = {
@@ -16,7 +16,7 @@ class ContactForm extends Form {
 
   doSubmit = async () => {
     const { data } = this.state;
-    console.log(data);
+    // console.log(data);
   };
 
   render() {

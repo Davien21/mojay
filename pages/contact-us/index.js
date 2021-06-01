@@ -3,7 +3,7 @@ import { InView } from "react-intersection-observer";
 import { callIcon, emailIcon, locationIcon } from "../../assets/imgs";
 
 import Footer from "./../../components/footer/index";
-import ContactForm from './../../components/form/contact/index.js';
+import ContactForm from "./../../components/form/contact/index";
 
 const easing = [0.6, -0.05, 0.01, 0.99];
 const transition1 = {
@@ -98,18 +98,22 @@ function ContactUs() {
                 <div className="col ">
                   <img className="pr-3" src={locationIcon} />
                   <span className="col-auto">Location</span>
-                <div className="col-12 pl-5">
-                  <a target="_blank" className="pointer" href="https://goo.gl/maps/TvuRc2yJWk5LKTiVA">
-                    N 2001, Emirates Financial Towers, DIFC, Dubai, United Arab
-                    Emirates
-                  </a>
-                </div>
+                  <div className="col-12 pl-5">
+                    <a
+                      target="_blank"
+                      className="pointer"
+                      href="https://goo.gl/maps/TvuRc2yJWk5LKTiVA"
+                    >
+                      N 2001, Emirates Financial Towers, DIFC, Dubai, United
+                      Arab Emirates
+                    </a>
+                  </div>
                 </div>
               </motion.li>
             </motion.ul>
           </motion.div>
           <motion.div className="col-lg-6 mt-lg-4 pb-5 pt-lg-5 px-4">
-            <ContactForm className=""/>
+            <ContactForm className="" />
           </motion.div>
         </motion.div>
       </motion.section>
@@ -119,7 +123,7 @@ function ContactUs() {
           width="100%"
           height="450"
           style={{ border: 0 }}
-          allowfullscreen="true"
+          allowFullScreen={true}
           loading="lazy"
         ></iframe>
       </motion.section>

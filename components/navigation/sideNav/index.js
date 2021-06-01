@@ -71,7 +71,7 @@ const anim = {
 
 const overlay = {
   height: "100vh",
-  width: "100vw",
+  width: "auto ;",
   backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6))",
   position: "fixed",
 };
@@ -117,7 +117,6 @@ export default function SideNav() {
           </svg>
         </button>
       </div>
-      
     </motion.div>
   );
 }

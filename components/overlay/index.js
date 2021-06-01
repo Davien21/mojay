@@ -2,7 +2,7 @@ import { motion } from "framer-motion/dist/framer-motion.cjs";
 import { useEffect } from "react";
 const style = {
   height: "100vh",
-  width: "100vw",
+  width: "auto ;",
   backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9))",
   position: "fixed",
 };
