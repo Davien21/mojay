@@ -56,8 +56,15 @@ a.default_link_1:hover {
 }
 
 ul.default_links_list > li > a:hover {
-  border: 1px solid #7b7b7b;
+  border-bottom: 1px solid #7b7b7b;
   cursor: pointer;
+}
+
+ul.side_nav_links > li > a {
+  display: block;
+  text-decoration: none;
+  padding: 24px;
+  color: inherit;
 }
 
 ul,
@@ -65,7 +72,7 @@ li {
   margin: 0;
   padding: 0;
 }
- 
+
 hr.dash {
   width: 10%;
   display: inline-block;
@@ -206,4 +213,3 @@ textarea.default_style:focus {
 .def_call-to-action:hover {
   border-bottom: 1px solid #ea543c;
 }
-

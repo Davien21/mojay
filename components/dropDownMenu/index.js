@@ -9,7 +9,6 @@ const transition = { duration: 0.5, ease: easing };
 const fadeIn = { opacity: 1, y: 10, display: "block", transition };
 const fadeOut = { opacity: 0, y: 60, display: "none", transition };
 
-
 const DropDownMenu = (props) => {
   const { isDropped, children, onDropDown, dropDownArrowRef } = props;
   router.events.on("routeChangeStart", () => onDropDown(false));
