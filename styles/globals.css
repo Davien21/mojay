@@ -11,6 +11,9 @@ body {
 
 body {
   margin-top: 56px;
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden !important;
 }
 
 a {
@@ -62,39 +65,7 @@ li {
   margin: 0;
   padding: 0;
 }
-/* 
-ul {
-  padding: 25px;
-  position: absolute;
-  top: 100px;
-  width: 230px;
-}
-
-li {
-  list-style: none;
-  margin-bottom: 20px;
-  display: flex;
-  align-items: center;
-  cursor: pointer;
-}
-
-.icon-placeholder {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  flex: 40px 0;
-  margin-right: 20px;
-}
-
-.text-placeholder {
-  border-radius: 5px;
-  width: 200px;
-  height: 20px;
-  flex: 1;
-}
-
-  */
-
+ 
 hr.dash {
   width: 10%;
   display: inline-block;
@@ -137,12 +108,12 @@ hr.undertone {
   }
 }
 
-@media (min-width: 730px) {
+/* @media (min-width: 730px) {
   .def-container,
   .def-container-sm {
     max-width: 600px;
   }
-}
+} */
 
 @media (min-width: 768px) {
   .def-container,
@@ -235,3 +206,4 @@ textarea.default_style:focus {
 .def_call-to-action:hover {
   border-bottom: 1px solid #ea543c;
 }
+

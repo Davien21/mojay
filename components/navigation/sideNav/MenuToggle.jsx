@@ -1,9 +1,10 @@
+import * as React from "react";
 import { motion } from "framer-motion";
-import style from "./side_nav.module.css";
+import styles from "./side_nav.module.css";
 
 const Path = (props) => (
   <motion.path
-    fill="black"
+    fill="transparent"
     strokeWidth="3"
     stroke="hsl(0, 0%, 18%)"
     strokeLinecap="round"
@@ -11,8 +12,8 @@ const Path = (props) => (
   />
 );
 
-export const MenuToggle = ({ onToggle }) => (
-  <button className={style.menu_svg_box} onClick={onToggle}>
+export const MenuToggle = ({ toggle }) => (
+  <button className={`${styles.menu_toggle}`} onClick={toggle}>
     <svg width="23" height="23" viewBox="0 0 23 23">
       <Path
         variants={{

@@ -12,6 +12,7 @@ import {
 } from "../../../assets/imgs";
 import ImageBackground from "./../../../components/imageBackground/index";
 import Link from "next/link";
+import Footer from "./../../../components/footer/index";
 const easing = [0.6, -0.05, 0.01, 0.99];
 const transition1 = {
   duration: 0.6,
@@ -65,10 +66,7 @@ function People() {
             <hr className="dash" />
             <span className="col">Our People</span>
           </motion.div>
-          <motion.article
-            variants={stagger}
-            className="text-center "
-          >
+          <motion.article variants={stagger} className="text-center ">
             <motion.h1 variants={fadeInUp} className="py-3">
               We are Visionaries
             </motion.h1>
@@ -83,7 +81,7 @@ function People() {
           </motion.article>
         </motion.section>
       </motion.section>
-      <motion.section className="def-container py-5">
+      <motion.section className="def-container-md py-5">
         <motion.div className="row flex-column mx-auto flex-sm-row align-items-center">
           <InView triggerOnce threshold={0.5}>
             {({ ref, inView }) => (
@@ -261,6 +259,7 @@ function People() {
           </InView>
         </motion.div>
       </motion.section>
+      <Footer />
     </>
   );
 }

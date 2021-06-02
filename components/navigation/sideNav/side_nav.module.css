@@ -1,15 +1,21 @@
-.background {
-  position: absolute;
+.fixed_box {
+  position: fixed;
   top: 0;
   right: 0;
   bottom: 0;
   width: 300px;
-  height: 30px;
-  /* background: #fff; */
-  background: white;
-  /* padding: 50px 100px; */
 }
-.menu_svg_box {
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 300px;
+  background: #fff;
+}
+
+.menu_toggle {
   outline: none;
   border: none;
   user-select: none;
@@ -18,18 +24,15 @@
   -ms-user-select: none;
   cursor: pointer;
   position: absolute;
-  align-self: flex-end;
-  top: 16px;
-  right: 18px;
+  top: 18px;
+  right: 15px;
   width: 50px;
   height: 50px;
   border-radius: 50%;
   background: transparent;
-  text-align: center;
-  z-index: 1;
 }
 
-.menu_svg_box_2 {
+.menu_toggle:focus {
   outline: none;
   border: none;
   user-select: none;
@@ -37,47 +40,36 @@
   -moz-user-select: none;
   -ms-user-select: none;
   cursor: pointer;
-  align-self: flex-end;
-  height: 50px;
-  border-radius: 50%;
   background: transparent;
-  text-align: center;
-  z-index: 1;
 }
 
-.menu_svg_box:focus, .menu_svg_box_2:focus {
-  background-color: initial;
-  outline: none;
-  box-shadow: none;
-  -webkit-box-shadow: none;
+.ul {
+  padding: 25px;
+  position: absolute;
+  top: 100px;
+  right: 0;
+  width: 296px;
 }
 
-.side_li {
-  border-bottom: 1px solid #cbcbcb;
-  font-family: AvenirNext, Helvetica, Arial, sans-serif;
-  font-size: 1rem;
-  font-weight: 600;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: 0.2px;
-  text-align: left;
+.li {
+  list-style: none;
+  margin-bottom: 20px;
   display: flex;
   align-items: center;
-}
-
-.side_li:first-child {
-  /* border-top: 1px solid #cbcbcb; */
-  padding: 2.3rem 0;
-  content: " ";
-
-}
-
-.side_li a {
   cursor: pointer;
-  padding: 1.5rem 0;
-  padding-left: 1rem;
 }
 
-@media (min-width: 1400px) {
+.icon_placeholder {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  flex: 40px 0;
+  margin-left: 20px;
+}
+
+.text_placeholder {
+  border-radius: 5px;
+  width: 200px;
+  height: 20px;
+  flex: 1;
 }
