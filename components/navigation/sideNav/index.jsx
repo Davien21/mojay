@@ -1,11 +1,13 @@
-import * as React from "react";
-import { useRef } from "react";
-import { motion, useCycle } from "framer-motion";
+import { useRef, useState } from "react";
+import router from "next/router";
+import { motion } from "framer-motion";
 import { useDimensions } from "./use-dimensions";
 import { MenuToggle } from "./MenuToggle";
 import { Navigation } from "./Navigation";
 import Overlay from "../../overlay/index";
 import styles from "./side_nav.module.css";
+import { mojayLogo } from "../../../assets/imgs/index";
+import Link from "next/link";
 
 const sidebar = {
   open: (height = 1000) => ({
@@ -28,14 +30,28 @@ const sidebar = {
 };
 
 export default function SideNav() {
-  const [isOpen, toggleOpen] = useCycle(false, true);
+  const [isOpen, toggleOpen] = useState(false);
+  router.events.on("routeChangeStart", () => toggleOpen(false));
+
   const containerRef = useRef(null);
   const { height } = useDimensions(containerRef);
 
   return (
     <>
-      <Overlay className="d-md-none" isOpen={isOpen} />
+      <Overlay
+        className="d-md-none"
+        isOpen={isOpen}
+        onClick={() => toggleOpen(!isOpen)}
+      />
+      <div className="d-md-none py-3 bg-white paper-box-shadow">
+        <Link href="/">
+          <span className="px-4">Logo</span>
+        </Link>
+      </div>
       <motion.div
+        onAnimationComplete={() => {
+          console.log(containerRef)
+        }}
         initial={false}
         animate={isOpen ? "open" : "closed"}
         custom={height}
@@ -43,8 +59,10 @@ export default function SideNav() {
         ref={containerRef}
       >
         <motion.div className={`${styles.background}`} variants={sidebar} />
-        <Navigation />
-        <MenuToggle toggle={() => toggleOpen()} />
+        <div>
+          <MenuToggle toggle={() => toggleOpen(!isOpen)} />
+          <Navigation />
+        </div>
       </motion.div>
     </>
   );

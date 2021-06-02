@@ -19,19 +19,17 @@ const variants = {
   },
 };
 
-const colors = ["#FF008C", "#D309E1", "#9C1AFF", "#7700FF", "#4400FF"];
 
-export const MenuItem = ({ i }) => {
-  const style = { border: `2px solid ${colors[i]}` };
+export const MenuItem = ({ children }) => {
+  // const style = { border: `2px solid ${colors[i]}` };
   return (
     <motion.li
       className={`${styles.li}`}
       variants={variants}
-      whileHover={{ scale: 1.1 }}
+      // whileHover={{ scale: 1.1 }}
       whileTap={{ scale: 0.95 }}
     >
-      <div className={`${styles.text_placeholder}`} style={style} />
-      <div className={`${styles.icon_placeholder}`} style={style} />
+      {children}
     </motion.li>
   );
 };

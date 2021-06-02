@@ -10,7 +10,7 @@ const style = {
 const fadeIn = { opacity: 1, transition: { duration: 0.5 } };
 const fadeOut = { opacity: 0, transition: { duration: 0.5, delay: 0.5 } };
 
-const Overlay = ({ isOpen, className }) => {
+const Overlay = ({ isOpen, ...rest }) => {
   useEffect(() => {
     document.body.style.overflow = isOpen ? "hidden" : "auto";
   }, [isOpen]);
@@ -19,7 +19,7 @@ const Overlay = ({ isOpen, className }) => {
       initial={{ opacity: 0 }}
       animate={isOpen ? fadeIn : fadeOut}
       style={style}
-      className={className}
+      {...rest}
     ></motion.div>
   );
 };
