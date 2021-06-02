@@ -10,7 +10,9 @@ import {
   shahImage,
   khanImage,
 } from "../../assets/imgs";
-import ImageBackground from "../../components/imageBackground/index";
+
+// import ImageBackground from "../../components/imageBackground/index";
+
 import Link from "next/link";
 import Footer from "../../components/footer/index";
 const easing = [0.6, -0.05, 0.01, 0.99];
