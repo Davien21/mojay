@@ -18,7 +18,7 @@ import khanImage from "./khan.png";
 import raulImage from "./raul.png";
 import arunImage from "./arun.png";
 import shahImage from "./shah.png";
-import deloitteLogo from "./svgs/deloitte_logo.svg";
+import deloitteLogo from "./svgs/Deloitte_logo.svg";
 import callIcon from "./svgs/call.svg";
 import rightArrowIcon from "./svgs/right-arrow.svg";
 import hook from "./svgs/hook.svg";
