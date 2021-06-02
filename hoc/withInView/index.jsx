@@ -18,7 +18,7 @@ const WithInView = (props) => {
         // console.log("animate", animate);
 
 
-        console.log(initial, animate, render);
+        // console.log(initial, animate, render);
 
         return <> {render}</>;
       }}

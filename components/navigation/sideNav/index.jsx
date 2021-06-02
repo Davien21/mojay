@@ -34,7 +34,7 @@ export default function SideNav() {
 
   return (
     <>
-      <Overlay isOpen={isOpen} />
+      <Overlay className="d-md-none" isOpen={isOpen} />
       <motion.div
         initial={false}
         animate={isOpen ? "open" : "closed"}
