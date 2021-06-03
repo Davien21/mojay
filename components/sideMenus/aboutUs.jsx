@@ -1,17 +1,26 @@
-import SideMenu from ".";
 import styles from "./side_menu.module.css";
-import { rightArrowIcon } from "../../assets/imgs";
-import { motion } from "framer-motion";
 import { useState } from "react";
+import { MenuItem } from "./../navigation/sideNav/MenuItem";
+import Link from "next/link";
 
-const AboutUsSideMenu = ({ toggleSideNav }) => {
-  const [isOpen, setOpen] = useState(false);
-  // const dropDownArrowRef = useRef();
-
+const AboutUsSideMenu = () => {
   return (
-    <SideMenu isOpen={isOpen} setOpen={setOpen} menuTitle="About Us">
-      <p>Hello</p>
-    </SideMenu>
+    <ul className={`${styles.ul} side_nav_links`}>
+      <MenuItem>
+        <Link href="/history">Our History</Link>
+      </MenuItem>
+
+      <MenuItem>
+        <Link href="/values">Our Values</Link>
+      </MenuItem>
+
+      <MenuItem>
+        <Link href="/philosophy">Our Philosophy</Link>
+      </MenuItem>
+      <MenuItem>
+        <Link href="/people">Our People</Link>
+      </MenuItem>
+    </ul>
   );
 };
 

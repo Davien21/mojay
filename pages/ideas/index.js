@@ -74,7 +74,7 @@ function ContactUs() {
               opportunities for investment and growth.
             </motion.article>
           </motion.div>
-          <motion.div className="col-lg-6 mt-lg-4 pb-5 pt-lg-5 px-4">
+          <motion.div className="col-lg-6 mt-lg-4 pb-5 pt-lg-4 px-4">
             <IdeaForm className="" />
           </motion.div>
         </motion.div>

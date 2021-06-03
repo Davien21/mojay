@@ -19,7 +19,9 @@ import raulImage from "./raul.png";
 import arunImage from "./arun.png";
 import shahImage from "./shah.png";
 import deloitteLogo from "./svgs/Deloitte_logo.svg";
+
 import callIcon from "./svgs/call.svg";
+import leftArrowAltIcon from "./svgs/left-arrow_alt.svg";
 import rightArrowIcon from "./svgs/right-arrow.svg";
 import hook from "./svgs/hook.svg";
 import emailIcon from "./svgs/email.svg";
@@ -60,4 +62,5 @@ export {
   techIcon3,
   hook,
   rightArrowIcon,
+  leftArrowAltIcon,
 };

@@ -1,22 +1,48 @@
 import styles from "./side_menu.module.css";
-import { rightArrowIcon } from "../../assets/imgs";
 import { motion } from "framer-motion";
 import { MenuToggle } from "./../navigation/sideNav/MenuToggle";
+import { leftArrowAltIcon } from "../../assets/imgs";
+import AboutUsSideMenu from "./aboutUs";
 
-const SideMenu = ({ children, menuTitle, isOpen, setOpen }) => {
+const slideIn = { width: "300px", transition: { duration: 0.2 } };
+const slideOut = { width: "0px", transition: { duration: 0.2 } };
+
+const Path = (props) => (
+  <motion.path
+    fill="transparent"
+    strokeWidth="3"
+    stroke="hsl(0, 0%, 18%)"
+    strokeLinecap="round"
+    {...props}
+  />
+);
+
+const menus = {
+  "about-us": <AboutUsSideMenu />,
+};
+
+const SideMenu = ({ active, onToggleSideNav, onSwitchToMainNav }) => {
+  if (active) console.log("active", active);
+  if (!active) console.log("not active", active);
   return (
     <>
-      <div className={`${styles.drop_button}`} onClick={() => setOpen(true)}>
-        <p className="m-0">{menuTitle}</p>
-        <img src={rightArrowIcon} height={15} width={15} alt="" />
-      </div>
-      {/* <motion.div
+      <motion.div
         initial={{ width: "0px" }}
-        animate={isOpen ? { width: "300px" } : { width: "0px" }}
-        className={`bg-primary vh-100 absolute ${styles.side_menu}`}
+        animate={active ? slideIn : slideOut}
+        className={`vh-100 absolute ${styles.side_menu}`}
       >
-        {children}
-      </motion.div> */}
+        <div className={`d-flex justify-content-between px-3 ${styles.back}`}>
+          <div className="pointer" onClick={() => onSwitchToMainNav(false)}>
+            <img
+              src={leftArrowAltIcon}
+              height={23}
+              width={23}
+              alt=""
+            />
+          </div>
+        </div>
+        {menus[active]}
+      </motion.div>
     </>
   );
 };
