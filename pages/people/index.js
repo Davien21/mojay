@@ -9,7 +9,7 @@ import {
   sunilImage,
   shahImage,
   khanImage,
-} from "./../assets/imgs";
+} from "./../../assets/imgs/index";
 
 // import ImageBackground from "../../components/imageBackground/index";
 
