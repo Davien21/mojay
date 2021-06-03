@@ -32,7 +32,7 @@ yarn-error.log*
 .env.production.local
 mojay*
 videos/myro.mp4
-assets/imgs/search
+# assets/imgs/search
 # vercel
 .vercel
 
