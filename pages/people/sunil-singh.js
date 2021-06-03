@@ -1,9 +1,9 @@
-import { sunilImage, checkIcon, leftArrowIcon } from "./../../../assets/imgs";
+import { sunilImage, checkIcon, leftArrowIcon } from "../../assets/imgs";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import styles from "../people/people.module.css";
-import Footer from "./../../../components/footer/index";
-import Brands from "./../../../components/brands/index";
+import Footer from "../../components/footer/index";
+import Brands from "../../components/brands/index";
 import SimpleBar from "simplebar-react";
 const easing = [0.6, -0.05, 0.01, 0.99];
 

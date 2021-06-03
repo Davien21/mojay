@@ -35,3 +35,6 @@ videos/myro.mp4
 assets/imgs/search
 # vercel
 .vercel
+
+# Local Netlify folder
+.netlify

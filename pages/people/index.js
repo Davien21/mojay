@@ -4,12 +4,12 @@ import styles from "./people.module.css";
 import {
   arunImage,
   candiImage,
-  peopleImage2,
+  // peopleImage2,
   raulImage,
   sunilImage,
   shahImage,
   khanImage,
-} from "./../../assets/imgs/index";
+} from "../../assets/imgs/index";
 
 // import ImageBackground from "../../components/imageBackground/index";
 
