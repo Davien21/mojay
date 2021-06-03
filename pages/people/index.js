@@ -1,6 +1,15 @@
 import { motion } from "framer-motion";
 import { InView } from "react-intersection-observer";
 import styles from "./people.module.css";
+import {
+  arunImage,
+  candiImage,
+  peopleImage2,
+  raulImage,
+  sunilImage,
+  shahImage,
+  khanImage,
+} from "../../assets/imgs";
 
 // import ImageBackground from "../../components/imageBackground/index";
 
@@ -74,7 +83,184 @@ function People() {
           </motion.article>
         </motion.section>
       </motion.section>
-      hi people
+      <motion.section className="def-container-md py-5">
+        <motion.div className="row flex-column mx-auto flex-sm-row align-items-center">
+          <InView triggerOnce threshold={0.5}>
+            {({ ref, inView }) => (
+              <motion.div
+                ref={ref}
+                className={`col-auto col-6 col-md-4 ${styles.people_card}`}
+                initial={fadeInUp.initial}
+                animate={inView ? fadeInUp.animate : ""}
+              >
+                <Link href="/about-us/people/sunil-singh">
+                  <motion.div
+                    initial={{ x: 60, opacity: 0 }}
+                    animate={{ x: 0, opacity: 1 }}
+                    transition={{ delay: 0.4 }}
+                    whileHover={{ scale: 1.05 }}
+                    whileTap={{ scale: 0.95 }}
+                    className="mb-4 bg-white paper-box-shadow pointer"
+                  >
+                    <div className={`w-100`}>
+                      <img src={sunilImage} alt="" className="img-fluid" />
+                    </div>
+                    <div className="px-3 pt-3 pb-5 text-left">
+                      <h4>Sunil Kumar Singh</h4>
+                      <p>Founder &amp; Director</p>
+                    </div>
+                  </motion.div>
+                </Link>
+              </motion.div>
+            )}
+          </InView>
+          <InView triggerOnce threshold={0.5}>
+            {({ ref, inView }) => (
+              <motion.div
+                ref={ref}
+                className={`col-auto col-6 col-md-4 ${styles.people_card}`}
+                initial={fadeInUp.animate}
+                animate={inView ? fadeInUp.animate : ""}
+              >
+                <Link href="/about-us/people/s-r-arun">
+                  <motion.div
+                    initial={{ x: 60, opacity: 0 }}
+                    animate={{ x: 0, opacity: 1 }}
+                    transition={{ delay: 0.4 }}
+                    whileHover={{ scale: 1.05 }}
+                    whileTap={{ scale: 0.95 }}
+                    className="mb-4 bg-white paper-box-shadow pointer"
+                  >
+                    <div className={`w-100`}>
+                      <img src={arunImage} alt="" className="img-fluid" />
+                    </div>
+                    <div className="px-3 pt-3 pb-5 text-left">
+                      <h4>S. R. Arun</h4>
+                      <p>Chairman</p>
+                    </div>
+                  </motion.div>
+                </Link>
+              </motion.div>
+            )}
+          </InView>
+          <InView triggerOnce threshold={0.5}>
+            {({ ref, inView }) => (
+              <motion.div
+                ref={ref}
+                className={`col-auto col-6 col-md-4 ${styles.people_card}`}
+                initial={fadeInUp.animate}
+                animate={inView ? fadeInUp.animate : ""}
+              >
+                <Link href="/about-us/people/raul-silva">
+                  <motion.div
+                    initial={{ x: 60, opacity: 0 }}
+                    animate={{ x: 0, opacity: 1 }}
+                    transition={{ delay: 0.4 }}
+                    whileHover={{ scale: 1.05 }}
+                    whileTap={{ scale: 0.95 }}
+                    className="mb-4 bg-white paper-box-shadow pointer"
+                  >
+                    <div className={`w-100`}>
+                      <img src={raulImage} alt="" className="img-fluid" />
+                    </div>
+                    <div className="px-3 pt-3 pb-5 text-left">
+                      <h4>Raul Silva</h4>
+                      <p>Managing Director &amp; CEO</p>
+                    </div>
+                  </motion.div>
+                </Link>
+              </motion.div>
+            )}
+          </InView>
+          <InView triggerOnce threshold={0.5}>
+            {({ ref, inView }) => (
+              <motion.div
+                ref={ref}
+                className={`col-auto col-6 col-md-4 ${styles.people_card}`}
+                initial={fadeInUp.animate}
+                animate={inView ? fadeInUp.animate : ""}
+              >
+                <Link href="/about-us/people/candi-carrera">
+                  <motion.div
+                    initial={{ x: 60, opacity: 0 }}
+                    animate={{ x: 0, opacity: 1 }}
+                    transition={{ delay: 0.4 }}
+                    whileHover={{ scale: 1.05 }}
+                    whileTap={{ scale: 0.95 }}
+                    className="mb-4 bg-white paper-box-shadow pointer"
+                  >
+                    <div className={`w-100`}>
+                      <img src={candiImage} alt="" className="img-fluid" />
+                    </div>
+                    <div className="px-3 pt-3 pb-5 text-left">
+                      <h4>Candi Carrera</h4>
+                      <p>Director</p>
+                    </div>
+                  </motion.div>
+                </Link>
+              </motion.div>
+            )}
+          </InView>
+          <InView triggerOnce threshold={0.5}>
+            {({ ref, inView }) => (
+              <motion.div
+                ref={ref}
+                className={`col-auto col-6 col-md-4 ${styles.people_card}`}
+                initial={fadeInUp.animate}
+                animate={inView ? fadeInUp.animate : ""}
+              >
+                <Link href="/about-us/people/siddhant-shah">
+                  <motion.div
+                    initial={{ x: 60, opacity: 0 }}
+                    animate={{ x: 0, opacity: 1 }}
+                    transition={{ delay: 0.4 }}
+                    whileHover={{ scale: 1.05 }}
+                    whileTap={{ scale: 0.95 }}
+                    className="mb-4 bg-white paper-box-shadow pointer"
+                  >
+                    <div className={`w-100`}>
+                      <img src={shahImage} alt="" className="img-fluid" />
+                    </div>
+                    <div className="px-3 pt-3 pb-5 text-left">
+                      <h4>Siddhant Shah</h4>
+                      <p>Director</p>
+                    </div>
+                  </motion.div>
+                </Link>
+              </motion.div>
+            )}
+          </InView>
+          <InView triggerOnce threshold={0.5}>
+            {({ ref, inView }) => (
+              <motion.div
+                ref={ref}
+                className={`col-auto col-6 col-md-4 ${styles.people_card}`}
+                initial={fadeInUp.animate}
+                animate={inView ? fadeInUp.animate : ""}
+              >
+                <Link href="/about-us/people/yasser-khan">
+                  <motion.div
+                    initial={{ x: 60, opacity: 0 }}
+                    animate={{ x: 0, opacity: 1 }}
+                    transition={{ delay: 0.4 }}
+                    whileHover={{ scale: 1.05 }}
+                    whileTap={{ scale: 0.95 }}
+                    className="mb-4 bg-white paper-box-shadow pointer"
+                  >
+                    <div className={`w-100`}>
+                      <img src={khanImage} alt="" className="img-fluid" />
+                    </div>
+                    <div className="px-3 pt-3 pb-5 text-left">
+                      <h4>Yasser Khan</h4>
+                      <p>Director</p>
+                    </div>
+                  </motion.div>
+                </Link>
+              </motion.div>
+            )}
+          </InView>
+        </motion.div>
+      </motion.section>
       <Footer />
     </>
   );

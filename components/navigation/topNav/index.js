@@ -8,7 +8,7 @@ import style from "./top_nav.module.css";
 export default function TopNav() {
   return (
     <>
-      <div className="container-fluid d-none d-md-block bg-white py-3 w-100">
+      <div className="container-fluid d-none d-md-block py-3 w-100">
         <ul className={`row`}>
           <li className="col-3 px-4">
             <Link href="/">Logo</Link>

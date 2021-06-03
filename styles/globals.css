@@ -12,13 +12,42 @@ body {
 body {
   margin-top: 56px;
   width: 100vw;
-  height: 100vh;
+  /* height: 100vh; */
   overflow-x: hidden !important;
 }
 
 a {
   color: inherit;
   text-decoration: none !important;
+}
+
+.image-container {
+  position: relative;
+  width: 200px;
+  height: 300px;
+}
+.image-container .after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  color: #FFF;
+}
+.image-container .after {
+  display: block;
+  background: rgba(0, 0, 0, .6);
+  background: -webkit-linear-gradient(
+    to right,
+    #dc2430,
+    #7b4397
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #dc2430,
+    #7b4397
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 * {
