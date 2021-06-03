@@ -1,6 +1,15 @@
 import { motion } from "framer-motion";
 import { InView } from "react-intersection-observer";
 import styles from "./people.module.css";
+import {
+  arunImage,
+  candiImage,
+  peopleImage2,
+  raulImage,
+  sunilImage,
+  shahImage,
+  khanImage,
+} from "../../assets/imgs";
 
 // import ImageBackground from "../../components/imageBackground/index";
 
@@ -48,7 +57,7 @@ function People() {
   return (
     <>
       <motion.section className="">
-        {/* <ImageBackground src={""} /> */}
+        {/* <ImageBackground src={peopleImage2} /> */}
         <motion.section
           exit={{ opacity: 0 }}
           initial="initial"
@@ -94,7 +103,7 @@ function People() {
                     className="mb-4 bg-white paper-box-shadow pointer"
                   >
                     <div className={`w-100`}>
-                      <img src={""} alt="" className="img-fluid" />
+                      <img src={sunilImage} alt="" className="img-fluid" />
                     </div>
                     <div className="px-3 pt-3 pb-5 text-left">
                       <h4>Sunil Kumar Singh</h4>
@@ -123,7 +132,7 @@ function People() {
                     className="mb-4 bg-white paper-box-shadow pointer"
                   >
                     <div className={`w-100`}>
-                      <img src={""} alt="" className="img-fluid" />
+                      <img src={arunImage} alt="" className="img-fluid" />
                     </div>
                     <div className="px-3 pt-3 pb-5 text-left">
                       <h4>S. R. Arun</h4>
@@ -152,7 +161,7 @@ function People() {
                     className="mb-4 bg-white paper-box-shadow pointer"
                   >
                     <div className={`w-100`}>
-                      <img src={""} alt="" className="img-fluid" />
+                      <img src={raulImage} alt="" className="img-fluid" />
                     </div>
                     <div className="px-3 pt-3 pb-5 text-left">
                       <h4>Raul Silva</h4>
@@ -181,7 +190,7 @@ function People() {
                     className="mb-4 bg-white paper-box-shadow pointer"
                   >
                     <div className={`w-100`}>
-                      <img src={""} alt="" className="img-fluid" />
+                      <img src={candiImage} alt="" className="img-fluid" />
                     </div>
                     <div className="px-3 pt-3 pb-5 text-left">
                       <h4>Candi Carrera</h4>
@@ -210,7 +219,7 @@ function People() {
                     className="mb-4 bg-white paper-box-shadow pointer"
                   >
                     <div className={`w-100`}>
-                      <img src={""} alt="" className="img-fluid" />
+                      <img src={shahImage} alt="" className="img-fluid" />
                     </div>
                     <div className="px-3 pt-3 pb-5 text-left">
                       <h4>Siddhant Shah</h4>
@@ -239,7 +248,7 @@ function People() {
                     className="mb-4 bg-white paper-box-shadow pointer"
                   >
                     <div className={`w-100`}>
-                      <img src={""} alt="" className="img-fluid" />
+                      <img src={khanImage} alt="" className="img-fluid" />
                     </div>
                     <div className="px-3 pt-3 pb-5 text-left">
                       <h4>Yasser Khan</h4>

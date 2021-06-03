@@ -28,7 +28,7 @@ export const Navigation = ({ isOpen, sideMenu, toggleSideMenu }) => {
       <MenuItem>
         <div
           className={`${styles.drop_button}`}
-          onClick={() => toggleSideMenu("about-us")}
+          onClick={() => toggleSideMenu("About Us")}
         >
           <p className="m-0">About Us</p>
           <img src={rightArrowIcon} height={15} width={15} alt="" />

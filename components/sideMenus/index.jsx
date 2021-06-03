@@ -18,7 +18,7 @@ const Path = (props) => (
 );
 
 const menus = {
-  "about-us": <AboutUsSideMenu />,
+  "About Us": <AboutUsSideMenu />,
 };
 
 const SideMenu = ({ active, onToggleSideNav, onSwitchToMainNav }) => {
@@ -40,6 +40,7 @@ const SideMenu = ({ active, onToggleSideNav, onSwitchToMainNav }) => {
               alt=""
             />
           </div>
+          <span>{active}</span>
         </div>
         {menus[active]}
       </motion.div>
