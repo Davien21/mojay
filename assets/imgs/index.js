@@ -11,7 +11,12 @@ import leftArrowIcon from "./svgs/left-arrow.svg";
 import aboutUsImage from "./svgs/about-us.svg";
 import techIcon3 from "./svgs/techIcon3.svg";
 import aboutUsImage2 from "./about-us.png";
-import peopleImage2 from "./people-2.jpg";
+import peopleImage2 from "./search/people-2.jpg";
+import myroBg from "./myro-bg.png";
+import preimoBg from "./preimo-bg.png";
+import bg1 from "./search/roland-samuel-jsMb895HTxY-unsplash.jpg";
+import bg2 from "./search/home-bg-1.jpg";
+
 import sunilImage from "./sunil.png";
 import candiImage from "./candi.png";
 import khanImage from "./khan.png";
@@ -63,4 +68,8 @@ export {
   hook,
   rightArrowIcon,
   leftArrowAltIcon,
+  myroBg,
+  preimoBg,
+  bg1,
+  bg2,
 };
