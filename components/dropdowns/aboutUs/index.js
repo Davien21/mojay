@@ -2,7 +2,7 @@ import Link from "next/link";
 import DropDownMenu from "../../dropDownMenu";
 import DropDownToggler from "../../dropDownToggler";
 import { useCycle, motion } from "framer-motion";
-import { rightArrowIcon } from "../../../assets/imgs/index";
+import { rightArrowIcon } from "./../../../assets/imgs/index";
 import { useState, useRef } from "react";
 import DropDownCard from "./../../dropDownCard/index";
 

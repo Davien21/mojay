@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { InView } from "react-intersection-observer";
-import { callIcon, emailIcon, locationIcon } from "../../assets/imgs";
+import { callIcon, emailIcon, locationIcon } from "./../../assets/imgs";
 
 import Footer from "./../../components/footer/index";
 import ContactForm from "./../../components/form/contact/index";

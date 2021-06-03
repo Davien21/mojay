@@ -1,5 +1,5 @@
 import ImageOverlay from "./../../components/imageOverlay/index";
-import { peopleImage2, bg1, bg2, myroBg, preimoBg } from "../../assets/imgs";
+import { peopleImage2, bg1, bg2, myroBg, preimoBg } from "./../../assets/imgs";
 import styles from "./values.module.css";
 
 function OurValues() {

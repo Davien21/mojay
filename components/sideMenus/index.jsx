@@ -1,7 +1,7 @@
 import styles from "./side_menu.module.css";
 import { motion } from "framer-motion";
 import { MenuToggle } from "./../navigation/sideNav/MenuToggle";
-import { leftArrowAltIcon } from "../../assets/imgs";
+import { leftArrowAltIcon } from "./../../assets/imgs";
 import AboutUsSideMenu from "./aboutUs";
 
 const slideIn = { width: "300px", transition: { duration: 0.2 } };
@@ -33,12 +33,7 @@ const SideMenu = ({ active, onToggleSideNav, onSwitchToMainNav }) => {
       >
         <div className={`d-flex justify-content-between px-3 ${styles.back}`}>
           <div className="pointer" onClick={() => onSwitchToMainNav(false)}>
-            <img
-              src={leftArrowAltIcon}
-              height={23}
-              width={23}
-              alt=""
-            />
+            <img src={leftArrowAltIcon} height={23} width={23} alt="" />
           </div>
           <span>{active}</span>
         </div>

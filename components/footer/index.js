@@ -1,10 +1,12 @@
 import styles from "./footer.module.css";
-import { mojayLogo } from "../../assets/imgs";
+import { mojayLogo } from "./../../assets/imgs";
 import Link from "next/link";
 const year = new Date().getFullYear();
 const Footer = () => {
   return (
-    <footer className={`text-center text-md-left ${styles.defaults} ${styles.grey_text}`}>
+    <footer
+      className={`text-center text-md-left ${styles.defaults} ${styles.grey_text}`}
+    >
       <div className="container">
         <div className="row  align-items-center">
           <div className="col-lg-6 pt-5 pb-4">
@@ -59,7 +61,6 @@ const Footer = () => {
                   <li className="py-2">
                     <Link href="/">Terms</Link>
                   </li>
-                 
                 </ul>
               </div>
               <div className="col-md-3 py-4">
@@ -74,7 +75,6 @@ const Footer = () => {
                   <li className="py-2">
                     <Link href="/">Instagram</Link>
                   </li>
-                 
                 </ul>
               </div>
             </div>

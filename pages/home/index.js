@@ -6,7 +6,7 @@ import {
   preimoBg,
   bg1,
   bg2,
-} from "../../assets/imgs";
+} from "./../../assets/imgs";
 
 function Home() {
   return (
@@ -26,7 +26,10 @@ function Home() {
         </div>
       </div>
       <div>
-        <BackgroundSlideshow animationDelay={1000000} images={[myroBg, preimoBg]} />
+        <BackgroundSlideshow
+          animationDelay={1000000}
+          images={[myroBg, preimoBg]}
+        />
       </div>
       <div>
         <p>Industrial automation, artificial Intelligence</p>

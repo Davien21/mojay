@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { mojayLogo } from "../../../assets/imgs";
+import { mojayLogo } from "./../../../assets/imgs";
 import AboutUsDropDown from "../../dropdowns/aboutUs";
 import BusinessDropDown from "../../dropdowns/business";
 import InvestmentsDropDown from "../../dropdowns/investments";

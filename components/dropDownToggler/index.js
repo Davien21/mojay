@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import { downArrow } from "../../assets/imgs";
+import { downArrow } from "./../../assets/imgs";
 
 const rotateUp = { rotate: 180, transition: { duration: 0 } };
 const rotateDown = { rotate: 0, transition: { duration: 0 } };

@@ -3,9 +3,7 @@ import { motion } from "framer-motion";
 import { MenuItem } from "./MenuItem";
 import styles from "./side_nav.module.css";
 import Link from "next/link";
-import { rightArrowIcon } from "../../../assets/imgs";
-
- 
+import { rightArrowIcon } from "./../../../assets/imgs";
 
 export const Navigation = ({ isOpen, sideMenu, toggleSideMenu }) => {
   const variants = {

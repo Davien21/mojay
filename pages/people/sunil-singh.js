@@ -1,4 +1,4 @@
-import { sunilImage, checkIcon, leftArrowIcon } from "../../../assets/imgs";
+import { sunilImage, checkIcon, leftArrowIcon } from "./../../../assets/imgs";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import styles from "../people/people.module.css";
@@ -33,7 +33,6 @@ const fadeInUp = {
 };
 
 const sunilSingh = () => {
- 
   return (
     <>
       <motion.div

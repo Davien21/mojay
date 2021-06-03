@@ -1,4 +1,4 @@
-import { deloitteLogo } from "../../assets/imgs";
+import { deloitteLogo } from "./../../assets/imgs";
 import styles from "./brands.module.css";
 import { motion } from "framer-motion";
 
