@@ -18,10 +18,14 @@ function OurValues() {
           src={bg5}
           alt=""
           className="img-fluid image_overlay"
-          style={{ maxHeight: "70vh", height: "auto", width: "100%", backgroundPosition: "0% 50%" }}
+          style={{
+            maxHeight: "70vh",
+            height: "auto",
+            width: "100%",
+          }}
         />
         <div className={styles.content}>
-          <div className="m-5 pt-5">
+          <div className="mx-3 my-5 mx-md-5 pt-5">
             <h1>Our Values</h1>
             <div className="mt-4 ">
               <p>
@@ -33,16 +37,16 @@ function OurValues() {
         </div>
       </ImageBackground>
       <section className="my-5">
-        <div className="def-container mt-5 pt-5">
+        <div className="def-container mt-5">
           <article className="text-center ">
             <h3>We live by Our Values</h3>
             <hr className="undertone ml-auto" />
           </article>
         </div>
         <div className="def-container my-5">
-          <div className="row mx-auto justify-content-center">
+          <div className="row mx-auto justify-content-center ">
             <div className="col-md-4 my-5 px-4 px-sm-5 px-md-3">
-              <div className="" style={{ height: "200px" }}>
+              <div className="">
                 <img
                   src={empathyImg}
                   alt=""
@@ -57,7 +61,7 @@ function OurValues() {
               </article>
             </div>
             <div className="col-md-4 my-5 px-4 px-sm-5 px-md-3">
-              <div className="" style={{ height: "200px" }}>
+              <div className="">
                 <img
                   src={respectImg}
                   alt=""
@@ -72,7 +76,7 @@ function OurValues() {
               </article>
             </div>
             <div className="col-md-4 my-5 px-4 px-sm-5 px-md-3">
-              <div className="" style={{ height: "200px" }}>
+              <div className="">
                 <img
                   src={integrityImg}
                   alt=""
@@ -86,7 +90,7 @@ function OurValues() {
               </article>
             </div>
             <div className="col-md-4 my-5 px-4 px-sm-5 px-md-3">
-              <div className="" style={{ height: "200px" }}>
+              <div className="">
                 <img
                   src={innovationImg}
                   alt=""
@@ -100,11 +104,12 @@ function OurValues() {
               </article>
             </div>
             <div className="col-md-4 my-5 px-4 px-sm-5 px-md-3">
-              <div className="" style={{ height: "200px" }}>
+              <div className="">
                 <img
                   src={performanceImg}
                   alt=""
                   className="img-fluid def-rounded"
+                  style={{minHeight: "203px"}}
                 />
               </div>
               <h5 className="text-center my-3 h4">Performance</h5>
