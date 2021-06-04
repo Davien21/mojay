@@ -4,28 +4,12 @@
   position: absolute;
   top: 0;
 }
-/* .li > * {
-  color: black;
-  border-bottom: 1px solid transparent;
-  cursor: pointer;
-  user-select: none;
+
+.unscrolled {
+  background-color: transparent;
+  color: white;
 }
 
-.li:nth-child(2):hover ~ .bottom_line {
-  left: 20%;
+.scrolled {
+  
 }
-
-.li:nth-child(3):hover ~ .bottom_line {
-  left: 40%;
-}
-
-.li:nth-child(4):hover ~ .bottom_line {
-  left: 60%;
-}
-
-.li:nth-child(5):hover ~ .bottom_line {
-  left: 80%;
-} */
-
-
-

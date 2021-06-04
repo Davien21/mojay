@@ -22,8 +22,6 @@ const menus = {
 };
 
 const SideMenu = ({ active, onToggleSideNav, onSwitchToMainNav }) => {
-  if (active) console.log("active", active);
-  if (!active) console.log("not active", active);
   return (
     <>
       <motion.div

@@ -2,7 +2,9 @@
   position: relative;
 }
 
-.img {
-  position: relative;
-  color: #fff;
+.body::after {
+  content: "";
+  background: linear-gradient(rgb(45 20 106 / 72%), rgb(0 0 0));
+
 }
+

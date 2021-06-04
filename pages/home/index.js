@@ -27,7 +27,7 @@ function Home() {
       </div>
       <div>
         <BackgroundSlideshow
-          animationDelay={1000000}
+          animationDelay={3000}
           images={[myroBg, preimoBg]}
         />
       </div>
