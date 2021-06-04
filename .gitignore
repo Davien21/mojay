@@ -35,6 +35,6 @@ videos/myro.mp4
 # assets/imgs/search
 # vercel
 .vercel
-
+non-commits/
 # Local Netlify folder
 .netlify

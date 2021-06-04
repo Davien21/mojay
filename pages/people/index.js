@@ -57,7 +57,6 @@ function People() {
   return (
     <>
       <motion.section className="">
-        {/* <ImageBackground src={peopleImage2} /> */}
         <motion.section
           exit={{ opacity: 0 }}
           initial="initial"
@@ -93,7 +92,7 @@ function People() {
                 initial={fadeInUp.initial}
                 animate={inView ? fadeInUp.animate : ""}
               >
-                <Link href="/about-us/people/sunil-singh">
+                <Link href="/people/sunil-singh">
                   <motion.div
                     initial={{ x: 60, opacity: 0 }}
                     animate={{ x: 0, opacity: 1 }}
@@ -122,7 +121,7 @@ function People() {
                 initial={fadeInUp.animate}
                 animate={inView ? fadeInUp.animate : ""}
               >
-                <Link href="/about-us/people/s-r-arun">
+                <Link href="/people/s-r-arun">
                   <motion.div
                     initial={{ x: 60, opacity: 0 }}
                     animate={{ x: 0, opacity: 1 }}
@@ -151,7 +150,7 @@ function People() {
                 initial={fadeInUp.animate}
                 animate={inView ? fadeInUp.animate : ""}
               >
-                <Link href="/about-us/people/raul-silva">
+                <Link href="/people/raul-silva">
                   <motion.div
                     initial={{ x: 60, opacity: 0 }}
                     animate={{ x: 0, opacity: 1 }}
@@ -180,7 +179,7 @@ function People() {
                 initial={fadeInUp.animate}
                 animate={inView ? fadeInUp.animate : ""}
               >
-                <Link href="/about-us/people/candi-carrera">
+                <Link href="/people/candi-carrera">
                   <motion.div
                     initial={{ x: 60, opacity: 0 }}
                     animate={{ x: 0, opacity: 1 }}
@@ -209,7 +208,7 @@ function People() {
                 initial={fadeInUp.animate}
                 animate={inView ? fadeInUp.animate : ""}
               >
-                <Link href="/about-us/people/siddhant-shah">
+                <Link href="/people/siddhant-shah">
                   <motion.div
                     initial={{ x: 60, opacity: 0 }}
                     animate={{ x: 0, opacity: 1 }}
@@ -238,7 +237,7 @@ function People() {
                 initial={fadeInUp.animate}
                 animate={inView ? fadeInUp.animate : ""}
               >
-                <Link href="/about-us/people/yasser-khan">
+                <Link href="/people/yasser-khan">
                   <motion.div
                     initial={{ x: 60, opacity: 0 }}
                     animate={{ x: 0, opacity: 1 }}

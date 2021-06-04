@@ -30,7 +30,7 @@ function OurHistory() {
           </div>
         </div>
       </ImageBackground>
-      <section className="min-vh-100 d-flex align-items-center justify-content-center">
+      <section className="def_min-vh-100 d-flex align-items-center justify-content-center">
         <div>
           <div className="def-container ">
             <article className="text-center ">

@@ -3,8 +3,15 @@
   padding: 50px 100px;
   width: 100vw;
   position: fixed;
-  left: 0;
+  left: calc(0px);
   box-shadow: 0 2px 10px 0 rgb(0 0 0 / 10%);
   font-size: 0.9rem;
   line-height: 1.7rem;
+  max-width: 1520px;
+}
+
+@media (min-width: 1519px) {
+  .drop_section {
+    left: calc(50% - 760px);
+  }
 }

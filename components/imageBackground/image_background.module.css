@@ -13,7 +13,7 @@
   -o-object-fit: cover;
   object-fit: cover;
   position: absolute;
-  width: 100%;
+  width: 100vw;
 }
 
 .image_overlay {
@@ -26,13 +26,13 @@
 .tall::after,
 .tall img {
   height: calc(100vh);
-  max-height: 1200px;
+  max-height: 800px;
 }
 
 .short,
 .short::after,
 .short img {
-  height: calc(38vh);
+  height: calc(50vh);
   max-height: 600px;
 }
 

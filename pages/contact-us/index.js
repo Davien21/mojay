@@ -78,8 +78,8 @@ function ContactUs() {
                 </div>
                 <div className="d-flex col-auto flex-column">
                   <span>Call</span>
-                  <a className="pointer" tel="+01 222 5589">
-                    +01 222 5589, 658-789-4562
+                  <a className="pointer" tel="+971 4 876 1992">
+                  +971 4 876 1992
                   </a>
                 </div>
               </motion.li>
