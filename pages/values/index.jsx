@@ -9,20 +9,21 @@ import {
 
 import ImageBackground from "../../components/imageBackground";
 import styles from "./values.module.css";
-import Footer from './../../components/footer/index';
+import Footer from "./../../components/footer/index";
+import { motion } from "framer-motion";
+const easing = [0.6, -0.05, 0.01, 0.99];
 
 function OurValues() {
   return (
-    <>
-      <ImageBackground >
-        <img
-          src={bg5}
-          alt=""
-          className="img-fluid image_overlay"
-           
-        />
-        <div className={`${styles.content} mt-5`}>
-          <div className="mx-3 my-5 mx-md-5 pt-md-5">
+    <motion.section
+      exit={{ opacity: 0 }}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1, transition: { ease: easing, duration: 0.6 } }}
+    >
+      <ImageBackground sizeType="tall">
+        <img src={bg5} alt="" className="img-fluid" />
+        <div className={`image_bg_content mt-5 text-shadow`}>
+          <div className="def-container-lg my-5 pt-md-5">
             <h1>Our Values</h1>
             <div className="mt-4 ">
               <p>
@@ -33,8 +34,8 @@ function OurValues() {
           </div>
         </div>
       </ImageBackground>
-      <section className="my-5">
-        <div className="def-container mt-5">
+      <section className="mb-5">
+        <div className="def-container ">
           <article className="text-center ">
             <h3>We live by Our Values</h3>
             <hr className="undertone ml-auto" />
@@ -106,7 +107,7 @@ function OurValues() {
                   src={performanceImg}
                   alt=""
                   className="img-fluid def-rounded"
-                  style={{minHeight: "203px"}}
+                  style={{ minHeight: "203px" }}
                 />
               </div>
               <h5 className="text-center my-3 h4">Performance</h5>
@@ -119,7 +120,7 @@ function OurValues() {
         </div>
       </section>
       <Footer />
-    </>
+    </motion.section>
   );
 }
 

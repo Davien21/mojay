@@ -40,7 +40,7 @@ const DropDownMenu = (props) => {
       ref={ref}
       initial={{ opacity: 0, y: 60 }}
       animate={isDropped ? fadeIn : fadeOut}
-      className={`${style.drop_section} paper-box-shadow`}
+      className={`${style.drop_section} paper-box-shadow text-black`}
     >
       {children}
     </motion.div>

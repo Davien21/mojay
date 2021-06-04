@@ -4,8 +4,6 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: calc(100vh);
-  max-height: 1600px;
   background: #c33764; /* fallback colour. Make sure this is just one solid colour. */
   background: linear-gradient(rgb(45 20 106 / 72%), rgb(0 0 0));
   opacity: 0.7;
@@ -16,27 +14,39 @@
   object-fit: cover;
   position: absolute;
   width: 100%;
-  height: calc(100vh);
-  max-height: 1600px;
 }
 
 .image_overlay {
-  height: calc(100vh);
-  max-height: 1600px;
   width: 100%;
   position: relative;
   top: -56px;
 }
 
-@media (min-width: 992px) {
-  .image_overlay {
-    height: calc(80vh + 56px);
-  }
-  .image_overlay img {
-    height: calc(80vh + 56px);
-  }
+.tall,
+.tall::after,
+.tall img {
+  height: calc(100vh);
+  max-height: 1200px;
+}
 
-  .image_overlay::after {
+.short,
+.short::after,
+.short img {
+  height: calc(38vh);
+  max-height: 600px;
+}
+
+@media (min-width: 992px) {
+  .tall,
+  .tall::after,
+  .tall img {
     height: calc(80vh + 56px);
   }
+  
+  .short,
+  .short::after,
+  .short img {
+    height: calc(44vh + 56px);
+  }
+  
 }

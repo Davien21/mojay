@@ -59,7 +59,7 @@ export default function SideNav() {
   const { height } = useDimensions(containerRef);
 
   return (
-    <div className="d-md-none">
+    <div className="d-md-none text-black">
       <Overlay
         className=""
         isOpen={isOpen}

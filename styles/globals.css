@@ -283,7 +283,31 @@ textarea.default_style:focus {
 } */
 
 .app-container {
-  max-width: 1440px;
+  max-width: 1520px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.image_bg_content {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  color: #fff;
+  z-index: 1;
+}
+
+.wrapped-text-div {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  .wrapped-text-div {
+    display: block;
+  }
+  .wrapped-text-div img {
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 15px;
+  }
 }

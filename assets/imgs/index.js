@@ -10,6 +10,7 @@ import financeIcon from "./svgs/finance.svg";
 import leftArrowIcon from "./svgs/left-arrow.svg";
 import aboutUsImage from "./svgs/about-us.svg";
 import techIcon3 from "./svgs/techIcon3.svg";
+import ideasImage from "./svgs/ideas.svg";
 import aboutUsImage2 from "./about-us.png";
 import peopleImage2 from "./search/people-2.jpg";
 import myroBg from "./myro-bg.png";
@@ -24,6 +25,14 @@ import performanceImg from "./search/CemqGWttHM.jpg";
 
 import bg4 from "./search/SzGKFLBlQs.jpg";
 import bg5 from "./search/GHyouzpqwL.jpg";
+import bg6 from "./search/neonbrand-KYxXMTpTzek-unsplash.jpg";
+import bg7 from "./search/x6jLTtynUA.jpg";
+import bg8 from "./search/gB5gO0iLAT.jpg";
+import bg9 from "./search/t6ob6J298R.jpg";
+import bg10 from "./search/alexander-schimmeck-io2zWCVE8CI-unsplash.jpg";
+import bg11 from "./search/Rrr5an9El5.jpg";
+import bg12 from "./search/lina-trochez-ktPKyUs3Qjs-unsplash.jpg";
+import bg13 from "./search/0pDQltjO1d.jpg";
 
 import sunilImage from "./sunil.png";
 import candiImage from "./candi.png";
@@ -82,9 +91,18 @@ export {
   bg4,
   bg2,
   bg5,
+  bg6,
+  bg7,
+  bg8,
+  bg9,
+  bg10,
+  bg11,
+  bg12,
+  bg13,
   empathyImg,
   respectImg,
   integrityImg,
   innovationImg,
   performanceImg,
+  ideasImage,
 };
