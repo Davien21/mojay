@@ -16,6 +16,14 @@ import myroBg from "./myro-bg.png";
 import preimoBg from "./preimo-bg.png";
 import bg1 from "./search/roland-samuel-jsMb895HTxY-unsplash.jpg";
 import bg2 from "./search/home-bg-1.jpg";
+import empathyImg from "./search/kulli-kittus-KQfxVDHGCUg-unsplash.jpg";
+import respectImg from "./search/wonderlane-MAQ1dcCn-Jc-unsplash.jpg";
+import integrityImg from "./search/mY2SqQyG9d.jpg";
+import innovationImg from "./search/vOgohgC46w.jpg";
+import performanceImg from "./search/CemqGWttHM.jpg";
+
+import bg4 from "./search/SzGKFLBlQs.jpg";
+import bg5 from "./search/s59Ifc60uB.jpg";
 
 import sunilImage from "./sunil.png";
 import candiImage from "./candi.png";
@@ -71,5 +79,12 @@ export {
   myroBg,
   preimoBg,
   bg1,
+  bg4,
   bg2,
+  bg5,
+  empathyImg,
+  respectImg,
+  integrityImg,
+  innovationImg,
+  performanceImg,
 };
