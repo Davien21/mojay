@@ -9,23 +9,20 @@ import {
 
 import ImageBackground from "../../components/imageBackground";
 import styles from "./values.module.css";
+import Footer from './../../components/footer/index';
 
 function OurValues() {
   return (
     <>
-      <ImageBackground height="70vh">
+      <ImageBackground >
         <img
           src={bg5}
           alt=""
           className="img-fluid image_overlay"
-          style={{
-            maxHeight: "70vh",
-            height: "auto",
-            width: "100%",
-          }}
+           
         />
-        <div className={styles.content}>
-          <div className="mx-3 my-5 mx-md-5 pt-5">
+        <div className={`${styles.content} mt-5`}>
+          <div className="mx-3 my-5 mx-md-5 pt-md-5">
             <h1>Our Values</h1>
             <div className="mt-4 ">
               <p>
@@ -121,6 +118,7 @@ function OurValues() {
           </div>
         </div>
       </section>
+      <Footer />
     </>
   );
 }

@@ -4,11 +4,10 @@
   top: 0;
   left: 0;
   width: 100%;
-  max-height: auto;
-  min-height: 77.5vh;
+  height: calc(100vh);
+  max-height: 1600px;
   background: #c33764; /* fallback colour. Make sure this is just one solid colour. */
   background: linear-gradient(rgb(45 20 106 / 72%), rgb(0 0 0));
-
   opacity: 0.7;
 }
 
@@ -16,23 +15,28 @@
   -o-object-fit: cover;
   object-fit: cover;
   position: absolute;
-  top: 56px;
   width: 100%;
-  max-height: 90%;
-  min-height: 528px;
+  height: calc(100vh);
+  max-height: 1600px;
 }
 
 .image_overlay {
-  max-height: "70vh";
-  height: "auto";
-  width: "100%";
-}
-
-.image_overlay {
-  max-height: "70vh";
-  height: "auto";
-  width: "100%";
+  height: calc(100vh);
+  max-height: 1600px;
+  width: 100%;
+  position: relative;
+  top: -56px;
 }
 
 @media (min-width: 992px) {
+  .image_overlay {
+    height: calc(80vh + 56px);
+  }
+  .image_overlay img {
+    height: calc(80vh + 56px);
+  }
+
+  .image_overlay::after {
+    height: calc(80vh + 56px);
+  }
 }
