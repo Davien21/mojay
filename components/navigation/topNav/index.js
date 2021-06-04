@@ -5,7 +5,7 @@ import BusinessDropDown from "../../dropdowns/business";
 import InvestmentsDropDown from "../../dropdowns/investments";
 import styles from "./top_nav.module.css";
 
-const TopNav = ({ isScrolled }) => {
+const TopNav = () => {
   return (
     <>
       <div className={`def-container-lg d-none d-md-block py-3 w-100`}>
