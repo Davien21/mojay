@@ -29,14 +29,14 @@ function Home() {
         />
         <div className={`absolute image_bg_content mt-5 text-shadow`}>
           <div className="def-container-lg my-5 pt-md-5 row">
-            <div className="col-md-7  d-flex flex-column">
+            <div className="col-md-7 mt-4 d-flex flex-column">
               <h6>Industrial automation, artificial intelligence</h6>
               <div className="row">
                 <span className="col-auto h1">Challenging</span>
-                <span className="col-6 font-weight-bold h1 px-0 def_red">
+                <span className="col-auto font-weight-bold h1 px-3 px-md-0 def_red">
                   Innovating
                 </span>
-                <span className="col-6 h1">Nurturing</span>
+                <span className="col-auto h1">Nurturing</span>
               </div>
               <div className="mt-4 ">
                 <p>
