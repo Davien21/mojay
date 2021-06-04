@@ -23,7 +23,7 @@ import innovationImg from "./search/vOgohgC46w.jpg";
 import performanceImg from "./search/CemqGWttHM.jpg";
 
 import bg4 from "./search/SzGKFLBlQs.jpg";
-import bg5 from "./search/s59Ifc60uB.jpg";
+import bg5 from "./search/GHyouzpqwL.jpg";
 
 import sunilImage from "./sunil.png";
 import candiImage from "./candi.png";

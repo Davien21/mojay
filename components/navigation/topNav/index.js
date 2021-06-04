@@ -34,13 +34,13 @@ const TopNav = () => {
   return (
     <>
       <motion.div
-        className={`container-fluid d-none d-md-block py-3 w-100 `}
+        className={`container-fluid d-none d-md-block py-3 w-100 px-5`}
         initial={scrollDown}
         animate={isImageBackgroundRoute && animate}
       >
         <ul className={`row`}>
           <li className="col-3 px-4">
-            {isImageBackgroundRoute.toString()}
+            {/* {isImageBackgroundRoute.toString()} */}
             <Link href="/">Logo</Link>
           </li>
           <li className={`d-flex justify-content-center col ml-auto `}>

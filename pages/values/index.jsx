@@ -18,21 +18,21 @@ function OurValues() {
           src={bg5}
           alt=""
           className="img-fluid image_overlay"
-          style={{ maxHeight: "70vh", height: "auto", width: "100%" }}
+          style={{ maxHeight: "70vh", height: "auto", width: "100%", backgroundPosition: "0% 50%" }}
         />
         <div className={styles.content}>
-          <div className=" m-5">
-            <h2>Our Values</h2>
+          <div className="m-5 pt-5">
+            <h1>Our Values</h1>
+            <div className="mt-4 ">
+              <p>
+                Our foundation lies in our core values, always directing us
+                towards the path of growth.
+              </p>
+            </div>
           </div>
         </div>
       </ImageBackground>
       <section className="my-5">
-        <div className="def-container text-center mt-5 pt-4">
-          <p>
-            Our foundation lies in our core values, always directing us towards
-            the path of growth.
-          </p>
-        </div>
         <div className="def-container mt-5 pt-5">
           <article className="text-center ">
             <h3>We live by Our Values</h3>
