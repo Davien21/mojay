@@ -37,6 +37,7 @@ import bg10 from "./search/alexander-schimmeck-io2zWCVE8CI-unsplash.jpg";
 import bg11 from "./search/Rrr5an9El5.jpg";
 import bg12 from "./search/lina-trochez-ktPKyUs3Qjs-unsplash.jpg";
 import bg13 from "./search/0pDQltjO1d.jpg";
+import philosophyBg from "./search/X31yyllyrd.jpg";
 
 import sunilImage from "./sunil.png";
 import candiImage from "./candi.png";
@@ -52,6 +53,9 @@ import pkfLogo from "./pkf.png";
 import thomasFamilyLogo from "./thomas-family.png";
 import bsaLogo from "./bsa.png";
 import abrahamicBusinessCircleLogo from "./abrahamic-business-circle.png";
+import myroLogo from "./Logo_Myro-final-05.png";
+import eternalRoboticsLogo from "./eternal-robotics-logo-2.png";
+import preimoLogo from "./preimo-logo.png";
 
 import callIcon from "./svgs/call.svg";
 import leftArrowAltIcon from "./svgs/left-arrow_alt.svg";
@@ -60,7 +64,7 @@ import hook from "./svgs/hook.svg";
 import emailIcon from "./svgs/email.svg";
 import locationIcon from "./svgs/location.svg";
 import preimo from "./preimo.png";
-import eternalRobotics from "./eternal-robotics.png";
+import eternalRobotics from "./eternal-robotics-logo.png";
 
 export {
   downArrow,
@@ -113,10 +117,14 @@ export {
   bg11,
   bg12,
   bg13,
+  philosophyBg,
   empathyImg,
   respectImg,
   integrityImg,
   innovationImg,
   performanceImg,
   ideasImage,
+  myroLogo,
+  eternalRoboticsLogo,
+  preimoLogo,
 };

@@ -1,0 +1,14 @@
+.card img {
+  height: 260px;
+  width: 100%;
+}
+
+.card {
+  max-width: 330px !important;
+}
+
+@media (min-width: 920px) {
+  .main_container {
+    height: calc(100vh - 56px);
+  }
+}

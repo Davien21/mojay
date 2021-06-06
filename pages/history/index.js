@@ -30,8 +30,8 @@ function OurHistory() {
           </div>
         </div>
       </ImageBackground>
-      <section className="def_min-vh-100 d-flex align-items-center justify-content-center">
-        <div>
+      <section className="clear-nav-margin">
+        <div className="my-5">
           <div className="def-container ">
             <article className="text-center ">
               <h3>We live by Our History</h3>

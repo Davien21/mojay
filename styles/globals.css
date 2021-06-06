@@ -251,7 +251,7 @@ textarea.default_style:focus {
   min-height: 100vh;
 }
 
-@media (min-width: 1519px) {
+@media (min-width: 1120px) {
   .def_min-vh-100 {
     min-height: 800px;
   }
@@ -324,4 +324,8 @@ textarea.default_style:focus {
   .before-img-div::after {
     top: 1%;
   }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
 }
