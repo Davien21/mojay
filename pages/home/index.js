@@ -225,10 +225,10 @@ function Home() {
               </div>
             </div>
             <div className="row px-3">
-              <div className="col col-md-6">
+              <div className="col-12 mb-5 col-md-6">
                 <img src={philosophyBg} alt="" className="img-fluid w-100" />
               </div>
-              <div className="col col-md-6">
+              <div className="col-12 col-md-6">
                 <h4 className="mb-4">Philosophy is two pronged</h4>
                 <p>
                   Fully customizable and neatly organized components will help
