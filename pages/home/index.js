@@ -235,7 +235,7 @@ function Home() {
                   you work faster without limiting creative freedom.
                 </p>
                 <div className="row">
-                  <div className="col col-md-6">
+                  <div className="col-12 my-2 col-md-6">
                     <div></div>
                     <h6 className="h5">Feature One</h6>
                     <div>
@@ -243,7 +243,7 @@ function Home() {
                       deriving elevated value for our stakeholders.
                     </div>
                   </div>
-                  <div className="col col-md-6">
+                  <div className="col-12 my-3 col-md-6">
                     <div></div>
                     <h6 className="h5">Feature Two</h6>
                     <div>
