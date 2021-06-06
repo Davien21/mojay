@@ -225,6 +225,7 @@ textarea.default_style:focus {
 
 .image_bg_content {
   position: absolute;
+  top: 56px;
   left: 0;
   width: 100%;
   color: #fff;
