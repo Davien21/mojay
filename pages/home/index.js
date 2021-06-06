@@ -40,14 +40,15 @@ function Home() {
             />
             <div className={`absolute image_bg_content mt-5 text-shadow`}>
               <div className="def-container-lg my-5 pt-md-5 row">
-                <div className="col-md-7 mt-4 d-flex flex-column">
-                  <h6>Industrial automation, artificial intelligence</h6>
+                <div className="col-md-6 d-flex flex-column">
+                  <h6 className="py-4">Industrial automation, artificial intelligence</h6>
                   <div className="row">
-                    <span className="col-auto h1">Challenging</span>
-                    <span className="col-auto font-weight-bold h1 px-3 px-md-0 def_text_red">
+                    <span className="col-auto h2">Challenging</span>
+                    <span className="col-auto font-weight-bold h2 px-3 px-md-0 def_text_red">
                       Innovating
                     </span>
-                    <span className="col-auto h1">Nurturing</span>
+                    <br />
+                    <span className="col-auto h2">Nurturing</span>
                   </div>
                   <div className="mt-4 ">
                     <p>
