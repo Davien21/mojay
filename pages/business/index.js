@@ -86,7 +86,7 @@ function OurBusiness() {
                   variants={stagger}
                   className="row bg-white align-items-center"
                 >
-                  <motion.div className="col-md-7 p-5 order-2 order-lg-1">
+                  <motion.div id="#preimo" id="#preimo"  className="col-md-7 p-5 order-2 order-lg-1">
                     <motion.h4 variants={fadeInUp}>Preimo</motion.h4>
                     <hr className="undertone" />
                     <motion.div variants={fadeInUp}>
@@ -135,7 +135,7 @@ function OurBusiness() {
                       className="img-fluid"
                     />
                   </motion.div>
-                  <motion.div className="col-md-7 p-5">
+                  <motion.div id="#eternal-robotics"  className="col-md-7 p-5">
                     <motion.h4 animate={inView ? fadeInUp.animate : ""}>
                       Eternal Robotics
                     </motion.h4>
@@ -170,7 +170,7 @@ function OurBusiness() {
                   variants={stagger}
                   className="row bg-white align-items-center"
                 >
-                  <motion.div className="col-md-7 p-5 order-2 order-lg-1">
+                  <motion.div id="#myro"  className="col-md-7 p-5 order-2 order-lg-1">
                     <motion.h4 variants={fadeInUp}>Myro</motion.h4>
                     <hr className="undertone" />
 

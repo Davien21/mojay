@@ -11,18 +11,22 @@ import leftArrowIcon from "./svgs/left-arrow.svg";
 import aboutUsImage from "./svgs/about-us.svg";
 import techIcon3 from "./svgs/techIcon3.svg";
 import ideasImage from "./svgs/ideas.svg";
+import beforeImg from "./svgs/before-image.svg";
+
 import aboutUsImage2 from "./about-us.png";
 import peopleImage2 from "./search/people-2.jpg";
+
 import myroBg from "./myro-bg.png";
 import preimoBg from "./preimo-bg.png";
-import bg1 from "./search/roland-samuel-jsMb895HTxY-unsplash.jpg";
-import bg2 from "./search/home-bg-1.jpg";
+
 import empathyImg from "./search/kulli-kittus-KQfxVDHGCUg-unsplash.jpg";
 import respectImg from "./search/wonderlane-MAQ1dcCn-Jc-unsplash.jpg";
 import integrityImg from "./search/mY2SqQyG9d.jpg";
 import innovationImg from "./search/vOgohgC46w.jpg";
 import performanceImg from "./search/CemqGWttHM.jpg";
 
+import bg1 from "./search/roland-samuel-jsMb895HTxY-unsplash.jpg";
+import bg2 from "./search/home-bg-1.jpg";
 import bg4 from "./search/SzGKFLBlQs.jpg";
 import bg5 from "./search/GHyouzpqwL.jpg";
 import bg6 from "./search/neonbrand-KYxXMTpTzek-unsplash.jpg";
@@ -40,7 +44,14 @@ import khanImage from "./khan.png";
 import raulImage from "./raul.png";
 import arunImage from "./arun.png";
 import shahImage from "./shah.png";
+import teamImage from "./team.png";
+
+import almtLogo from "./almt.png";
 import deloitteLogo from "./svgs/Deloitte_logo.svg";
+import pkfLogo from "./pkf.png";
+import thomasFamilyLogo from "./thomas-family.png";
+import bsaLogo from "./bsa.png";
+import abrahamicBusinessCircleLogo from "./abrahamic-business-circle.png";
 
 import callIcon from "./svgs/call.svg";
 import leftArrowAltIcon from "./svgs/left-arrow_alt.svg";
@@ -48,8 +59,6 @@ import rightArrowIcon from "./svgs/right-arrow.svg";
 import hook from "./svgs/hook.svg";
 import emailIcon from "./svgs/email.svg";
 import locationIcon from "./svgs/location.svg";
-import almtLogo from "./almt.png";
-import pkfLogo from "./pkf.png";
 import preimo from "./preimo.png";
 import eternalRobotics from "./eternal-robotics.png";
 
@@ -61,6 +70,7 @@ export {
   mobilityIcon,
   realEstateIcon,
   fmgcIcon,
+  beforeImg,
   financeIcon,
   checkIcon,
   aboutUsImage,
@@ -72,10 +82,14 @@ export {
   raulImage,
   arunImage,
   shahImage,
+  teamImage,
   leftArrowIcon,
   deloitteLogo,
+  thomasFamilyLogo,
+  abrahamicBusinessCircleLogo,
   almtLogo,
   pkfLogo,
+  bsaLogo,
   preimo,
   eternalRobotics,
   callIcon,

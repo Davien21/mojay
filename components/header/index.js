@@ -12,7 +12,7 @@ const scrollUp = {
   color: "white",
   backgroundColor: "transparent",
   boxShadow: "0px 0px 0px 0px rgba(0,0,0,0)",
-  transition: {  duration: 0.6 },
+  transition: { duration: 0.6 },
 };
 
 const scrollDown = {
@@ -38,7 +38,7 @@ export default function Header() {
   return (
     <motion.nav
       className={styles.container}
-      initial={scrollDown}
+      initial={scrollUp}
       animate={isScrolled ? scrollDown : scrollUp}
     >
       <TopNav isScrolled={isScrolled} />

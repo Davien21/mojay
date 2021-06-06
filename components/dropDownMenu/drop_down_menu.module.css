@@ -10,7 +10,7 @@
   max-width: 1520px;
 }
 
-@media (min-width: 1519px) {
+@media (min-width: 1520px) {
   .drop_section {
     left: calc(50% - 760px);
   }

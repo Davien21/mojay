@@ -5,24 +5,22 @@ import BusinessDropDown from "../../dropdowns/business";
 import InvestmentsDropDown from "../../dropdowns/investments";
 import styles from "./top_nav.module.css";
 
-const TopNav = () => {
+const TopNav = ({ isScrolled }) => {
   return (
     <>
       <div className={`def-container-lg d-none d-md-block py-3 w-100`}>
         <ul className={`row align-items-center`}>
           <li className="col px-4">
-            <Link href="/">
-              Logo
-            </Link>
+            <Link href="/">Logo</Link>
           </li>
           <li className={`d-flex justify-content-center col ml-auto `}>
-            <AboutUsDropDown />
+            <AboutUsDropDown isScrolled={isScrolled} />
           </li>
           <li className={`d-flex justify-content-center col ml-auto  `}>
-            <BusinessDropDown />
+            <BusinessDropDown isScrolled={isScrolled} />
           </li>
           <li className={`d-flex justify-content-center col ml-auto `}>
-            <InvestmentsDropDown />
+            <InvestmentsDropDown isScrolled={isScrolled} />
           </li>
           <li className={`col text-center `}>
             <Link href="/ideas">Ideas</Link>

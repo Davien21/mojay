@@ -36,17 +36,32 @@
   max-height: 600px;
 }
 
-@media (min-width: 992px) {
+@media screen and (min-width: 992px) and (min-height: 700px) {
   .tall,
   .tall::after,
   .tall img {
-    height: calc(80vh + 56px);
+    height: calc(100vh - 56px);
   }
   
   .short,
   .short::after,
   .short img {
     height: calc(44vh + 56px);
+  }
+  
+}
+
+@media screen and (max-height: 699px) {
+  .tall,
+  .tall::after,
+  .tall img {
+    height: calc(699px);
+  }
+  
+  .short,
+  .short::after,
+  .short img {
+    height: calc(699px);
   }
   
 }

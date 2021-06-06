@@ -72,7 +72,7 @@ export default function SideNav() {
       />
       <div className=" py-3 bg-white paper-box-shadow">
         <Link href="/">
-          <span className="px-4">Logo</span>
+          <span className="px-4 pointer">Logo</span>
         </Link>
       </div>
       <motion.div
