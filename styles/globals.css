@@ -43,12 +43,12 @@ ul.default_links_list > li > a {
   text-decoration: none !important;
 }
 
-a.default_link_1 {
+.default_link_1 {
   color: #ea543c;
   border-bottom: 1px solid transparent;
   text-decoration: none !important;
 }
-a.default_link_1:hover {
+.default_link_1:hover {
   color: #ea543c;
   border-bottom: 1px solid #ea543c;
   text-decoration: none !important;
@@ -326,6 +326,23 @@ textarea.default_style:focus {
   }
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 0;
+}
+
+.def-btn {
+  color: #ea543c;
+  /* outl  */
+  border: 1px solid #ea543c;
+  border-radius: 0 !important;
+}
+
+.def-btn:hover {
+  background-color: #ea543c;
+  color: white;
 }

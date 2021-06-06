@@ -145,9 +145,9 @@ function Home() {
             </div>
             <div className="row px-3">
               <div className="col-12 col-md-6 col-lg-4 mx-auto">
-                <HoverCard height={"96%"}>
+                <HoverCard isHoverable={false} height={"96%"}>
                   <div
-                  style={{height: "64.85%"}}
+                    style={{ height: "61.75%" }}
                     className={`w-100 d-flex align-items-center border-bottom`}
                   >
                     <img src={preimoLogo} alt="" className="img-fluid w-100" />
@@ -159,11 +159,16 @@ function Home() {
                     <p style={{ fontSize: "0.9rem" }}>
                       PREIMO Urban Mobility provides luxury mobility services.
                     </p>
+                    <Link href="#">
+                      <span className="default_link_1">
+                        Click to Learn More
+                      </span>
+                    </Link>
                   </div>
                 </HoverCard>
               </div>
               <div className="col-12 col-md-6 col-lg-4 mx-auto">
-                <HoverCard>
+                <HoverCard isHoverable={false}>
                   <div className={`w-100`}>
                     <img
                       src={eternalRoboticsLogo}
@@ -179,11 +184,16 @@ function Home() {
                       ETERNAL ROBOTICS (ER), was acquired by our Group in August
                       2019.
                     </p>
+                    <Link href="#">
+                      <span className="default_link_1">
+                        Click to Learn More
+                      </span>
+                    </Link>
                   </div>
                 </HoverCard>
               </div>
               <div className="col-12 col-md-6 col-lg-4 mx-auto">
-                <HoverCard>
+                <HoverCard isHoverable={false}>
                   <div className={`w-100`}>
                     <img src={myroLogo} alt="" className="img-fluid w-100" />
                   </div>
@@ -194,6 +204,11 @@ function Home() {
                     <p style={{ fontSize: "0.9rem" }}>
                       MYRO is the first product developed by Eternal Robotics.
                     </p>
+                    <Link href="#">
+                      <span className="default_link_1">
+                        Click to Learn More
+                      </span>
+                    </Link>
                   </div>
                 </HoverCard>
               </div>
