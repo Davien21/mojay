@@ -23,7 +23,7 @@ const AboutUsDropDown = ({ isScrolled }) => {
             <div className="col">
               <div className="row">
                 <div className="py-1 col-lg-6">
-                  <DropDownCard route="/history">
+                  <DropDownCard route="/business#preimo">
                     <div className="">
                       <span className="pr-2 hover_target ">
                         Preimo Urban Mobility LLC
@@ -38,7 +38,7 @@ const AboutUsDropDown = ({ isScrolled }) => {
                   </DropDownCard>
                 </div>
                 <div className="py-1 pl-lg-0 col-lg-6">
-                  <DropDownCard route="/values">
+                  <DropDownCard route="/business#myro">
                     <div className="">
                       <span className="pr-2 hover_target">Myro</span>
                       <img src={rightArrowIcon} height={12} width={12} />
@@ -51,7 +51,7 @@ const AboutUsDropDown = ({ isScrolled }) => {
                   </DropDownCard>
                 </div>
                 <div className="py-1 col-lg-6">
-                  <DropDownCard route="/philosophy">
+                  <DropDownCard route="/business#eternal-robotics">
                     <div className="">
                       <span className="pr-2 hover_target">
                         Eternal Robotics

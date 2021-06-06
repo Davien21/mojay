@@ -1,8 +1,9 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { InView } from "react-intersection-observer";
+import ImageBackground from "../../components/imageBackground";
 
-import { eternalRobotics, preimo } from "./../../assets/imgs";
+import { eternalRobotics, preimo, bg16 } from "./../../assets/imgs";
 import Footer from "./../../components/footer/index";
 
 const easing = [0.6, -0.05, 0.01, 0.99];
@@ -52,11 +53,25 @@ const fadeInUp = {
 function OurBusiness() {
   return (
     <>
+      <ImageBackground sizeType="short">
+        <img src={bg16} alt="" className="img-fluid" />
+        <div className={`image_bg_content mt-5 text-shadow`}>
+          <div className="def-container-lg my-5 pt-md-5">
+            <h1>Investment Process</h1>
+            <div className="mt-4 ">
+              <p>
+                Look at our step by step guide for how we can get you started
+                with us.
+              </p>
+            </div>
+          </div>
+        </div>
+      </ImageBackground>
       <motion.section
         exit={{ opacity: 0 }}
         initial="initial"
         animate="animate"
-        className="def-container py-5"
+        className="def-container clear-nav-margin py-5"
       >
         <motion.div variants={fadeInUp} className="">
           <hr className="col dash" />
@@ -83,10 +98,11 @@ function OurBusiness() {
               {({ ref, inView }) => (
                 <motion.div
                   ref={ref}
+                  id="#preimo"
                   variants={stagger}
                   className="row bg-white align-items-center"
                 >
-                  <motion.div id="#preimo" id="#preimo"  className="col-md-7 p-5 order-2 order-lg-1">
+                  <motion.div className="col-md-7 p-5 order-2 order-lg-1">
                     <motion.h4 variants={fadeInUp}>Preimo</motion.h4>
                     <hr className="undertone" />
                     <motion.div variants={fadeInUp}>
@@ -125,6 +141,7 @@ function OurBusiness() {
               {({ ref, inView }) => (
                 <motion.div
                   ref={ref}
+                  id="#eternal-robotics"
                   variants={stagger}
                   className="row my-5 pt-0 pt-md-5 pb-5 row bg-white align-items-center"
                 >
@@ -135,7 +152,7 @@ function OurBusiness() {
                       className="img-fluid"
                     />
                   </motion.div>
-                  <motion.div id="#eternal-robotics"  className="col-md-7 p-5">
+                  <motion.div className="col-md-7 p-5">
                     <motion.h4 animate={inView ? fadeInUp.animate : ""}>
                       Eternal Robotics
                     </motion.h4>
@@ -167,10 +184,11 @@ function OurBusiness() {
               {({ ref, inView }) => (
                 <motion.div
                   ref={ref}
+                  id="#myro"
                   variants={stagger}
                   className="row bg-white align-items-center"
                 >
-                  <motion.div id="#myro"  className="col-md-7 p-5 order-2 order-lg-1">
+                  <motion.div className="col-md-7 p-5 order-2 order-lg-1">
                     <motion.h4 variants={fadeInUp}>Myro</motion.h4>
                     <hr className="undertone" />
 

@@ -39,6 +39,7 @@ import bg12 from "./search/lina-trochez-ktPKyUs3Qjs-unsplash.jpg";
 import bg13 from "./search/0pDQltjO1d.jpg";
 import bg14 from "./search/DVoYwJRFMR.jpg";
 import bg15 from "./search/tIG9hc7Tfb.jpg";
+import bg16 from "./search/FIo0QatFtH.jpg";
 
 import philosophyBg from "./search/X31yyllyrd.jpg";
 import philosophyBg2 from "./search/NjXaBpaPRu.jpg";
@@ -123,6 +124,7 @@ export {
   bg13,
   bg14,
   bg15,
+  bg16,
   philosophyBg,
   philosophyBg2,
   empathyImg,
