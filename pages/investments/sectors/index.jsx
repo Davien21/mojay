@@ -252,4 +252,4 @@ function InvestmentSectors() {
   );
 }
 
-export default Investments;
+export default InvestmentSectors;
