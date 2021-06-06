@@ -84,7 +84,7 @@ const CeoMessage = () => {
                   transition={{ delay: 0.4 }}
                   className="mb-4 bg-white paper-box-shadow pointer"
                 >
-                  <div className={`w-100`}>
+                  <div className={`w-100 mt-4`}>
                     <img src={raulImage} alt="" className="img-fluid" />
                   </div>
                 </motion.div>

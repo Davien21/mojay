@@ -353,6 +353,10 @@ h6 {
   border-radius: 0 !important;
 }
 
+.def-orange-bg {
+  background-color: #ea543c;
+}
+
 .def-btn:hover {
   background-color: #ea543c;
   color: white;
