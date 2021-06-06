@@ -19,6 +19,7 @@ import {
   eternalRoboticsLogo,
   preimoLogo,
   philosophyBg,
+  beforeImg,
 } from "./../../assets/imgs";
 
 const easing = [0.6, -0.05, 0.01, 0.99];
@@ -129,7 +130,8 @@ function Home() {
                 </ul>
               </div>
               <div className="col-lg justify-content-center-6 d-flex align-items-center before-img-div top-margin">
-                <img src={teamImage} alt="" className="img-fluid" />
+                <img src={teamImage} alt="" className="img-fluid main" />
+                <img src={beforeImg} alt="" className="img-fluid before" />
               </div>
             </div>
           </div>

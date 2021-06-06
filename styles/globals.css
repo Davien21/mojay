@@ -291,6 +291,8 @@ textarea.default_style:focus {
   margin-top: 140px;
 }
 
+
+
 .before-img-div::after {
   content: " ";
   display: block;
@@ -299,18 +301,26 @@ textarea.default_style:focus {
   right: 0px;
   bottom: 0px;
   left: 0px;
-  background: url(/_next/static/media/before-image.e4c34896446be7f384bc7131c91d2d84.svg)
-    no-repeat;
+  /* background: url(/_next/static/media/before-image.e4c34896446be7f384bc7131c91d2d84.svg)
+    no-repeat; */
   background-size: contain;
   z-index: 0;
   width: 100%;
   height: calc(100% + 139px);
 }
 
-.before-img-div img {
+
+.before-img-div img.before {
+  position: absolute;
+  left: 0px;
+  z-index: 0;
+}
+
+.before-img-div img.main {
   position: relative;
   z-index: 1;
 }
+
 
 @media screen and (min-width: 768px) {
   .before-img-div::after {
