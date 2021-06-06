@@ -41,22 +41,16 @@ function Home() {
             <div className={`absolute image_bg_content mt-5 text-shadow`}>
               <div className="def-container-lg my-5 pt-md-5 row">
                 <div className="col-md-6 d-flex flex-column">
-                  <h6 className="py-4">Industrial automation, artificial intelligence</h6>
-                  <div className="row">
-                    <span className="col-auto h2">Challenging</span>
+                  <div className="row mt-5">
+                    <span className="col-auto h2">Challenging,</span>
                     <span className="col-auto font-weight-bold h2 px-3 px-md-0 def_text_red">
-                      Innovating
+                      Innovating,
                     </span>
                     <br />
                     <span className="col-auto h2">Nurturing</span>
                   </div>
-                  <div className="mt-4 ">
-                    <p>
-                      Mojay Global Holding helps industy’s leaders to automate
-                      the development and production process, because speed is
-                      essential.
-                    </p>
-                  </div>
+                  
+                <p className="mt-4">We are Mojay Global Holding Limited</p>
                 </div>
               </div>
             </div>

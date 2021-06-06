@@ -176,7 +176,7 @@ const CeoMessage = () => {
               </div>
               <div className="my-4">
                 <motion.p className="font-weight-bold" variants={fadeInUp}>
-                  Raul Silva
+                  Raul Geraldes Silva
                 </motion.p>
                 <motion.p variants={fadeInUp}>CEO</motion.p>
               </div>
