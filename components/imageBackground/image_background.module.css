@@ -42,13 +42,12 @@
   .tall img {
     height: calc(100vh - 56px);
   }
-  
+
   .short,
   .short::after,
   .short img {
     height: calc(44vh + 56px);
   }
-  
 }
 
 @media screen and (max-height: 699px) {
@@ -57,11 +56,10 @@
   .tall img {
     height: calc(699px);
   }
-  
+
   .short,
   .short::after,
   .short img {
     height: calc(699px);
   }
-  
 }
