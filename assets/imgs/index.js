@@ -1,5 +1,6 @@
 import downArrow from "./svgs/down-arrow.svg";
-import mojayLogo from "./svgs/mojay-logo.svg";
+import mojayLogo from "./svgs/full-logo.svg";
+import mojayFavicon from "./svgs/full-logo.svg";
 import techIcon from "./svgs/tech.svg";
 import techIcon2 from "./svgs/tech-2.svg";
 import mobilityIcon from "./svgs/refugee.svg";
@@ -12,6 +13,7 @@ import aboutUsImage from "./svgs/about-us.svg";
 import techIcon3 from "./svgs/techIcon3.svg";
 import ideasImage from "./svgs/ideas.svg";
 import beforeImg from "./svgs/before-image.svg";
+import processesIcon from "./svgs/processes.svg";
 
 import aboutUsImage2 from "./about-us.png";
 import aboutUsImage3 from "./about-us-2.png";
@@ -61,7 +63,12 @@ import raulImage from "./raul.png";
 import arunImage from "./arun.png";
 import shahImage from "./shah.png";
 import teamImage from "./team.png";
+import promoterImage from "./svgs/promoter.svg";
 import investmentsImage from "./investments-img.png";
+import mghlExecutiveImage from "./svgs/mghl-executive.svg";
+import mghlComplianceImage from "./svgs/mghl-compliance.svg";
+import mghlInvestmentImage from "./svgs/mghl-investment.svg";
+import mghlEntrepreneurImage from "./svgs/mghl-entrepreneur.svg";
 
 import almtLogo from "./almt.png";
 import deloitteLogo from "./svgs/Deloitte_logo.svg";
@@ -102,6 +109,11 @@ export {
   raulImage,
   arunImage,
   shahImage,
+  promoterImage,
+  mghlExecutiveImage,
+  mghlComplianceImage,
+  mghlInvestmentImage,
+  mghlEntrepreneurImage,
   teamImage,
   leftArrowIcon,
   deloitteLogo,
@@ -116,6 +128,7 @@ export {
   emailIcon,
   locationIcon,
   techIcon3,
+  processesIcon,
   hook,
   rightArrowIcon,
   leftArrowAltIcon,
@@ -156,4 +169,5 @@ export {
   eternalRoboticsLogo,
   preimoLogo,
   aboutUsImage3,
+  mojayFavicon,
 };

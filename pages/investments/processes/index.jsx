@@ -1,7 +1,15 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
 import Footer from "./../../../components/footer/index";
-import { bg15 } from "./../../../assets/imgs";
+import {
+  bg15,
+  processesIcon,
+  promoterImage,
+  mghlComplianceImage,
+  mghlEntrepreneurImage,
+  mghlInvestmentImage,
+  mghlExecutiveImage,
+} from "./../../../assets/imgs";
 import ImageBackground from "./../../../components/imageBackground/index";
 
 const easing = [0.6, -0.05, 0.01, 0.99];
@@ -53,84 +61,48 @@ const InvestmentProcesses = () => {
             </div>
           </div>
         </ImageBackground>
-        <section className="clear-nav-margin">
+        <section id="philosophy" className="clear-nav-margin">
+          <div className="def-container-lg my-5 py-5 px-2">
+            <div className="col-lg justify-content-center-6">
+              <div className="mb-5">
+                <p className="def_text_red">LEARN ABOUT</p>
+                <h3>OUR INVESTMENT PROCESS</h3>
+                <hr className="undertone" />
+              </div>
+            </div>
+            <div className="row px-3">
+              <div className="col-8 mx-auto mb-5">
+                <img src={processesIcon} alt="" className="img-fluid w-100" />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section
+          id="process-breakdown"
+          className="clear-nav-margin container-fluid"
+        >
           <motion.div variants={stagger} className="col-12 my-5 pb-4">
-            <section></section>
-            <section className="row">
-              <div className="col my-auto">
-                <h5 className="text-white text-center def-orange-bg py-3">
-                  Promoter / Entrepreneur
-                </h5>
-                <ul className="paper-box-shadow bg-white px-3 pb-5 text-center">
-                  <h6>Origination</h6>
-                  <hr />
-                  <li className="my-3">Letter of Intention</li>
-                  <li className="my-3">NDA Signature</li>
-                  <li className="my-3">
-                    Idea, Project and/or Company Presentation
-                  </li>
-                  <li className="my-3">Promoter Presentation</li>
-                  <li className="my-3">Business Plan</li>
-                  <li className="my-3">Budget and Projections</li>
-                  <li className="my-3">Investment Requirements</li>
-                </ul>
-              </div>
-              <div className="col my-auto">
-                <h5 className="text-white text-center def-orange-bg py-3">
-                  MGHL Executive Commitee
-                </h5>
-                <ul className="paper-box-shadow bg-white px-3 pb-5 text-center">
-                  <h6>INITIAL ANALYSIS</h6>
-                  <hr />
-                  <li className="my-3">Strategic Fitting</li>
-                  <li className="my-3">Business Model Analisys</li>
-                  <li className="my-3">Innovation Potential</li>
-                  <li className="my-3">Value Creation Potential</li>
-                  <li className="my-3">Request for Additional Information</li>
-                </ul>
-              </div>
-              <div className="col my-auto">
-                <h5 className="text-white text-center def-orange-bg py-3">
-                  MGHL Compliance Team
-                </h5>
-                <ul className="paper-box-shadow bg-white px-3 pb-5 text-center">
-                  <h6>DUE DILLIGENCE</h6>
-                  <hr />
-                  <li className="my-3">Company Overview</li>
-                  <li className="my-3">Organisation &amp; Structure</li>
-                  <li className="my-3">Products and Services</li>
-                  <li className="my-3">Management Team</li>
-                  <li className="my-3">Supply Chain Analysis</li>
-                  <li className="my-3">Sales &amp; Marketing</li>
-                  <li className="my-3">Financial Reports</li>
-                  <li className="my-3">R &amp; D, Brands and IPs</li>
-                </ul>
-              </div>
-              <div className="col my-auto">
-                <h5 className="text-white text-center def-orange-bg py-3">
-                  MGHL Investment Commitee
-                </h5>
-                <ul className="paper-box-shadow bg-white px-3 pb-5 text-center">
-                  <h6>INTERNAL ANALISYS</h6>
-                  <hr />
-                  <li className="my-3">Investment Committee Analysis</li>
-                  <li className="my-3">Risk Committee Analisys</li>
-                  <li className="my-3">Investment Report and Recommendation</li>
-                  <li className="my-3">Board of Directors Deliberation</li>
-                </ul>
-              </div>
-              <div className="col my-auto">
-                <h5 className="text-white text-center def-orange-bg py-3">
-                  MGHL &amp; Entrepreneur
-                </h5>
-                <ul className="paper-box-shadow bg-white px-3 pb-5 text-center">
-                  <h6>NEGOTIATION STAGE</h6>
-                  <hr />
-                  <li className="my-3">Negotiation of terms and conditions</li>
-                  <li className="my-3">Investment Agreement</li>
-                  <li className="my-3">Investment Deployment</li>
-                  <li className="my-3">MGHL Strategic Support</li>
-                </ul>
+            <section
+              className="row mx-auto justify-content-center"
+              style={{ maxWidth: "1200px" }}
+            >
+              <div className="row mx-auto ">
+                <div className="col d-flex process-card justify-content-center my-4">
+                  <img src={promoterImage} alt="" />
+                </div>
+                <div className="col d-flex process-card justify-content-center my-4">
+                  <img src={mghlExecutiveImage} alt="" />
+                </div>
+                <div className="col d-flex process-card justify-content-center my-4">
+                  <img src={mghlComplianceImage} alt="" />
+                </div>
+                <div className="col d-flex process-card my-4">
+                  <img src={mghlInvestmentImage} alt="" />
+                </div>
+                <div className="col d-flex process-card my-4">
+                  <img src={mghlEntrepreneurImage} alt="" />
+                </div>
               </div>
             </section>
           </motion.div>

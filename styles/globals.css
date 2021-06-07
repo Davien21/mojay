@@ -398,3 +398,7 @@ h6 {
 .yellow-btn {
   background-color: #F5EFD8;
 }
+
+#process-breakdown .process-card {
+  max-width: 240px;
+}

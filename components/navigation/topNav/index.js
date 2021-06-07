@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { mojayLogo } from "./../../../assets/imgs";
+import { mojayLogo, mojayFavicon } from "./../../../assets/imgs";
 import AboutUsDropDown from "../../dropdowns/aboutUs";
 import BusinessDropDown from "../../dropdowns/business";
 import InvestmentsDropDown from "../../dropdowns/investments";
@@ -11,7 +11,9 @@ const TopNav = ({ isScrolled }) => {
       <div className={`def-container-lg d-none d-md-block py-3 w-100`}>
         <ul className={`row align-items-center`}>
           <li className="col px-4">
-            <Link href="/">Logo</Link>
+            <Link href="/">
+              <img src={mojayFavicon} alt="" />
+            </Link>
           </li>
           <li className={`d-flex justify-content-center col ml-auto `}>
             <AboutUsDropDown isScrolled={isScrolled} />
