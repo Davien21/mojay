@@ -41,6 +41,14 @@ import bg14 from "./search/DVoYwJRFMR.jpg";
 import bg15 from "./search/tIG9hc7Tfb.jpg";
 import bg16 from "./search/FIo0QatFtH.jpg";
 
+import techImage from "./search/1ZjUo4tgyk.jpg";
+import aiImage from "./search/0Bplk7kVmS.jpg";
+import roboticsImage from "./search/7IaPLlSWSS.jpg";
+import carImage from "./search/e7m9mqBi77.jpg";
+import fmcgImage from "./search/7cpvk0vhN4.jpg";
+import realEstateImage from "./search/Q2yAtIhAIf.jpg";
+import financeAssetsImage from "./search/sHVrz4FChm.jpg";
+
 import philosophyBg from "./search/X31yyllyrd.jpg";
 import philosophyBg2 from "./search/NjXaBpaPRu.jpg";
 
@@ -51,6 +59,7 @@ import raulImage from "./raul.png";
 import arunImage from "./arun.png";
 import shahImage from "./shah.png";
 import teamImage from "./team.png";
+import investmentsImage from "./investments-img.png";
 
 import almtLogo from "./almt.png";
 import deloitteLogo from "./svgs/Deloitte_logo.svg";
@@ -125,6 +134,14 @@ export {
   bg14,
   bg15,
   bg16,
+  techImage,
+  aiImage,
+  roboticsImage,
+  carImage,
+  fmcgImage,
+  realEstateImage,
+  financeAssetsImage,
+  investmentsImage,
   philosophyBg,
   philosophyBg2,
   empathyImg,

@@ -10,7 +10,7 @@ class MyDocument extends Document {
     return (
       <Html>
         <Head></Head>
-        <body className="app-container relative">
+        <body className="body-container relative">
           <Main />
           <NextScript />
         </body>

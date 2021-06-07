@@ -33,16 +33,17 @@ const DropDownMenu = (props) => {
 
   return (
     <motion.div
-      // onAnimationComplete={() => {
-      //   let a = ref.current.classList;
-      //   isDropped ? a.add("d-none") : a.remove("d-none");
-      // }}
       ref={ref}
       initial={{ opacity: 0, y: 60 }}
       animate={isDropped ? fadeIn : fadeOut}
       className={`${style.drop_section} paper-box-shadow text-black`}
     >
-      {children}
+      <motion.div
+        className="app-container"
+        style={{ padding: "50px 100px", maxWidth: "1520px" }}
+      >
+        {children}
+      </motion.div>
     </motion.div>
   );
 };

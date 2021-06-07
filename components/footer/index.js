@@ -11,10 +11,8 @@ const Footer = () => {
         <div className="row  align-items-center">
           <div className="col-lg-6 pt-5 pb-4">
             <img className="img-fluid" src={mojayLogo} alt="" />
-            <p className="font-weight-bold text-white py-5 m-0">
-              Challenging, Innovating, Nurturing
-            </p>
-            <p className="text-white">
+          
+            <p className="text-white py-5">
               Located in the Center of Now, Downtown Dubai, Emaar Boulevard
               Plaza, Tower 1, Office 2903
             </p>

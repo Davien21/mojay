@@ -61,7 +61,7 @@ const InvestmentProcesses = () => {
                 <h5 className="text-white text-center def-orange-bg py-3">
                   Promoter / Entrepreneur
                 </h5>
-                <ul className="paper-box-shadow bg-white px-3 pb-5 pt-3 text-center">
+                <ul className="paper-box-shadow bg-white px-3 pb-5 text-center">
                   <h6>Origination</h6>
                   <hr />
                   <li className="my-3">Letter of Intention</li>
@@ -79,7 +79,7 @@ const InvestmentProcesses = () => {
                 <h5 className="text-white text-center def-orange-bg py-3">
                   MGHL Executive Commitee
                 </h5>
-                <ul className="paper-box-shadow bg-white px-3 pb-5 pt-3 text-center">
+                <ul className="paper-box-shadow bg-white px-3 pb-5 text-center">
                   <h6>INITIAL ANALYSIS</h6>
                   <hr />
                   <li className="my-3">Strategic Fitting</li>
@@ -93,7 +93,7 @@ const InvestmentProcesses = () => {
                 <h5 className="text-white text-center def-orange-bg py-3">
                   MGHL Compliance Team
                 </h5>
-                <ul className="paper-box-shadow bg-white px-3 pb-5 pt-3 text-center">
+                <ul className="paper-box-shadow bg-white px-3 pb-5 text-center">
                   <h6>DUE DILLIGENCE</h6>
                   <hr />
                   <li className="my-3">Company Overview</li>
@@ -110,7 +110,7 @@ const InvestmentProcesses = () => {
                 <h5 className="text-white text-center def-orange-bg py-3">
                   MGHL Investment Commitee
                 </h5>
-                <ul className="paper-box-shadow bg-white px-3 pb-5 pt-3 text-center">
+                <ul className="paper-box-shadow bg-white px-3 pb-5 text-center">
                   <h6>INTERNAL ANALISYS</h6>
                   <hr />
                   <li className="my-3">Investment Committee Analysis</li>
@@ -123,7 +123,7 @@ const InvestmentProcesses = () => {
                 <h5 className="text-white text-center def-orange-bg py-3">
                   MGHL &amp; Entrepreneur
                 </h5>
-                <ul className="paper-box-shadow bg-white px-3 pb-5 pt-3 text-center">
+                <ul className="paper-box-shadow bg-white px-3 pb-5 text-center">
                   <h6>NEGOTIATION STAGE</h6>
                   <hr />
                   <li className="my-3">Negotiation of terms and conditions</li>
