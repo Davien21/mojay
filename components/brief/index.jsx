@@ -1,20 +1,13 @@
 import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
 
-const button = {
-  initial: {
-    backgroundColor: "#F5EFD8",
-  },
-  animate: {
-    backgroundColor: "#000",
-  },
-};
-
-const activeBtn = { backgroundColor: "#ea543c", color: "#fff" };
+const activeBtn = { backgroundColor: "#000", color: "#fff" };
 
 const belief = () => {
   return (
-    <p className="my-auto" >We believe that the keystone of any good relationship is nurturing.</p>
+    <p className="my-auto">
+      We believe that the keystone of any good relationship is nurturing.
+    </p>
   );
 };
 
@@ -36,12 +29,13 @@ const name = () => {
   return (
     <>
       <p className="my-auto">
-        Mojay is more than just a name; <br /> it is a portmanteau of our founder
-        children’s names.
+        Mojay is more than just a name; <br /> it is a portmanteau of our
+        founder children’s names.
       </p>
     </>
   );
 };
+
 const briefs = {
   name,
   foundation,
@@ -50,8 +44,11 @@ const briefs = {
 
 const OurBrief = () => {
   const [currentBrief, setCurrentBrief] = useState(foundation);
+  const [currentBriefName, setCurrentBriefName] = useState("foundation");
+
   function toggleBrief(brief) {
-    setCurrentBrief(brief);
+    setCurrentBrief(briefs[brief]);
+    setCurrentBriefName(brief);
   }
 
   return (
@@ -63,9 +60,9 @@ const OurBrief = () => {
               whileTap={{ scale: 0.99 }}
               whileHover={{ scale: 1.02 }}
               className="def-badge rounded pointer paper-box-shadow btn-block btn py-2"
-              style={currentBrief == name ? activeBtn : null}
+              style={currentBriefName == "name" ? activeBtn : null}
               onClick={() => {
-                toggleBrief(name);
+                toggleBrief("name");
               }}
             >
               Our Name
@@ -76,9 +73,9 @@ const OurBrief = () => {
               whileTap={{ scale: 0.99 }}
               whileHover={{ scale: 1.02 }}
               className="def-badge rounded pointer paper-box-shadow btn-block btn py-2 my-3"
-              style={currentBrief == belief ? activeBtn : null}
+              style={currentBriefName == "belief" ? activeBtn : null}
               onClick={() => {
-                toggleBrief(belief);
+                toggleBrief("belief");
               }}
             >
               Our Belief
@@ -89,9 +86,9 @@ const OurBrief = () => {
               whileTap={{ scale: 0.99 }}
               whileHover={{ scale: 1.02 }}
               className="def-badge rounded pointer paper-box-shadow btn-block btn py-2"
-              style={currentBrief == foundation ? activeBtn : null}
+              style={currentBriefName == "foundation" ? activeBtn : null}
               onClick={() => {
-                toggleBrief(foundation);
+                toggleBrief("foundation");
               }}
             >
               Our Foundation
