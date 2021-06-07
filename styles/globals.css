@@ -7,7 +7,7 @@ body {
   background: #f1f3f5;
   padding: 0;
   margin: 0;
-  scroll-behavior: smooth;
+  /* scroll-behavior: smooth; */
 }
 
 body {

@@ -10,8 +10,13 @@ const Footer = () => {
       <div className="container">
         <div className="row  align-items-center">
           <div className="col-lg-6 pt-5 pb-4">
-            <img className="img-fluid" src={mojayLogo} alt="" />
-          
+            <img
+              className="img-fluid"
+              src={mojayLogo}
+              style={{ maxHeight: "78px", maxWidth: "315px" }}
+              alt=""
+            />
+
             <p className="text-white py-5">
               Located in the Center of Now, Downtown Dubai, Emaar Boulevard
               Plaza, Tower 1, Office 2903
@@ -29,7 +34,7 @@ const Footer = () => {
                     <Link href="/">Home</Link>
                   </li>
                   <li className="py-2">
-                    <Link href="/">About us</Link>
+                    <Link href="/about-us">About us</Link>
                   </li>
                   <li className="py-2">
                     <Link href="/">Contact Us</Link>

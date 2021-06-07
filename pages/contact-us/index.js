@@ -102,10 +102,9 @@ function ContactUs() {
                     <a
                       target="_blank"
                       className="pointer"
-                      href="https://goo.gl/maps/TvuRc2yJWk5LKTiVA"
+                      href="https://goo.gl/maps/ZBMUJ8ax53nSQDXDA"
                     >
-                      N 2001, Emirates Financial Towers, DIFC, Dubai, United
-                      Arab Emirates
+                      Trade CentreDIFC - Dubai - United Arab Emirates
                     </a>
                   </div>
                 </div>
