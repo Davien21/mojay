@@ -181,8 +181,8 @@ function AboutUs() {
           </div>
         </div>
         <motion.section>
-          <motion.div variants={fadeInUp} className="row my-5 py-4">
-            <motion.div className={`w-100 col-lg-6 order-2 order-md-1`}>
+          <motion.div variants={fadeInUp} className="row my-5 py-4 text-center text-md-left">
+            <motion.div className={`w-100 col-lg-6`}>
               <img
                 src={aboutUsImage3}
                 alt=""
@@ -191,7 +191,7 @@ function AboutUs() {
             </motion.div>
             <motion.div
               variants={fadeInUp}
-              className="col-lg-6 order-1 order-md-2 "
+              className="col-lg-6 "
             >
               <motion.div className="">
                 <div className="mb-5 my-5 pb-3">

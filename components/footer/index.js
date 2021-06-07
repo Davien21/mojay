@@ -18,8 +18,7 @@ const Footer = () => {
             />
 
             <p className="text-white py-5">
-              Located in the Center of Now, Downtown Dubai, Emaar Boulevard
-              Plaza, Tower 1, Office 2903
+              Located at Trade CentreDIFC - Dubai - United Arab Emirates
             </p>
             <p className={styles.grey_text}>
               © {year} Mojay Global Holdings. All Rights Reserved

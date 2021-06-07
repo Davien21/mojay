@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { InView } from "react-intersection-observer";
-import { callIcon, emailIcon, locationIcon } from "./../../assets/imgs";
+import ImageBackground from "../../components/imageBackground";
+import { callIcon, emailIcon, locationIcon, bg17 } from "./../../assets/imgs";
 
 import Footer from "./../../components/footer/index";
 import ContactForm from "./../../components/form/contact/index";
@@ -52,16 +53,23 @@ const fadeInUp = {
 function ContactUs() {
   return (
     <>
+      <ImageBackground sizeType="short">
+        <img src={bg17} alt="" className="img-fluid" />
+        <div className={`image_bg_content mt-5 text-shadow`}>
+          <div className="def-container-lg my-5 pt-md-5">
+            <h1>Contact Us</h1>
+            <div className="mt-4 ">
+              <p>Feel free to reach out to us</p>
+            </div>
+          </div>
+        </div>
+      </ImageBackground>
       <motion.section
         exit={{ opacity: 0 }}
         initial="initial"
         animate="animate"
-        className="def-container py-5"
+        className="def-container py-5 clear-nav-margin"
       >
-        <motion.div variants={fadeInUp} className="">
-          <hr className="col dash" />
-          <span className="col">Contact Us</span>
-        </motion.div>
         <motion.div variants={stagger} className="row">
           <motion.div className="col-lg-6 py-5 px-4">
             <motion.h2 variants={fadeInUp} className="py-3">
@@ -79,7 +87,7 @@ function ContactUs() {
                 <div className="d-flex col-auto flex-column">
                   <span>Call</span>
                   <a className="pointer" tel="+971 4 876 1992">
-                  +971 4 876 1992
+                    +971 4 876 1992
                   </a>
                 </div>
               </motion.li>

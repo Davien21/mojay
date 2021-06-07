@@ -44,6 +44,7 @@ import bg13 from "./search/0pDQltjO1d.jpg";
 import bg14 from "./search/DVoYwJRFMR.jpg";
 import bg15 from "./search/tIG9hc7Tfb.jpg";
 import bg16 from "./search/FIo0QatFtH.jpg";
+import bg17 from "./search/amy-hirschi-K0c8ko3e6AA-unsplash.jpg";
 
 import techImage from "./search/1ZjUo4tgyk.jpg";
 import aiImage from "./search/0Bplk7kVmS.jpg";
@@ -149,6 +150,7 @@ export {
   bg14,
   bg15,
   bg16,
+  bg17,
   techImage,
   aiImage,
   roboticsImage,
