@@ -20,7 +20,7 @@ function OurValues() {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1, transition: { ease: easing, duration: 0.6 } }}
     >
-      <ImageBackground sizeType="tall">
+      <ImageBackground sizeType="short">
         <img src={bg5} alt="" className="img-fluid" />
         <div className={`image_bg_content mt-5 text-shadow`}>
           <div className="def-container-lg my-5 pt-md-5">

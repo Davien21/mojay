@@ -156,7 +156,7 @@ function Home() {
                     <p style={{ fontSize: "0.9rem" }}>
                       PREIMO Urban Mobility provides luxury mobility services.
                     </p>
-                    <Link href="#">
+                    <Link href="/business#preimo">
                       <span className="default_link_1">
                         Click to Learn More
                       </span>
@@ -181,7 +181,7 @@ function Home() {
                       ETERNAL ROBOTICS (ER), was acquired by our Group in August
                       2019.
                     </p>
-                    <Link href="#">
+                    <Link href="/business#eternal-robotics">
                       <span className="default_link_1">
                         Click to Learn More
                       </span>
@@ -201,7 +201,7 @@ function Home() {
                     <p style={{ fontSize: "0.9rem" }}>
                       MYRO is the first product developed by Eternal Robotics.
                     </p>
-                    <Link href="#">
+                    <Link href="/business#myro">
                       <span className="default_link_1">
                         Click to Learn More
                       </span>

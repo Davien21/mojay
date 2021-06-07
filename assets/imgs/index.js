@@ -14,6 +14,8 @@ import ideasImage from "./svgs/ideas.svg";
 import beforeImg from "./svgs/before-image.svg";
 
 import aboutUsImage2 from "./about-us.png";
+import aboutUsImage3 from "./about-us-2.png";
+
 import peopleImage2 from "./search/people-2.jpg";
 
 import myroBg from "./myro-bg.png";
@@ -153,4 +155,5 @@ export {
   myroLogo,
   eternalRoboticsLogo,
   preimoLogo,
+  aboutUsImage3,
 };

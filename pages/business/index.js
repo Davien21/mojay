@@ -3,8 +3,14 @@ import Link from "next/link";
 import { InView } from "react-intersection-observer";
 import ImageBackground from "../../components/imageBackground";
 
-import { eternalRobotics, preimo, bg16 } from "./../../assets/imgs";
+import {
+  myroLogo,
+  eternalRoboticsLogo,
+  preimoLogo,
+  bg16,
+} from "./../../assets/imgs";
 import Footer from "./../../components/footer/index";
+import { useRef, useEffect } from "react";
 
 const easing = [0.6, -0.05, 0.01, 0.99];
 const transition1 = {
@@ -51,17 +57,33 @@ const fadeInUp = {
 };
 
 function OurBusiness() {
+  let myroRef = useRef();
+  let eternalRoboticsRef = useRef();
+  let preimoRef = useRef();
+  let hashRoutes = {
+    myro: myroRef,
+    "eternal-robotics": eternalRoboticsRef,
+    preimo: preimoRef,
+  };
+  let handleHashRouting = () => {
+    let route = window.location.href.split("#")[1];
+    console.log(route)
+    if (!route) return;
+    hashRoutes[route].current.scrollIntoView();
+  };
+  useEffect(() => {
+    handleHashRouting();
+  });
   return (
     <>
       <ImageBackground sizeType="short">
         <img src={bg16} alt="" className="img-fluid" />
         <div className={`image_bg_content mt-5 text-shadow`}>
           <div className="def-container-lg my-5 pt-md-5">
-            <h1>Investment Process</h1>
+            <h1>Our Businesses</h1>
             <div className="mt-4 ">
               <p>
-                Look at our step by step guide for how we can get you started
-                with us.
+                Take a look at the companies we have acquired over the years.
               </p>
             </div>
           </div>
@@ -73,10 +95,6 @@ function OurBusiness() {
         animate="animate"
         className="def-container clear-nav-margin py-5"
       >
-        <motion.div variants={fadeInUp} className="">
-          <hr className="col dash" />
-          <span className="col">Our Businesses</span>
-        </motion.div>
         <motion.div variants={stagger} className=" text-center text-md-left">
           <motion.h2 variants={fadeInUp} className="py-3">
             We Are Always Exploring and Expanding
@@ -97,14 +115,14 @@ function OurBusiness() {
             <InView triggerOnce threshold={0.5}>
               {({ ref, inView }) => (
                 <motion.div
-                  ref={ref}
                   id="#preimo"
+                  ref={preimoRef}
                   variants={stagger}
                   className="row bg-white align-items-center"
                 >
                   <motion.div className="col-md-7 p-5 order-2 order-lg-1">
                     <motion.h4 variants={fadeInUp}>Preimo</motion.h4>
-                    <hr className="undertone" />
+                    <hr className="undertone mx-auto mx-md-0" />
                     <motion.div variants={fadeInUp}>
                       <motion.p className="def-line-height">
                         PREIMO Urban Mobility provides luxury mobility services
@@ -127,12 +145,39 @@ function OurBusiness() {
                       </a>
                     </motion.div>
                   </motion.div>
-                  <motion.div className="px-0 pl-md-5 pr-lg-5 col-md-5 order-1 order-lg-2">
+                  <motion.div className="px-0 col-md-5 order-1 order-md-2">
                     <motion.img
                       variants={ImageSlideIn}
-                      src={preimo}
+                      src={preimoLogo}
                       className="img-fluid"
                     />
+                  </motion.div>
+                  <motion.div
+                    className=" pb-4 px-0 col-12 order-3"
+                    variants={fadeInUp}
+                  >
+                    <div className="row">
+                      <div className="col-12 col-md-6 mb-4">
+                        <div className="px-5">
+                          <h5 className="mb-2">Vision</h5>
+                          <hr className="undertone-2 mx-auto mx-md-0 " />
+                          <p>
+                            To be the most desired Luxury Mobility Services
+                            Engager.
+                          </p>
+                        </div>
+                      </div>
+                      <div className="col-12 col-md-6">
+                        <div className="px-5">
+                          <h5 className="mb-2">Mission</h5>
+                          <hr className="undertone-2 mx-auto mx-md-0 " />
+                          <p>
+                            To provide Luxurious Mobility experiences and
+                            consistent patron delight.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
                   </motion.div>
                 </motion.div>
               )}
@@ -140,15 +185,15 @@ function OurBusiness() {
             <InView triggerOnce threshold={0.5}>
               {({ ref, inView }) => (
                 <motion.div
-                  ref={ref}
+                  ref={eternalRoboticsRef}
                   id="#eternal-robotics"
                   variants={stagger}
-                  className="row my-5 pt-0 pt-md-5 pb-5 row bg-white align-items-center"
+                  className="row my-5 pt-0 row bg-white align-items-center"
                 >
-                  <motion.div className="col-md-5 px-0 px-md-5 h-100">
+                  <motion.div className="col-md-5 px-0 h-100">
                     <motion.img
                       variants={InView ? ImageSlideIn : ""}
-                      src={eternalRobotics}
+                      src={eternalRoboticsLogo}
                       className="img-fluid"
                     />
                   </motion.div>
@@ -156,7 +201,7 @@ function OurBusiness() {
                     <motion.h4 animate={inView ? fadeInUp.animate : ""}>
                       Eternal Robotics
                     </motion.h4>
-                    <hr className="undertone" />
+                    <hr className="undertone mx-auto mx-md-0" />
 
                     <motion.div animate={inView ? fadeInUp.animate : ""}>
                       <motion.p className="def-line-height">
@@ -177,20 +222,53 @@ function OurBusiness() {
                       </motion.div>
                     </motion.div>
                   </motion.div>
+                  <motion.div
+                    className=" py-4 px-0 col-12 order-3"
+                    variants={fadeInUp}
+                  >
+                    <div className="row">
+                      <div className="col-12 col-md-6 mb-4">
+                        <div className="px-5">
+                          <h5 className="mb-2">Vision</h5>
+                          <hr className="undertone-2 mx-auto mx-md-0 " />
+                          <p>
+                            To create intelligent collaborative robots using
+                            hardware innovation and integrated software systems
+                            to safeguard and improve the quality of work and
+                            human life globally. luxurious and engaging mobility
+                            experience.
+                          </p>
+                        </div>
+                      </div>
+                      <div className="col-12 col-md-6">
+                        <div className="px-5">
+                          <h5 className="mb-2">Mission</h5>
+                          <hr className="undertone-2 mx-auto mx-md-0 " />
+                          <p>
+                            To design and develop robotics and AI
+                            technology-based multi-channel products and
+                            solutions for the automation and simplification or
+                            improvement of processes that are otherwise
+                            hazardous, exhausting and menial to human work.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </motion.div>
                 </motion.div>
               )}
             </InView>
             <InView triggerOnce threshold={0.5}>
               {({ ref, inView }) => (
                 <motion.div
-                  ref={ref}
+                  ref={myroRef}
                   id="#myro"
                   variants={stagger}
                   className="row bg-white align-items-center"
                 >
                   <motion.div className="col-md-7 p-5 order-2 order-lg-1">
                     <motion.h4 variants={fadeInUp}>Myro</motion.h4>
-                    <hr className="undertone" />
+                    <hr className="undertone mx-auto mx-md-0" />
 
                     <motion.div variants={fadeInUp}>
                       <motion.p className="def-line-height">
@@ -205,12 +283,39 @@ function OurBusiness() {
                       </a>
                     </motion.div>
                   </motion.div>
-                  <motion.div className="col-md-5 order-1 order-lg-2">
+                  <motion.div className="px-0 col-md-5 order-1 order-md-2">
                     <motion.img
                       variants={ImageSlideIn}
-                      src={"https://myro.bot/images/content/gall-01@4x-8.jpg"}
+                      src={myroLogo}
                       className="img-fluid"
                     />
+                  </motion.div>
+                  <motion.div
+                    className=" py-4 px-0 col-12 order-3"
+                    variants={fadeInUp}
+                  >
+                    <div className="row">
+                      <div className="col-12 col-md-6 mb-4">
+                        <div className="px-5">
+                          <h5 className="mb-2">Vision</h5>
+                          <hr className="undertone-2 mx-auto mx-md-0 " />
+                          <p>
+                            To Develop technological solutions that improve
+                            productivity, quality and safety
+                          </p>
+                        </div>
+                      </div>
+                      <div className="col-12 col-md-6">
+                        <div className="px-5">
+                          <h5 className="mb-2">Mission</h5>
+                          <hr className="undertone-2 mx-auto mx-md-0 " />
+                          <p>
+                            To Transfor workplaces into better, safer and high
+                            productive envoirments.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
                   </motion.div>
                 </motion.div>
               )}

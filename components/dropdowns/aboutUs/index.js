@@ -16,7 +16,7 @@ const AboutUsDropDown = ({ isScrolled }) => {
         <DropDownMenu>
           <div className="row">
             <div className="col-lg-4">
-              <h4>About</h4>
+              <Link href="/about-us">Go to About us Page</Link>
               <hr className="undertone mt-0" style={{ borderWidth: "3px" }} />
               <div>
                 Mojay Global holding limited is a value-driven organisation

@@ -95,6 +95,16 @@ hr.undertone {
   margin-left: 0;
 }
 
+hr.undertone-2 {
+  border-width: 3px;
+  border-radius: 10%;
+  max-width: 80px;
+  color: #ea543c;
+  border-color: #ea543c;
+  margin-left: 0;
+}
+
+
 .def-container,
 .def-container-sm,
 .def-container-md,
@@ -359,6 +369,22 @@ h6 {
   border-radius: 0 !important;
 }
 
+
+.def-badge {
+  background-color: #ea543c;
+  color: #fff;
+  border: 1px solid #ea543c;
+  /* border-radius: 0 !important; */
+}
+.def-badge:hover {
+  background-color: #ea543c;
+  color: #fff;
+  border: 1px solid #ea543c;
+  /* border-radius: 0 !important; */
+}
+
+
+
 .def-orange-bg {
   background-color: #ea543c;
 }
@@ -366,4 +392,9 @@ h6 {
 .def-btn:hover {
   background-color: #ea543c;
   color: white;
+}
+
+
+.yellow-btn {
+  background-color: #F5EFD8;
 }
