@@ -70,6 +70,9 @@ const InvestmentProcesses = () => {
                 <hr className="undertone" />
               </div>
             </div>
+            <div className="col-lg mb-5">
+              <p>Here is a step by step breakdown of how we run investments</p>
+            </div>
             <div className="row px-3">
               <div className="col-8 mx-auto mb-5">
                 <img src={processesIcon} alt="" className="img-fluid w-100" />

@@ -12,7 +12,14 @@ const TopNav = ({ isScrolled }) => {
         <ul className={`row align-items-center`}>
           <li className="col px-4">
             <Link href="/">
-              <img src={mojayFavicon} alt="" />
+              <img
+                height={30}
+                width={35}
+                className="pointer"
+                title="Home Page"
+                src={mojayFavicon}
+                alt=""
+              />
             </Link>
           </li>
           <li className={`d-flex justify-content-center col ml-auto `}>

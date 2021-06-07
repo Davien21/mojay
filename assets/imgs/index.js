@@ -1,6 +1,6 @@
 import downArrow from "./svgs/down-arrow.svg";
 import mojayLogo from "./svgs/full-logo.svg";
-import mojayFavicon from "./svgs/full-logo.svg";
+import mojayFavicon from "./svgs/favicon.svg";
 import techIcon from "./svgs/tech.svg";
 import techIcon2 from "./svgs/tech-2.svg";
 import mobilityIcon from "./svgs/refugee.svg";
