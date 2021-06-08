@@ -11,7 +11,7 @@ import {
   fmcgImage,
   realEstateImage,
   financeAssetsImage,
-  bg15,
+  bg4,
 } from "./../../../assets/imgs";
 import Footer from "./../../../components/footer/index";
 import ImageBackground from "./../../../components/imageBackground/index";
@@ -70,7 +70,7 @@ function InvestmentSectors() {
         className=""
       >
         <ImageBackground sizeType="short">
-          <img src={bg15} alt="" className="img-fluid def-rounded" />
+          <img src={bg4} alt="" className="img-fluid def-rounded" />
           <div className={`image_bg_content mt-5 text-shadow`}>
             <div className="def-container-lg my-5 pt-md-5">
               <h1>Investment Sectors</h1>
@@ -140,7 +140,10 @@ function InvestmentSectors() {
             <motion.div className={`w-100 col-lg-6 order-2 order-md-1`}>
               <img src={aiImage} alt="" className="img-fluid def-rounded" />
             </motion.div>
-            <motion.div variants={fadeInUp} className="col-lg-6 order-1 order-md-2">
+            <motion.div
+              variants={fadeInUp}
+              className="col-lg-6 order-1 order-md-2"
+            >
               <motion.div className="">
                 <motion.div className="row p-4 flex-column">
                   <motion.div className="col-auto ">
@@ -207,7 +210,10 @@ function InvestmentSectors() {
             <motion.div className={`w-100 col-lg-6 order-2 order-md-1`}>
               <img src={carImage} alt="" className="img-fluid def-rounded" />
             </motion.div>
-            <motion.div variants={fadeInUp} className="col-lg-6 order-1 order-md-2">
+            <motion.div
+              variants={fadeInUp}
+              className="col-lg-6 order-1 order-md-2"
+            >
               <motion.div className="">
                 <motion.div className="row p-4 flex-column">
                   <motion.div className="col-auto ">
@@ -277,7 +283,10 @@ function InvestmentSectors() {
                 className="img-fluid def-rounded"
               />
             </motion.div>
-            <motion.div variants={fadeInUp} className="col-lg-6 order-1 order-md-2">
+            <motion.div
+              variants={fadeInUp}
+              className="col-lg-6 order-1 order-md-2"
+            >
               <motion.div className="">
                 <motion.div className="row p-4 flex-column">
                   <motion.div className="col-auto ">
@@ -342,8 +351,6 @@ function InvestmentSectors() {
               />
             </motion.div>
           </motion.div>
-
-    
         </motion.section>
       </motion.section>
       <Footer />

@@ -1,6 +1,6 @@
 import {
   respectImg,
-  bg5,
+  bg1,
   empathyImg,
   integrityImg,
   innovationImg,
@@ -21,10 +21,10 @@ function OurValues() {
       animate={{ opacity: 1, transition: { ease: easing, duration: 0.6 } }}
     >
       <ImageBackground sizeType="short">
-        <img src={bg5} alt="" className="img-fluid" />
+        <img src={bg1} alt="" className="img-fluid" />
         <div className={`image_bg_content mt-5 text-shadow`}>
           <div className="def-container-lg my-5 pt-md-5">
-            <h1 >Our Values</h1>
+            <h1>Our Values</h1>
             <div className="mt-4 ">
               <p>
                 Our foundation lies in our core values, always directing us

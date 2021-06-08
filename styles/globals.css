@@ -413,3 +413,8 @@ h6 {
 #process-breakdown .process-card {
   max-width: 240px;
 }
+
+ul.default_setting {
+  margin-left: 2.5rem;
+  list-style-type: disc;
+}

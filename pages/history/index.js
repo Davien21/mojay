@@ -2,8 +2,8 @@ import {
   respectImg,
   bg6,
   bg7,
-  bg8,
-  bg13,
+  bg2,
+  bg3,
   ideasImage,
 } from "./../../assets/imgs";
 
@@ -20,7 +20,7 @@ function OurHistory() {
       animate={{ opacity: 1, transition: { ease: easing, duration: 0.6 } }}
     >
       <ImageBackground sizeType="short">
-        <img src={bg8} alt="" className="img-fluid" />
+        <img src={bg2} alt="" className="img-fluid" />
         <div className={`image_bg_content mt-5 text-shadow`}>
           <div className="def-container-lg my-5 pt-md-5">
             <h1>Our History</h1>

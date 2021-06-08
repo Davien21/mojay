@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { InView } from "react-intersection-observer";
 import ImageBackground from "../../components/imageBackground";
-import { bg17, ideasImage, ideasIcon } from "./../../assets/imgs";
+import { bg6, ideasImage, ideasIcon } from "./../../assets/imgs";
 
 import Footer from "./../../components/footer/index";
 import IdeaForm from "./../../components/form/ideas/index";
@@ -36,7 +36,7 @@ function ContactUs() {
   return (
     <>
       <ImageBackground sizeType="short">
-        <img src={bg17} alt="" className="img-fluid" />
+        <img src={bg6} alt="" className="img-fluid" />
         <div className={`image_bg_content mt-5 text-shadow`}>
           <div className="def-container-lg my-5 pt-md-5">
             <h1>Share your ideas</h1>

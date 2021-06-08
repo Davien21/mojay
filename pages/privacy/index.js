@@ -1,5 +1,5 @@
 import React from "react";
-import { bg18 } from "../../assets/imgs";
+import { bg7 } from "../../assets/imgs";
 import ImageBackground from "../../components/imageBackground";
 import { motion } from "framer-motion";
 import Footer from "./../../components/footer/index";
@@ -34,7 +34,7 @@ function Privacy({}) {
   return (
     <>
       <ImageBackground sizeType="short">
-        <img src={bg18} alt="" className="img-fluid" />
+        <img src={bg7} alt="" className="img-fluid" />
         <div className={`image_bg_content mt-5 text-shadow`}>
           <div className="def-container-lg my-5 pt-md-5">
             <h1>Our Privacy policy</h1>
@@ -142,7 +142,7 @@ function Privacy({}) {
                 In general, we collect data relating to the following categories
                 of persons:
               </p>
-              <ul>
+              <ul className="default_setting">
                 <li>
                   Vendors and partners (including consultants) with whom we do
                   business;
@@ -164,8 +164,8 @@ function Privacy({}) {
                   partners.
                 </li>
               </ul>
-              <p>We collect your data:</p>
-              <ul>
+              <p className="my-3">We collect your data:</p>
+              <ul className="default_setting">
                 <li>Directly from you.</li>
                 <li>From security clearance providers.</li>
                 <li>
@@ -224,6 +224,142 @@ function Privacy({}) {
                 <span>2.</span>
                 <span className="col-auto">Categories of data</span>
               </div>
+              <p>We process standard data, which includes, as applicable:</p>
+              <ul className="default_setting">
+                <li className="mb-2">
+                  <span className="col-auto underline-text">
+                    Identity data:
+                  </span>
+                  <span className="">
+                    This includes first name, last name, nationality, address,
+                    title, marital status, gender and date of birth, national
+                    identifiers (copies of passport and identity card).
+                  </span>
+                </li>
+                <li className="">
+                  <span className="col-auto underline-text">Contact data:</span>
+                  <span className="">
+                    This includes first name, last name, nationality, address,
+                    title, marital status, gender and date of birth, national
+                    identifiers (copies of passport and identity card).
+                  </span>
+                </li>
+                <li className="">
+                  <span className="col-auto underline-text">
+                    Financial data
+                  </span>
+                  <span className="">
+                    Financial transactions entered with all customers and
+                    employees of Mojay and its subsidiaries (the “
+                    <b>Mojay Group</b>”) and our other Affiliates for the
+                    purpose of conducting financial auditing.
+                  </span>
+                </li>
+                <li className="">
+                  <span className="col-auto underline-text">
+                    Communications data:
+                  </span>
+                  <span className="">
+                    This includes details of any communication we have had with
+                    you, such as complaints or incidents.
+                  </span>
+                </li>
+                <li className="">
+                  <span className="col-auto underline-text">
+                    Security clearance data
+                  </span>
+                  <span className="">
+                    This includes the results of any searches undertaken to
+                    ascertain whether the information provided by you is
+                    accurate, basic checks and higher security clearance details
+                    depending on the nature of your job or our relationshipo.
+                  </span>
+                </li>
+              </ul>
+              <p className="font-italic my-2">
+                More specifically with respect to Workers
+              </p>
+              <ul className="default_setting">
+                <li>
+                  Information about your employment, such as your role,
+                  designation, salary, payment details, attendance, overtime,
+                  working hours, contractual and legal entitlements and usage of
+                  such entitlements.
+                </li>
+                <li>
+                  Information relating to your qualifications, job application,
+                  employment references, right to work information and details
+                  of any criminal convictions that you declare.
+                </li>
+                <li>
+                  Workers’ bank account and related payment details, salary
+                  payment records.
+                </li>
+                <li>
+                  Data relating to Workers’ end-of-service benefits, including
+                  membership in any end-of-service compensation schemes to which
+                  you have been enrolled (e.g. the DEWS scheme).
+                </li>
+                <li>
+                  Data relating to Workers’ taken annual, sick, maternal, or
+                  other leaves and details relating to your leave entitlements
+                  and rights: including leave applications and the exercise of
+                  other related rights.
+                </li>
+                <li>
+                  Any other data required to obtain visas, flight tickets and
+                  other related immigration papers, and insurance and other
+                  related papers, for our workers and our workers’ spouses and
+                  dependents.
+                </li>
+                <li>
+                  Data pertaining to your education, skills, certifications,
+                  employment history, curriculum vitae, training requirements,
+                  training history, course completed/needed, performance
+                  evaluations/reviews and data relating to the recruiting
+                  process.
+                </li>
+                <li>
+                  Data to enroll you into competitions and for other related
+                  administrative purposes.
+                </li>
+                <li>
+                  Complaints/grievances submitted by or against you, and
+                  investigations to which you may be party or witness.
+                </li>
+                <li>
+                  Disciplinary records and documentation concerning you or to
+                  which you may be related.
+                </li>
+                <li>
+                  Photos and CCTV images from our landlords or taken using our
+                  own CCTV systems (if any).
+                </li>
+                <li>
+                  Data related to your use of Mojay’s IT system and resources,
+                  to the extent legally permitted.
+                </li>
+                <li>
+                  Health data submitted by you either directly or through a
+                  medical certificate or doctor’s note, including with respect
+                  to any sick leaves taken, and work fitness notes.
+                </li>
+                <li>
+                  Accident records with respect to any occupational injuries.
+                </li>
+              </ul>
+              <p className="my-2">
+                However, in certain circumstances, we may need to collect, or
+                request your special category of personal data for employment
+                related purposes: for example, data about your racial / ethnic
+                origin, gender and disabilities for the purposes of equal
+                opportunities monitoring, to comply with anti-discrimination
+                laws and for government reporting obligations and data regarding
+                your health check-up and physical or mental condition data so
+                that we can consider how we might accommodate you in your role.
+                We might also process data about you to provide health and
+                insurance benefits to you and your dependents.
+              </p>
             </div>
           </motion.article>
         </motion.div>

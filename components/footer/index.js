@@ -18,7 +18,7 @@ const Footer = () => {
             />
 
             <p className="text-white py-5">
-              Located at Trade CentreDIFC - Dubai - United Arab Emirates
+              Located at N2001, Emirates Financial Towers, DIFC, Dubai, UAE
             </p>
             <p className={styles.grey_text}>
               © {year} Mojay Global Holdings. All Rights Reserved

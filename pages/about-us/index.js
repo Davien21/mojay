@@ -5,10 +5,10 @@ import {
   realEstateIcon,
   fmgcIcon,
   financeIcon,
-  bg16,
+  bg5,
   aboutUsImage3,
   respectImg,
-  bg5,
+  bg1,
   ideasImage,
   empathyImg,
   integrityImg,
@@ -61,9 +61,9 @@ function AboutUs() {
   return (
     <>
       <ImageBackground sizeType="short">
-        <img src={bg16} alt="" className="img-fluid" />
+        <img src={bg5} alt="" className="img-fluid" />
         <div className={`image_bg_content mt-5 text-shadow`}>
-          <div className="def-container-lg my-5 pt-md-5">
+          <div className="def-container my-5 pt-md-5">
             <h1>About Us</h1>
             {/* <div className="mt-4 ">
               <p>
@@ -77,7 +77,7 @@ function AboutUs() {
         exit={{ opacity: 0 }}
         initial="initial"
         animate="animate"
-        className="def-container-lg"
+        className="def-container"
       >
         <motion.div variants={fadeInUp} className="my-4"></motion.div>
         <motion.div variants={stagger} className=" text-center text-md-left">
@@ -142,7 +142,7 @@ function AboutUs() {
         exit={{ opacity: 0 }}
         initial="initial"
         animate="animate"
-        className="def-container-lg my-5"
+        className="def-container my-5"
       >
         <motion.article className="text-center mt-5 pb-4 text-md-left">
           <motion.h3 variants={fadeInUp}>Company Brief</motion.h3>

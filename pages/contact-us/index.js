@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { InView } from "react-intersection-observer";
 import ImageBackground from "../../components/imageBackground";
-import { callIcon, emailIcon, locationIcon, bg17 } from "./../../assets/imgs";
+import { callIcon, emailIcon, locationIcon, bg6 } from "./../../assets/imgs";
 
 import Footer from "./../../components/footer/index";
 import ContactForm from "./../../components/form/contact/index";
@@ -54,7 +54,7 @@ function ContactUs() {
   return (
     <>
       <ImageBackground sizeType="short">
-        <img src={bg17} alt="" className="img-fluid" />
+        <img src={bg6} alt="" className="img-fluid" />
         <div className={`image_bg_content mt-5 text-shadow`}>
           <div className="def-container-lg my-5 pt-md-5">
             <h1>Contact Us</h1>
@@ -112,7 +112,7 @@ function ContactUs() {
                       className="pointer"
                       href="https://goo.gl/maps/ZBMUJ8ax53nSQDXDA"
                     >
-                      Trade CentreDIFC - Dubai - United Arab Emirates
+                      N2001, Emirates Financial Towers, DIFC, Dubai, UAE
                     </a>
                   </div>
                 </div>

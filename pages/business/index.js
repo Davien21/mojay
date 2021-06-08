@@ -7,7 +7,7 @@ import {
   myroLogo,
   eternalRoboticsLogo,
   preimoLogo,
-  bg16,
+  bg5,
 } from "./../../assets/imgs";
 import Footer from "./../../components/footer/index";
 import { useRef, useEffect } from "react";
@@ -67,7 +67,7 @@ function OurBusiness() {
   };
   let handleHashRouting = () => {
     let route = window.location.href.split("#")[1];
-    console.log(route)
+    console.log(route);
     if (!route) return;
     hashRoutes[route].current.scrollIntoView();
   };
@@ -77,7 +77,7 @@ function OurBusiness() {
   return (
     <>
       <ImageBackground sizeType="short">
-        <img src={bg16} alt="" className="img-fluid" />
+        <img src={bg5} alt="" className="img-fluid" />
         <div className={`image_bg_content mt-5 text-shadow`}>
           <div className="def-container-lg my-5 pt-md-5">
             <h1>Our Businesses</h1>

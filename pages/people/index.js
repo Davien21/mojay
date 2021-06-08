@@ -8,7 +8,8 @@ import {
   raulImage,
   sunilImage,
   shahImage,
-  khanImage,bg16
+  khanImage,
+  bg5,
 } from "../../assets/imgs/index";
 
 // import ImageBackground from "../../components/imageBackground/index";
@@ -59,7 +60,7 @@ function People() {
   return (
     <>
       <ImageBackground sizeType="short">
-        <img src={bg16} alt="" className="img-fluid" />
+        <img src={bg5} alt="" className="img-fluid" />
         <div className={`image_bg_content mt-5 text-shadow`}>
           <div className="def-container-lg my-5 pt-md-5">
             <h1>Our People</h1>

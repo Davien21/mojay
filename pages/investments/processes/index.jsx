@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import Footer from "./../../../components/footer/index";
 import {
-  bg15,
+  bg4,
   processesIcon,
   promoterImage,
   mghlComplianceImage,
@@ -48,7 +48,7 @@ const InvestmentProcesses = () => {
         animate={{ opacity: 1, transition: { ease: easing, duration: 0.6 } }}
       >
         <ImageBackground sizeType="short">
-          <img src={bg15} alt="" className="img-fluid" />
+          <img src={bg4} alt="" className="img-fluid" />
           <div className={`image_bg_content mt-5 text-shadow`}>
             <div className="def-container-lg my-5 pt-md-5">
               <h1>Investment Process</h1>
