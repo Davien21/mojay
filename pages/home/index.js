@@ -142,7 +142,7 @@ function Home() {
             </div>
             <div className="row px-3">
               <div className="col-12 col-md-6 col-lg-4 mx-auto">
-                <HoverCard isHoverable={false} height={"96%"}>
+                <HoverCard flex isHoverable={false} height={"96%"}>
                   <div
                     style={{ height: "61.75%" }}
                     className={`w-100 d-flex align-items-center border-bottom`}
@@ -165,8 +165,8 @@ function Home() {
                 </HoverCard>
               </div>
               <div className="col-12 col-md-6 col-lg-4 mx-auto">
-                <HoverCard isHoverable={false}>
-                  <div className={`w-100`}>
+                <HoverCard flex isHoverable={false}>
+                  <div className={`w-100 bg-white`}>
                     <img
                       src={eternalRoboticsLogo}
                       alt=""
@@ -190,8 +190,8 @@ function Home() {
                 </HoverCard>
               </div>
               <div className="col-12 col-md-6 col-lg-4 mx-auto">
-                <HoverCard isHoverable={false}>
-                  <div className={`w-100`}>
+                <HoverCard flex isHoverable={false}>
+                  <div className={`w-100 bg-white`}>
                     <img src={myroLogo} alt="" className="img-fluid w-100" />
                   </div>
                   <div className="px-3 pt-3 pb-5 text-left">

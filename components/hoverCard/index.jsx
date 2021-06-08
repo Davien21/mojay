@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 
-const HoverCard = ({ children, height, isHoverable }) => {
+const HoverCard = ({ children, height, isHoverable, flex }) => {
   height = height ?? "auto";
   return (
     <>
@@ -9,8 +9,8 @@ const HoverCard = ({ children, height, isHoverable }) => {
         animate={{ x: 0, opacity: 1 }}
         whileHover={isHoverable ?? { scale: 1.05 }}
         whileTap={{ scale: 0.95 }}
-        className="mb-4 bg-white paper-box-shadow pointer"
-        style={{
+        className="mb-4 paper-box-shadow pointer"
+        style={flex && {
           height,
           display: "flex",
           flexDirection: "column",

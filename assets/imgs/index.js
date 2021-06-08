@@ -14,6 +14,7 @@ import techIcon3 from "./svgs/techIcon3.svg";
 import ideasImage from "./svgs/ideas.svg";
 import beforeImg from "./svgs/before-image.svg";
 import processesIcon from "./svgs/processes.svg";
+import ideasIcon from "./svgs/idea.svg";
 
 import aboutUsImage2 from "./about-us.png";
 import aboutUsImage3 from "./about-us-2.png";
@@ -64,6 +65,7 @@ import raulImage from "./raul.png";
 import arunImage from "./arun.png";
 import shahImage from "./shah.png";
 import teamImage from "./team.png";
+
 import promoterImage from "./svgs/promoter.svg";
 import investmentsImage from "./investments-img.png";
 import mghlExecutiveImage from "./svgs/mghl-executive.svg";
@@ -97,6 +99,7 @@ export {
   techIcon2,
   mobilityIcon,
   realEstateIcon,
+  ideasIcon,
   fmgcIcon,
   beforeImg,
   financeIcon,

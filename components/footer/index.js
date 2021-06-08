@@ -36,7 +36,7 @@ const Footer = () => {
                     <Link href="/about-us">About us</Link>
                   </li>
                   <li className="py-2">
-                    <Link href="/">Contact Us</Link>
+                    <Link href="/contact-us">Contact Us</Link>
                   </li>
                 </ul>
               </div>
@@ -44,13 +44,13 @@ const Footer = () => {
                 <header className="text-white">Business</header>
                 <ul className="default_links_list">
                   <li className="pb-2 pt-3">
-                    <Link href="/">Investments</Link>
+                    <Link href="/investment/sectors">Sectors</Link>
                   </li>
                   <li className="py-2">
-                    <Link href="/">Ideas</Link>
+                    <Link href="/investment/processes">Processes</Link>
                   </li>
                   <li className="py-2">
-                    <Link href="/">Contact Us</Link>
+                    <Link href="/ideas">Ideas</Link>
                   </li>
                 </ul>
               </div>
@@ -58,11 +58,9 @@ const Footer = () => {
                 <header className="text-white">Legal</header>
                 <ul className="default_links_list">
                   <li className="pb-2 pt-3">
-                    <Link href="/">Privacy</Link>
+                    <Link href="/privacy">Privacy</Link>
                   </li>
-                  <li className="py-2">
-                    <Link href="/">Terms</Link>
-                  </li>
+                 
                 </ul>
               </div>
               <div className="col-md-3 py-4">
