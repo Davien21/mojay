@@ -33,7 +33,7 @@ function Home() {
         animate={{ opacity: 1, transition: { ease: easing, duration: 0.6 } }}
       >
         <section>
-          <ImageBackground sizeType="short">
+          <ImageBackground sizeType="tall">
             <BackgroundSlideshow
               animationDelay={3000}
               images={[myroBg, preimoBg]}
