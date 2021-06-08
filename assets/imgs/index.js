@@ -32,6 +32,7 @@ import bg4 from "./search/tIG9hc7Tfb.jpg";
 import bg5 from "./search/FIo0QatFtH.jpg";
 import bg6 from "./search/amy-hirschi-K0c8ko3e6AA-unsplash.jpg";
 import bg7 from "./search/scott-graham-OQMZwNd3ThU-unsplash.jpg";
+import bg14 from "./search/DVoYwJRFMR.jpg";
 
 import aiImage from "./search/0Bplk7kVmS.jpg";
 import roboticsImage from "./search/7IaPLlSWSS.jpg";
@@ -64,6 +65,7 @@ import pkfLogo from "./pkf.png";
 import thomasFamilyLogo from "./thomas-family.png";
 import bsaLogo from "./bsa.png";
 import abrahamicBusinessCircleLogo from "./abrahamic-business-circle.png";
+
 import myroLogo from "./Logo_Myro-final-05.png";
 import eternalRoboticsLogo from "./eternal-robotics-logo-2.png";
 import preimoLogo from "./preimo-logo.png";
@@ -73,7 +75,6 @@ import leftArrowAltIcon from "./svgs/left-arrow_alt.svg";
 import rightArrowIcon from "./svgs/right-arrow.svg";
 import emailIcon from "./svgs/email.svg";
 import locationIcon from "./svgs/location.svg";
-import eternalRobotics from "./eternal-robotics-logo.png";
 
 export {
   downArrow,
@@ -105,7 +106,6 @@ export {
   almtLogo,
   pkfLogo,
   bsaLogo,
-  eternalRobotics,
   callIcon,
   emailIcon,
   locationIcon,
@@ -122,6 +122,7 @@ export {
   bg5,
   bg6,
   bg7,
+  bg14,
   aiImage,
   roboticsImage,
   carImage,

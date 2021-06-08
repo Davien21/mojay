@@ -6,7 +6,7 @@ import { MenuToggle } from "./MenuToggle";
 import { Navigation } from "./Navigation";
 import Overlay from "../../overlay/index";
 import styles from "./side_nav.module.css";
-import { mojayLogo } from "../../../assets/imgs/index";
+import { mojayFavicon, mojayLogo } from "../../../assets/imgs/index";
 import Link from "next/link";
 import SideMenu from "../../sideMenus";
 
@@ -72,7 +72,14 @@ export default function SideNav() {
       />
       <div className=" py-3 bg-white paper-box-shadow">
         <Link href="/">
-          <span className="px-4 pointer">Logo</span>
+          <img
+            height={30}
+            width={35}
+            className="pointer ml-4"
+            title="Home Page"
+            src={mojayFavicon}
+            alt=""
+          />
         </Link>
       </div>
       <motion.div

@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import { InView } from "react-intersection-observer";
 
-import { eternalRobotics, preimo, techIcon3 } from "./../../assets/imgs";
+import { techIcon3 } from "./../../assets/imgs";
 import Footer from "./../../components/footer/index";
 
 const easing = [0.6, -0.05, 0.01, 0.99];

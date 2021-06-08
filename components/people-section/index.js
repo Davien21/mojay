@@ -11,6 +11,13 @@ import {
   khanImage,
 } from "../../assets/imgs";
 
+let hoverProps = {
+  initial: { x: 60, opacity: 0 },
+  animate: { x: 0, opacity: 1 },
+  whileHover: { scale: 1.05 },
+  whileTap: { scale: 0.95 },
+};
+
 const PeopleSection = () => {
   return (
     <div id="" className="d-none d-lg-flex row people-section">
@@ -21,10 +28,10 @@ const PeopleSection = () => {
           </p>
           <p className="">
             Sunil is a technocrat with over 18 years of technology experience
-            and one of the early proponents of blockchain-enabled technology. <br /> He
-            plays an integral part in leading the firm’s tactical path and
-            development processes, leading the organization to build a growing
-            portfolio of thriving companies and IPs.
+            and one of the early proponents of blockchain-enabled technology.{" "}
+            <br /> He plays an integral part in leading the firm’s tactical path
+            and development processes, leading the organization to build a
+            growing portfolio of thriving companies and IPs.
           </p>
         </div>
       </div>
@@ -46,11 +53,8 @@ const PeopleSection = () => {
           </div>
           <div class="row">
             <motion.div
-              initial={{ x: 60, opacity: 0 }}
-              animate={{ x: 0, opacity: 1 }}
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className="col-lg-4 my-lg-3 px-lg-0 people_card-2"
+              {...hoverProps}
+              className="col-lg-4 my-lg-3 people_card-2"
             >
               <img
                 src={sunilImage}
@@ -59,10 +63,7 @@ const PeopleSection = () => {
             </motion.div>
 
             <motion.div
-              initial={{ x: 60, opacity: 0 }}
-              animate={{ x: 0, opacity: 1 }}
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
+              {...hoverProps}
               className="col-lg-4 my-lg-3 people_card-2"
             >
               <img
@@ -72,11 +73,8 @@ const PeopleSection = () => {
             </motion.div>
 
             <motion.div
-              initial={{ x: 60, opacity: 0 }}
-              animate={{ x: 0, opacity: 1 }}
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className="col-lg-4 my-lg-3 px-lg-0 people_card-2"
+              {...hoverProps}
+              className="col-lg-4 my-lg-3 people_card-2"
             >
               <img
                 src={raulImage}
@@ -85,11 +83,8 @@ const PeopleSection = () => {
             </motion.div>
 
             <motion.div
-              initial={{ x: 60, opacity: 0 }}
-              animate={{ x: 0, opacity: 1 }}
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className="col-lg-4 px-lg-0 people_card-2"
+              {...hoverProps}
+              className="col-lg-4 people_card-2"
             >
               <img
                 src={candiImage}
@@ -97,13 +92,7 @@ const PeopleSection = () => {
               />
             </motion.div>
 
-            <motion.div
-              initial={{ x: 60, opacity: 0 }}
-              animate={{ x: 0, opacity: 1 }}
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className="col-lg-4 people_card-2"
-            >
+            <motion.div {...hoverProps} className="col-lg-4 people_card-2">
               <img
                 src={shahImage}
                 className="img-fluid paper-box-shadow pointer"
@@ -111,11 +100,8 @@ const PeopleSection = () => {
             </motion.div>
 
             <motion.div
-              initial={{ x: 60, opacity: 0 }}
-              animate={{ x: 0, opacity: 1 }}
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className="col-lg-4 px-lg-0 people_card-2"
+              {...hoverProps}
+              className="col-lg-4 people_card-2"
             >
               <img
                 src={khanImage}
