@@ -280,6 +280,10 @@ textarea.default_style:focus {
   color: #d43842;
 }
 
+.def_text_orange {
+  color: #ea543c;
+}
+
 .people_card img {
   height: 260px;
   width: 100%;

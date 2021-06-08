@@ -8,7 +8,7 @@ import {
   raulImage,
   sunilImage,
   shahImage,
-  khanImage,
+  khanImage,bg16
 } from "../../assets/imgs/index";
 
 // import ImageBackground from "../../components/imageBackground/index";
@@ -59,12 +59,12 @@ function People() {
   return (
     <>
       <ImageBackground sizeType="short">
-        <img src={philosophyBg} alt="" className="img-fluid" />
+        <img src={bg16} alt="" className="img-fluid" />
         <div className={`image_bg_content mt-5 text-shadow`}>
           <div className="def-container-lg my-5 pt-md-5">
-            <h1>Our Philosophy</h1>
+            <h1>Our People</h1>
             <div className="mt-4 ">
-              <p>Challenging, nurturing, innovating.</p>
+              <p>Meet the team that makes things happen.</p>
             </div>
           </div>
         </div>
@@ -77,10 +77,6 @@ function People() {
           animate="animate"
           className="def-container"
         >
-          <motion.div variants={fadeInUp} className="py-5 text-center">
-            <hr className="dash" />
-            <span className="col">Our People</span>
-          </motion.div>
           <motion.article variants={stagger} className="text-center ">
             <motion.h1 variants={fadeInUp} className="py-3">
               We are Visionaries

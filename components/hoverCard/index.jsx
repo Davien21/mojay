@@ -9,7 +9,7 @@ const HoverCard = ({ children, height, isHoverable, flex }) => {
         animate={{ x: 0, opacity: 1 }}
         whileHover={isHoverable ?? { scale: 1.05 }}
         whileTap={{ scale: 0.95 }}
-        className="mb-4 paper-box-shadow pointer"
+        className="mb-4 bg-white paper-box-shadow pointer"
         style={flex && {
           height,
           display: "flex",

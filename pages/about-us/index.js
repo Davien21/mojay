@@ -144,6 +144,13 @@ function AboutUs() {
         animate="animate"
         className="def-container-lg my-5"
       >
+        <motion.article className="text-center mt-5 pb-4 text-md-left">
+          <motion.h3 variants={fadeInUp}>Company Brief</motion.h3>
+          <motion.hr
+            variants={fadeInUp}
+            className="undertone mx-auto mx-md-0"
+          />
+        </motion.article>
         <OurBrief />
         <div className="row d-md-none text-center">
           <div className="col-md-12">
@@ -181,7 +188,10 @@ function AboutUs() {
           </div>
         </div>
         <motion.section>
-          <motion.div variants={fadeInUp} className="row my-5 py-4 text-center text-md-left">
+          <motion.div
+            variants={fadeInUp}
+            className="row my-5 py-4 text-center text-md-left"
+          >
             <motion.div className={`w-100 col-lg-6`}>
               <img
                 src={aboutUsImage3}
@@ -189,10 +199,7 @@ function AboutUs() {
                 className="img-fluid def-rounded"
               />
             </motion.div>
-            <motion.div
-              variants={fadeInUp}
-              className="col-lg-6 "
-            >
+            <motion.div variants={fadeInUp} className="col-lg-6 ">
               <motion.div className="">
                 <div className="mb-5 my-5 pb-3">
                   <h5>Vision</h5>

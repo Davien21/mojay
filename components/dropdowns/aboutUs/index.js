@@ -8,8 +8,6 @@ import DropDownCard from "./../../dropDownCard/index";
 import DropDown from "./../index";
 
 const AboutUsDropDown = ({ isScrolled }) => {
-  const [isDropped, setIsDropped] = useState(false);
-
   return (
     <div>
       <DropDown isScrolled={isScrolled} dropDownName="About Us">
