@@ -29,7 +29,7 @@ function Modal({ children, modalOpen, onModalOpen }) {
         onAnimationComplete={() => handleAnimationEnd(modalBodyRef, modalOpen)}
         onAnimationStart={() => handleAnimationStart(modalBodyRef, modalOpen)}
         initial={{ opacity: 0, y: 0 }}
-        animate={modalOpen ? { opacity: 1, y: "25%" } : { opacity: 0, y: 0 }}
+        animate={modalOpen ? { opacity: 1, y: "12%" } : { opacity: 0, y: 0 }}
         className="def-container"
       >
         <div
