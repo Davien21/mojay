@@ -3,6 +3,8 @@ import { InView } from "react-intersection-observer";
 import ImageBackground from "../../components/imageBackground";
 import { bg6, ideasImage, ideasIcon } from "./../../assets/imgs";
 
+import Image from "next/image";
+
 import Footer from "./../../components/footer/index";
 import IdeaForm from "./../../components/form/ideas/index";
 

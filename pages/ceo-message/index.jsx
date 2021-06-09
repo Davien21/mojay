@@ -1,5 +1,7 @@
 import Footer from "./../../components/footer/index";
 import { raulImage, bg14 } from "./../../assets/imgs";
+
+import Image from "next/image";
 import { motion } from "framer-motion";
 import ImageBackground from "./../../components/imageBackground/index";
 import Link from "next/link";

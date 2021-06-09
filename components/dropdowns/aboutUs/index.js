@@ -3,6 +3,8 @@ import DropDownMenu from "../../dropDownMenu";
 import DropDownToggler from "../../dropDownToggler";
 import { useCycle, motion } from "framer-motion";
 import { rightArrowIcon } from "./../../../assets/imgs/index";
+
+import Image from "next/image";
 import { useState, useRef } from "react";
 import DropDownCard from "./../../dropDownCard/index";
 import DropDown from "./../index";

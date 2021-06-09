@@ -9,6 +9,8 @@ import {
   preimoLogo,
   bg5,
 } from "./../../assets/imgs";
+
+import Image from "next/image";
 import Footer from "./../../components/footer/index";
 import { useRef, useEffect } from "react";
 

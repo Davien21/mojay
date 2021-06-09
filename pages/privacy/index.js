@@ -1,5 +1,7 @@
 import React from "react";
 import { bg7 } from "../../assets/imgs";
+
+import Image from "next/image";
 import ImageBackground from "../../components/imageBackground";
 import { motion } from "framer-motion";
 import Footer from "./../../components/footer/index";

@@ -13,6 +13,8 @@ import {
   financeAssetsImage,
   bg4,
 } from "./../../../assets/imgs";
+
+import Image from "next/image";
 import Footer from "./../../../components/footer/index";
 import ImageBackground from "./../../../components/imageBackground/index";
 

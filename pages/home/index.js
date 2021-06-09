@@ -22,6 +22,8 @@ import {
   beforeImg,
 } from "./../../assets/imgs";
 
+import Image from "next/image";
+
 const easing = [0.6, -0.05, 0.01, 0.99];
 
 function Home() {
@@ -49,8 +51,8 @@ function Home() {
                     <br />
                     <span className="col-auto h2">Nurturing</span>
                   </div>
-                  
-                <p className="mt-4">We are Mojay Global Holding Limited</p>
+
+                  <p className="mt-4">We are Mojay Global Holding Limited</p>
                 </div>
               </div>
             </div>
@@ -60,22 +62,54 @@ function Home() {
           <div className="def-container-lg ">
             <div className="row justify-content-lg-between mx-auto">
               <div className="partner-logo col-6 col-md-4 py-4 col-lg justify-content-center justify-content-lg-start pl-lg-0 d-flex align-items-center ">
-                <img src={deloitteLogo} alt="" className="img-fluid" />
+                <Image
+                  width={80}
+                  height={60}
+                  src={deloitteLogo}
+                  alt=""
+                  className="img-fluid"
+                />
               </div>
               <div className="partner-logo col-6 col-md-4 py-4 col-lg justify-content-center d-flex align-items-center">
-                <img src={pkfLogo} alt="" className="img-fluid " />
+                <Image
+                  width={138}
+                  height={60}
+                  src={pkfLogo}
+                  alt=""
+                  className="img-fluid "
+                />
               </div>
               <div className="partner-logo col-6 col-md-4 py-4 col-lg justify-content-center d-flex align-items-center ">
-                <img src={almtLogo} alt="" className="img-fluid" />
+                <Image
+                  width={158}
+                  height={35}
+                  src={almtLogo}
+                  alt=""
+                  className="img-fluid"
+                />
               </div>
               <div className="partner-logo col-6 col-md-4 py-4 col-lg justify-content-center d-flex align-items-center">
-                <img src={bsaLogo} alt="" className="img-fluid" />
+                <Image
+                  width={46}
+                  height={46}
+                  src={bsaLogo}
+                  alt=""
+                  className="img-fluid"
+                />
               </div>
               <div className="partner-logo col-6 col-md-4 py-4 col-lg justify-content-center d-flex align-items-center ">
-                <img src={thomasFamilyLogo} alt="" className="img-fluid " />
+                <Image
+                  width={60}
+                  height={60}
+                  src={thomasFamilyLogo}
+                  alt=""
+                  className="img-fluid "
+                />
               </div>
               <div className="partner-logo col-6 col-md-4 py-4 col-lg justify-content-center d-flex align-items-center">
-                <img
+                <Image
+                  width={127}
+                  height={39}
                   src={abrahamicBusinessCircleLogo}
                   alt=""
                   className="img-fluid"
@@ -85,13 +119,13 @@ function Home() {
           </div>
         </section>
         <section id="who-we-are">
-          <div className="def-container-lg my-5 py-5">
+          <div className="def-container-lg my-5 text-center py-5">
             <div className="row">
-              <div className="col-lg justify-content-center-6">
+              <div className="col-lg">
                 <div className="mb-4">
                   <p className="def_text_red">GET TO KNOW</p>
                   <h3>WHO WE ARE</h3>
-                  <hr className="undertone" />
+                  <hr className="undertone mx-auto mx-lg-0" />
                 </div>
                 <ul className="">
                   <li className="row my-4">
@@ -124,20 +158,26 @@ function Home() {
                   </li>
                 </ul>
               </div>
-              <div className="col-lg justify-content-center-6 d-flex align-items-center before-img-div top-margin">
-                <img src={teamImage} alt="" className="img-fluid main" />
-                <img src={beforeImg} alt="" className="img-fluid before" />
+              <div className="col-lg justify-content-center d-flex align-items-center  top-margin">
+                <Image
+                  width={520}
+                  height={406}
+                  style={{ display: "none" }}
+                  src={teamImage}
+                  alt=""
+                  className=""
+                />
               </div>
             </div>
           </div>
         </section>
         <section id="investment-portfolio">
-          <div className="def-container-lg my-5 py-5 px-2">
-            <div className="col-lg justify-content-center-6">
+          <div className="def-container-lg my-5 text-center py-5 px-2">
+            <div className="col-lg">
               <div className="mb-5">
                 <p className="def_text_red">TAKE A LOOK AT</p>
                 <h3>OUR INVESTMENT PORTFOLIO</h3>
-                <hr className="undertone" />
+                <hr className="undertone mx-auto mx-lg-0" />
               </div>
             </div>
             <div className="row px-3">
@@ -147,7 +187,13 @@ function Home() {
                     style={{ height: "61.75%" }}
                     className={`w-100 d-flex align-items-center border-bottom`}
                   >
-                    <img src={preimoLogo} alt="" className="img-fluid w-100" />
+                    <Image
+                      width={438}
+                      height={216}
+                      src={preimoLogo}
+                      alt=""
+                      className="img-fluid w-100"
+                    />
                   </div>
                   <div className="px-3 pt-3 pb-5 text-left">
                     <div className="mb-3 row align-items-center">
@@ -167,7 +213,9 @@ function Home() {
               <div className="col-12 col-md-6 col-lg-4 mx-auto">
                 <HoverCard flex isHoverable={false}>
                   <div className={`w-100 bg-white`}>
-                    <img
+                    <Image
+                      width={438}
+                      height={438}
                       src={eternalRoboticsLogo}
                       alt=""
                       className="img-fluid w-100"
@@ -192,7 +240,13 @@ function Home() {
               <div className="col-12 col-md-6 col-lg-4 mx-auto">
                 <HoverCard flex isHoverable={false}>
                   <div className={`w-100 bg-white`}>
-                    <img src={myroLogo} alt="" className="img-fluid w-100" />
+                    <Image
+                      width={438}
+                      height={438}
+                      src={myroLogo}
+                      alt=""
+                      className="img-fluid w-100"
+                    />
                   </div>
                   <div className="px-3 pt-3 pb-5 text-left">
                     <div className="mb-3 row align-items-center">
@@ -213,17 +267,23 @@ function Home() {
           </div>
         </section>
         <section id="philosophy">
-          <div className="def-container-lg my-5 py-5 px-2">
-            <div className="col-lg justify-content-center-6">
+          <div className="def-container-lg my-5 text-center py-5 px-2">
+            <div className="col-lg">
               <div className="mb-5">
                 <p className="def_text_red">LEARN ABOUT</p>
                 <h3>OUR PHILOSOPHY</h3>
-                <hr className="undertone" />
+                <hr className="undertone mx-auto mx-lg-0" />
               </div>
             </div>
             <div className="row px-3">
               <div className="col-12 mb-5 col-md-6">
-                <img src={philosophyBg} alt="" className="img-fluid w-100" />
+                <Image
+                  width={438}
+                  height={292}
+                  src={philosophyBg}
+                  alt=""
+                  className="img-fluid w-100"
+                />
               </div>
               <div className="col-12 col-md-6">
                 <h4 className="mb-4">Philosophy is two pronged</h4>

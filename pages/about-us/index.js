@@ -15,6 +15,8 @@ import {
   innovationImg,
   performanceImg,
 } from "./../../assets/imgs";
+
+import Image from "next/image";
 import Footer from "../../components/footer";
 import ImageBackground from "../../components/imageBackground";
 import OurBrief from "./../../components/brief/index";

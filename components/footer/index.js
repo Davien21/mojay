@@ -1,5 +1,7 @@
 import styles from "./footer.module.css";
 import { mojayLogo } from "./../../assets/imgs";
+
+import Image from "next/image";
 import Link from "next/link";
 const year = new Date().getFullYear();
 const Footer = () => {
@@ -10,10 +12,11 @@ const Footer = () => {
       <div className="container">
         <div className="row  align-items-center">
           <div className="col-lg-6 pt-5 pb-4">
-            <img
-              className="img-fluid"
+            <Image
               src={mojayLogo}
-              style={{ maxHeight: "78px", maxWidth: "315px" }}
+              className="img-fluid"
+              width={315}
+              height={78}
               alt=""
             />
 
@@ -60,7 +63,6 @@ const Footer = () => {
                   <li className="pb-2 pt-3">
                     <Link href="/privacy">Privacy</Link>
                   </li>
-                 
                 </ul>
               </div>
               <div className="col-md-3 py-4">

@@ -7,6 +7,8 @@ import {
   ideasImage,
 } from "./../../assets/imgs";
 
+import Image from "next/image";
+
 import ImageBackground from "../../components/imageBackground";
 import Footer from "./../../components/footer/index";
 import { motion } from "framer-motion";

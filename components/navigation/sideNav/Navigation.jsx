@@ -4,6 +4,8 @@ import styles from "./side_nav.module.css";
 import Link from "next/link";
 import { rightArrowIcon } from "./../../../assets/imgs";
 
+import Image from "next/image";
+
 export const Navigation = ({ isOpen, sideMenu, toggleSideMenu }) => {
   const variants = {
     open: {
@@ -14,10 +16,7 @@ export const Navigation = ({ isOpen, sideMenu, toggleSideMenu }) => {
     },
   };
   return (
-    <motion.ul
-      className={`${styles.ul} side_nav_links`}
-      variants={variants}
-    >
+    <motion.ul className={`${styles.ul} side_nav_links`} variants={variants}>
       <MenuItem>
         <Link href="/">Home</Link>
       </MenuItem>

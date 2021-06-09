@@ -3,6 +3,8 @@ import { InView } from "react-intersection-observer";
 import ImageBackground from "../../components/imageBackground";
 import { callIcon, emailIcon, locationIcon, bg6 } from "./../../assets/imgs";
 
+import Image from "next/image";
+
 import Footer from "./../../components/footer/index";
 import ContactForm from "./../../components/form/contact/index";
 

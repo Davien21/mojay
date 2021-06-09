@@ -1,4 +1,6 @@
 import { sunilImage, checkIcon, leftArrowIcon } from "../../assets/imgs";
+
+import Image from "next/image";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import styles from "../people/people.module.css";

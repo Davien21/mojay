@@ -12,6 +12,8 @@ import {
   bg5,
 } from "../../assets/imgs/index";
 
+import Image from "next/image";
+
 // import ImageBackground from "../../components/imageBackground/index";
 
 import Link from "next/link";

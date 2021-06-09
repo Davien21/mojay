@@ -1,5 +1,7 @@
 import Footer from "./../../components/footer/index";
 import { philosophyBg, philosophyBg2 } from "./../../assets/imgs";
+
+import Image from "next/image";
 import { motion } from "framer-motion";
 import ImageBackground from "./../../components/imageBackground/index";
 const easing = [0.6, -0.05, 0.01, 0.99];

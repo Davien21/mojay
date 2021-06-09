@@ -1,9 +1,10 @@
 import DropDownMenu from "../../dropDownMenu";
 import { motion } from "framer-motion";
 import { rightArrowIcon } from "./../../../assets/imgs/index";
+
+import Image from "next/image";
 import DropDownCard from "./../../dropDownCard/index";
 import DropDown from "./../index";
-import Image from 'next/image';
 
 const AboutUsDropDown = ({ isScrolled }) => {
   return (

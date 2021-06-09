@@ -2,9 +2,11 @@ import styles from "./side_menu.module.css";
 import { motion } from "framer-motion";
 import { MenuToggle } from "./../navigation/sideNav/MenuToggle";
 import { leftArrowAltIcon } from "./../../assets/imgs";
+
+import Image from "next/image";
 import AboutUsSideMenu from "./aboutUs";
-import BusinessSideMenu from './business';
-import InvestmentsSideMenu from './investments';
+import BusinessSideMenu from "./business";
+import InvestmentsSideMenu from "./investments";
 
 const slideIn = { width: "300px", transition: { duration: 0.2 } };
 const slideOut = { width: "0px", transition: { duration: 0.2 } };
@@ -21,8 +23,8 @@ const Path = (props) => (
 
 const menus = {
   "About Us": <AboutUsSideMenu />,
-  "Business": <BusinessSideMenu />,
-  "Investments": <InvestmentsSideMenu />,
+  Business: <BusinessSideMenu />,
+  Investments: <InvestmentsSideMenu />,
 };
 
 const SideMenu = ({ active, onToggleSideNav, onSwitchToMainNav }) => {

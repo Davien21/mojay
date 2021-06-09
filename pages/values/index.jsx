@@ -7,6 +7,8 @@ import {
   performanceImg,
 } from "./../../assets/imgs";
 
+import Image from "next/image";
+
 import ImageBackground from "../../components/imageBackground";
 import styles from "./values.module.css";
 import Footer from "./../../components/footer/index";

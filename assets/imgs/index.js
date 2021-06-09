@@ -16,8 +16,8 @@ import ideasIcon from "./svgs/idea.svg";
 
 import aboutUsImage3 from "./about-us-2.png";
 
-import myroBg from "./myro-bg.png";
-import preimoBg from "./preimo-bg.png";
+import myroBg from "./myro-bg.webp";
+import preimoBg from "./preimo-bg.webp";
 
 import empathyImg from "./search/kulli-kittus-KQfxVDHGCUg-unsplash.jpg";
 import respectImg from "./search/wonderlane-MAQ1dcCn-Jc-unsplash.jpg";
@@ -67,7 +67,7 @@ import bsaLogo from "./bsa.png";
 import abrahamicBusinessCircleLogo from "./abrahamic-business-circle.png";
 
 import myroLogo from "./Logo_Myro-final-05.png";
-import eternalRoboticsLogo from "./eternal-robotics-logo-2.png";
+import eternalRoboticsLogo from "./eternal-robotics-logo-2.webp";
 import preimoLogo from "./preimo-logo.png";
 
 import callIcon from "./svgs/call.svg";

@@ -7,6 +7,8 @@ import { Navigation } from "./Navigation";
 import Overlay from "../../overlay/index";
 import styles from "./side_nav.module.css";
 import { mojayFavicon, mojayLogo } from "../../../assets/imgs/index";
+
+import Image from "next/image";
 import Link from "next/link";
 import SideMenu from "../../sideMenus";
 
