@@ -41,7 +41,7 @@ function Modal({ children, modalOpen, onModalOpen }) {
         onAnimationComplete={() => handleAnimationEnd(modalBodyRef, modalOpen)}
         onAnimationStart={() => handleAnimationStart(modalBodyRef, modalOpen)}
         initial={{ opacity: 0, y: 0 }}
-        animate={modalOpen ? { opacity: 1, y: "15%" } : { opacity: 0, y: 0 }}
+        animate={modalOpen ? { opacity: 1, y: "10%" } : { opacity: 0, y: 0 }}
         className="d-lg-none"
       >
         <div
