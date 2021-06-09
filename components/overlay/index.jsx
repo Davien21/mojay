@@ -1,5 +1,6 @@
 import { motion } from "framer-motion/dist/framer-motion.cjs";
 import { useEffect, useRef } from "react";
+
 const style = {
   height: "100vh",
   width: "100vw",
@@ -22,7 +23,7 @@ const handleAnimationEnd = (ref, isOpen) => {
 
 const Overlay = ({ children, isOpen, ...rest }) => {
   const ref = useRef();
-  console.log(isOpen);
+
   useEffect(() => {
     document.body.style.overflow = isOpen ? "hidden" : "auto";
   }, [isOpen]);

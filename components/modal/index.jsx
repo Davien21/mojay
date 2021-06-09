@@ -16,9 +16,8 @@ function Modal({ children, modalOpen, onModalOpen }) {
   const modalRef = useRef();
 
   const handleClickOutside = (e) => {
-    if (modalRef?.current.contains(e.target)) return;
-    console.log("clicked outside");
-    // onModalOpen(false);
+    if (!modalOpen || modalRef?.current.contains(e.target)) return;
+    onModalOpen(false);
   };
   useEffect(() => {
     document.addEventListener("click", handleClickOutside);
@@ -28,11 +27,7 @@ function Modal({ children, modalOpen, onModalOpen }) {
   }, [modalOpen]);
   return (
     <>
-      <Overlay
-        
-        className="d-lg-none z-index-100"
-        isOpen={modalOpen}
-      ></Overlay>
+      <Overlay className="d-lg-none z-index-100" isOpen={modalOpen}></Overlay>
       <motion.div
         ref={modalBodyRef}
         style={{
@@ -40,13 +35,14 @@ function Modal({ children, modalOpen, onModalOpen }) {
           position: "fixed",
           top: 0,
           zIndex: "102",
+          width: "100%",
           marginLeft: "-1rem",
         }}
         onAnimationComplete={() => handleAnimationEnd(modalBodyRef, modalOpen)}
         onAnimationStart={() => handleAnimationStart(modalBodyRef, modalOpen)}
         initial={{ opacity: 0, y: 0 }}
-        animate={modalOpen ? { opacity: 1, y: "12%" } : { opacity: 0, y: 0 }}
-        className="d-lg-none justify-content-center"
+        animate={modalOpen ? { opacity: 1, y: "15%" } : { opacity: 0, y: 0 }}
+        className="d-lg-none"
       >
         <div
           className="row
@@ -60,7 +56,7 @@ function Modal({ children, modalOpen, onModalOpen }) {
               backgroundColor: "#fff",
               maxHeight: "70vh",
             }}
-            className="col-10 py-5"
+            className="col-10 col-sm-8 col-md-6 py-5"
           >
             <CloseButton toggle={() => onModalOpen(false)} />
             {children}

@@ -24,18 +24,7 @@ const fadeInUp = {
   },
 };
 
-const slideInRight = {
-  initial: {
-    x: 60,
-    opacity: 0,
-  },
-  animate: {
-    x: 0,
-    opacity: 1,
-    transition: transition1,
-  },
-};
-
+ 
 const stagger = {
   animate: {
     transition: {
