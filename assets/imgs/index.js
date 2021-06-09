@@ -14,7 +14,7 @@ import beforeImg from "./svgs/before-image.svg";
 import processesIcon from "./svgs/processes.svg";
 import ideasIcon from "./svgs/idea.svg";
 
-import aboutUsImage3 from "./about-us-2.png";
+import aboutUsImage3 from "./about-us-2.jpg";
 
 import myroBg from "./myro-bg.webp";
 import preimoBg from "./preimo-bg.webp";
@@ -44,16 +44,16 @@ import financeAssetsImage from "./search/sHVrz4FChm.jpg";
 import philosophyBg from "./search/X31yyllyrd.jpg";
 import philosophyBg2 from "./search/NjXaBpaPRu.jpg";
 
-import sunilImage from "./sunil.png";
-import candiImage from "./candi.png";
-import khanImage from "./khan.png";
-import raulImage from "./raul.png";
-import arunImage from "./arun.png";
-import shahImage from "./shah.png";
+import sunilImage from "./sunil.jpg";
+import candiImage from "./candi.jpg";
+import khanImage from "./khan.jpg";
+import raulImage from "./raul.jpg";
+import arunImage from "./arun.jpg";
+import shahImage from "./shah.jpg";
 import teamImage from "./team.png";
 
 import promoterImage from "./svgs/promoter.svg";
-import investmentsImage from "./investments-img.png";
+import investmentsImage from "./investments-img.jpg";
 import mghlExecutiveImage from "./svgs/mghl-executive.svg";
 import mghlComplianceImage from "./svgs/mghl-compliance.svg";
 import mghlInvestmentImage from "./svgs/mghl-investment.svg";

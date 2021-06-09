@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+
 import {
   techIcon2,
   mobilityIcon,
@@ -67,11 +68,7 @@ function AboutUs() {
         <div className={`image_bg_content mt-5 text-shadow`}>
           <div className="def-container my-5 pt-md-5">
             <h1>About Us</h1>
-            {/* <div className="mt-4 ">
-              <p>
-                Get to know us
-              </p>
-            </div> */}
+            
           </div>
         </div>
       </ImageBackground>
@@ -194,7 +191,7 @@ function AboutUs() {
             variants={fadeInUp}
             className="row my-5 py-4 text-center text-md-left"
           >
-            <motion.div className={`w-100 col-lg-6`}>
+            <motion.div className={`w-100 col-lg-6`} variants={fadeInUp}>
               <Image
                 layout="fill"
                 src={aboutUsImage3}

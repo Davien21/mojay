@@ -36,7 +36,7 @@ function Privacy({}) {
   return (
     <>
       <ImageBackground sizeType="short">
-        <img src={bg7} alt="" className="img-fluid" />
+        <Image layout="fill" src={bg7} alt="" className="img-fluid" />
         <div className={`image_bg_content mt-5 text-shadow`}>
           <div className="def-container-lg my-5 pt-md-5">
             <h1>Our Privacy policy</h1>
