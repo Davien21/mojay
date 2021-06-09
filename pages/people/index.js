@@ -14,8 +14,6 @@ import {
 
 import Image from "next/image";
 
-// import ImageBackground from "../../components/imageBackground/index";
-
 import Link from "next/link";
 import Footer from "../../components/footer/index";
 import PeopleSection from "./../../components/people-section/index";
@@ -175,7 +173,7 @@ function People() {
                   <img src={raulImage} alt="" className="img-fluid" />
                 </div>
                 <div className="px-3 pt-3 pb-5 text-left">
-                  <h4>Raul Silva</h4>
+                  <h4>Raul Geraldes Silva</h4>
                   <p>Managing Director &amp; CEO</p>
                 </div>
               </motion.div>

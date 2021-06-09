@@ -1,7 +1,5 @@
+import { sunilImage } from "../../../assets/imgs";
+import shortSummary from "./short-summary";
+import longSummary from "./long-summary";
 
-
-const Sunil = () => {
-  return (<div>Hi, This is sunil </div>);
-}
- 
-export default Sunil;
+export default { image: sunilImage, shortSummary, longSummary };
