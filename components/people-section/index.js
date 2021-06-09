@@ -54,7 +54,7 @@ const PeopleSection = () => {
           <div class="row">
             <motion.div
               {...hoverProps}
-              className="col-lg-4 my-lg-3 people_card-2"
+              className="col-lg-4 pl-lg-0 my-lg-3 people_card-2"
             >
               <img
                 src={sunilImage}
@@ -64,7 +64,7 @@ const PeopleSection = () => {
 
             <motion.div
               {...hoverProps}
-              className="col-lg-4 my-lg-3 people_card-2"
+              className="col-lg-4 px-2 my-lg-3 people_card-2"
             >
               <img
                 src={arunImage}
@@ -74,7 +74,7 @@ const PeopleSection = () => {
 
             <motion.div
               {...hoverProps}
-              className="col-lg-4 my-lg-3 people_card-2"
+              className="col-lg-4 pr-lg-0 my-lg-3 people_card-2"
             >
               <img
                 src={raulImage}
@@ -84,7 +84,7 @@ const PeopleSection = () => {
 
             <motion.div
               {...hoverProps}
-              className="col-lg-4 people_card-2"
+              className="col-lg-4 pl-lg-0 people_card-2"
             >
               <img
                 src={candiImage}
@@ -92,7 +92,7 @@ const PeopleSection = () => {
               />
             </motion.div>
 
-            <motion.div {...hoverProps} className="col-lg-4 people_card-2">
+            <motion.div {...hoverProps} className="col-lg-4 px-2 people_card-2">
               <img
                 src={shahImage}
                 className="img-fluid paper-box-shadow pointer"
@@ -101,7 +101,7 @@ const PeopleSection = () => {
 
             <motion.div
               {...hoverProps}
-              className="col-lg-4 people_card-2"
+              className="col-lg-4 pr-lg-0 people_card-2"
             >
               <img
                 src={khanImage}

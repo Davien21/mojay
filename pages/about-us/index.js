@@ -18,6 +18,7 @@ import {
 import Footer from "../../components/footer";
 import ImageBackground from "../../components/imageBackground";
 import OurBrief from "./../../components/brief/index";
+import Image from "next/image";
 
 const easing = [0.6, -0.05, 0.01, 0.99];
 const transition1 = {
@@ -61,7 +62,7 @@ function AboutUs() {
   return (
     <>
       <ImageBackground sizeType="short">
-        <img src={bg5} alt="" className="img-fluid" />
+        <Image layout="fill" src={bg5} alt="" className="img-fluid" />
         <div className={`image_bg_content mt-5 text-shadow`}>
           <div className="def-container my-5 pt-md-5">
             <h1>About Us</h1>
@@ -115,24 +116,24 @@ function AboutUs() {
           >
             <div className="offset-2 d-md-none"></div>
             <li className="col-4 col-md-2 py-2 mx-auto mx-md-0 text-center">
-              <img src={techIcon2} height={50} width={50} alt="" />
+              <Image src={techIcon2} height={50} width={50} alt="" />
               <p>Technology and Robotics</p>
             </li>
             <li className="col-4 col-md-2 py-2 mx-auto mx-md-0 text-center">
-              <img src={mobilityIcon} height={50} width={50} alt="" />
+              <Image src={mobilityIcon} height={50} width={50} alt="" />
               <p>Mobility</p>
             </li>
             <div className="offset-2 d-md-none"></div>
             <li className="col-4 col-md-2 py-2 text-center">
-              <img src={realEstateIcon} height={50} width={50} alt="" />
+              <Image src={realEstateIcon} height={50} width={50} alt="" />
               <p>Real Estate</p>
             </li>
             <li className="col-4 col-md-2 py-2 text-center">
-              <img src={fmgcIcon} height={50} width={50} alt="" />
+              <Image src={fmgcIcon} height={50} width={50} alt="" />
               <p>FMGC</p>
             </li>
             <li className="col-4 col-md-2 py-2 text-center">
-              <img src={financeIcon} height={50} width={50} alt="" />
+              <Image src={financeIcon} height={50} width={50} alt="" />
               <p>Financial Assets</p>
             </li>
           </motion.ul>
@@ -193,7 +194,8 @@ function AboutUs() {
             className="row my-5 py-4 text-center text-md-left"
           >
             <motion.div className={`w-100 col-lg-6`}>
-              <img
+              <Image
+                layout="fill"
                 src={aboutUsImage3}
                 alt=""
                 className="img-fluid def-rounded"

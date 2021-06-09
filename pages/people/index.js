@@ -62,7 +62,7 @@ function People() {
       <ImageBackground sizeType="short">
         <img src={bg5} alt="" className="img-fluid" />
         <div className={`image_bg_content mt-5 text-shadow`}>
-          <div className="def-container my-5 pt-md-5">
+          <div className="def-container-lg my-5 pt-md-5">
             <h1>Our People</h1>
             <div className="mt-4 ">
               <p>Meet the team that makes things happen.</p>
@@ -76,7 +76,7 @@ function People() {
           exit={{ opacity: 0 }}
           initial="initial"
           animate="animate"
-          className="def-container"
+          className="def-container-lg"
         >
           <motion.article variants={stagger} className="text-center ">
             <motion.h1 variants={fadeInUp} className="py-3">
@@ -93,12 +93,12 @@ function People() {
           </motion.article>
         </motion.section>
       </motion.section>
-      <motion.section className="def-container py-5">
+      <motion.section className="def-container-lg py-5 text-center text-lg-left">
         <div className="">
           <div className="mb-5">
             <p className="def_text_red">MEET</p>
             <h3>OUR PEOPLE</h3>
-            <hr className="undertone" />
+            <hr className="undertone mx-auto mx-lg-0" />
           </div>
         </div>
         <div>

@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { rightArrowIcon } from "./../../../assets/imgs/index";
 import DropDownCard from "./../../dropDownCard/index";
 import DropDown from "./../index";
+import Image from 'next/image';
 
 const AboutUsDropDown = ({ isScrolled }) => {
   return (
@@ -26,7 +27,7 @@ const AboutUsDropDown = ({ isScrolled }) => {
                   <DropDownCard route="/investments/sectors">
                     <div className="">
                       <span className="pr-2 hover_target ">Sectors</span>
-                      <img src={rightArrowIcon} height={12} width={12} />
+                      <Image src={rightArrowIcon} height={12} width={12} />
                     </div>
                     <span style={{ fontSize: "0.7rem" }}>
                       Lorem ipsum dolor, sit amet consectetur adipisicing elit.
@@ -39,7 +40,7 @@ const AboutUsDropDown = ({ isScrolled }) => {
                   <DropDownCard route="/investments/processes">
                     <div className="">
                       <span className="pr-2 hover_target">Processes</span>
-                      <img src={rightArrowIcon} height={12} width={12} />
+                      <Image src={rightArrowIcon} height={12} width={12} />
                     </div>
                     <span style={{ fontSize: "0.7rem" }}>
                       Lorem ipsum dolor, sit amet consectetur adipisicing elit.
