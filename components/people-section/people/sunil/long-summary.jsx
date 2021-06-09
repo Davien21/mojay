@@ -1,9 +1,7 @@
 const SunilLongSummary = () => {
   return (
     <>
-      <p className="def_text_orange" style={{ fontSize: "1.2rem" }}>
-        Founder and Director
-      </p>
+      
       <p className="">
         Sunil is a technocrat with over 18 years of technology experience and
         one of the early proponents of blockchain-enabled technology. <br /> He

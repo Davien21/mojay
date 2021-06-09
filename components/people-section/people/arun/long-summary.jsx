@@ -7,9 +7,7 @@ const ArunLongSummary = () => {
   // }
   return (
     <>
-      <p className="def_text_orange" style={{ fontSize: "1.2rem" }}>
-        Chairman of the board
-      </p>
+      
       <p className="">
         ARUN (SR) has an extensive experience of over 25 years. He has worked
         wdef-btnith Hewlett Packard and has been a partner and on the management

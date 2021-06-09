@@ -1,9 +1,7 @@
 const SunilLongSummary = () => {
   return (
     <>
-      <p className="def_text_orange" style={{ fontSize: "1.2rem" }}>
-        Compliance Officer
-      </p>
+      
       <p className="">
         Yasser is a Qualified Company Secretary and a Member of Institute of
         Company Secretaries of India with over 5 years of experience displayed

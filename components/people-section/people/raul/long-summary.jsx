@@ -1,9 +1,7 @@
 const RaulLongSummary = () => {
   return (
     <>
-      <p className="def_text_orange" style={{ fontSize: "1.2rem" }}>
-        Managing Director &amp; CEO
-      </p>
+      
       <p>
         Raul is the Chief Executive Officer and Managing Director of Mojay
         Global Holding.

@@ -1,5 +1,4 @@
 import "../styles/bootstrap.css";
-import "simplebar/dist/simplebar.min.css";
 
 // import "../styles.scss";
 import "../styles/globals.css";

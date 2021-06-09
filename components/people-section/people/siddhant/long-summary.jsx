@@ -1,9 +1,7 @@
 const SiddhantLongSummary = () => {
   return (
     <>
-      <p className="def_text_orange" style={{ fontSize: "1.2rem" }}>
-        CFO
-      </p>
+      
       <p className="">
         Siddhant has over 13 years of professional experience across Mumbai,
         London, Singapore and Dubai. He has diversified experience of having

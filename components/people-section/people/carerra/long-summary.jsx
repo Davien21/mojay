@@ -1,9 +1,7 @@
 const CarerraLongSummary = () => {
   return (
     <>
-      <p className="def_text_orange" style={{ fontSize: "1.2rem" }}>
-        Director
-      </p>
+      
       <p className="">
         Candi Carrera is Director of the Board at Mojay Global Holding.
       </p>

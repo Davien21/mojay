@@ -5,6 +5,9 @@ const style = {
   width: "100vw",
   backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9))",
   position: "fixed",
+  top: 0,
+  left: 0,
+  zIndex: "101"
 };
 
 const fadeIn = { opacity: 1, transition: { duration: 0.5 } };
@@ -18,8 +21,9 @@ const handleAnimationEnd = (ref, isOpen) => {
   if (!isOpen) ref.current.style.display = "none";
 };
 
-const Overlay = ({ isOpen, ...rest }) => {
+const Overlay = ({ children, isOpen, ...rest }) => {
   const ref = useRef();
+  console.log(isOpen);
   useEffect(() => {
     document.body.style.overflow = isOpen ? "hidden" : "auto";
   }, [isOpen]);
@@ -27,12 +31,15 @@ const Overlay = ({ isOpen, ...rest }) => {
     <motion.div
       ref={ref}
       onAnimationComplete={() => handleAnimationEnd(ref, isOpen)}
+      onAnimationStart={() => handleAnimationStart(ref, isOpen)}onAnimationComplete={() => handleAnimationEnd(ref, isOpen)}
       onAnimationStart={() => handleAnimationStart(ref, isOpen)}
       initial={{ opacity: 0 }}
       animate={isOpen ? fadeIn : fadeOut}
       style={style}
       {...rest}
-    ></motion.div>
+    >
+      <div>{children}</div>
+    </motion.div>
   );
 };
 
