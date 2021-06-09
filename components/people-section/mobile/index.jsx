@@ -43,7 +43,7 @@ const MobilePeopleSection = ({
         <div
           style={{
             backgroundColor: "#fff",
-            maxHeight: "100%",
+            maxHeight: "90%",
             overflowY: "auto",
           }}
         >
