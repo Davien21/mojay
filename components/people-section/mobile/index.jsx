@@ -31,19 +31,19 @@ const MobilePeopleSection = ({
   return (
     <>
       <Modal modalOpen={modalOpen} onModalOpen={setModalOpen}>
-        <img
-          style={{ maxHeight: "30%" }}
+        {/* <img
+          style={{ maxHeight: "30%", objectFit: "cover" }}
           src={currentPersonImage}
           alt=""
           className="img-fluid def-rounded"
-        />
-        <p className="def_text_orange" style={{ fontSize: "1.2rem" }}>
+        /> */}
+        <p className="def_text_orange mt-3" style={{ fontSize: "1.2rem" }}>
           {role}
         </p>
         <div
           style={{
             backgroundColor: "#fff",
-            maxHeight: "66%",
+            maxHeight: "100%",
             overflowY: "auto",
           }}
         >
