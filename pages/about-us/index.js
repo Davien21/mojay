@@ -20,7 +20,6 @@ import Image from "next/image";
 import Footer from "../../components/footer";
 import ImageBackground from "../../components/imageBackground";
 import OurBrief from "./../../components/brief/index";
-import Image from "next/image";
 
 const easing = [0.6, -0.05, 0.01, 0.99];
 const transition1 = {

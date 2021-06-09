@@ -17,7 +17,7 @@ function Modal({ children, modalOpen, onModalOpen }) {
   return (
     <>
       <Overlay
-        className=""
+        className="d-lg-none"
         isOpen={modalOpen}
         onClick={() => {
           onModalOpen(false);
@@ -25,12 +25,18 @@ function Modal({ children, modalOpen, onModalOpen }) {
       ></Overlay>
       <motion.div
         ref={modalBodyRef}
-        style={{ position: "fixed", top: 0, zIndex: "102" }}
+        style={{
+          display: "none",
+          position: "fixed",
+          top: 0,
+          zIndex: "102",
+          marginLeft: "-1rem",
+        }}
         onAnimationComplete={() => handleAnimationEnd(modalBodyRef, modalOpen)}
         onAnimationStart={() => handleAnimationStart(modalBodyRef, modalOpen)}
         initial={{ opacity: 0, y: 0 }}
         animate={modalOpen ? { opacity: 1, y: "12%" } : { opacity: 0, y: 0 }}
-        className="def-container"
+        className="d-lg-none justify-content-center"
       >
         <div
           className="row justify-content-center
@@ -41,7 +47,7 @@ function Modal({ children, modalOpen, onModalOpen }) {
               backgroundColor: "#fff",
               maxHeight: "70vh",
             }}
-            className="col-10 py-5 px-"
+            className="col-10 py-5"
           >
             <CloseButton toggle={() => onModalOpen(false)} />
             {children}
