@@ -1,9 +1,9 @@
 import BackgroundSlideshow from "react-background-slideshow";
 import ImageBackground from "../../components/imageBackground";
-import Footer from "./../../components/footer/index";
+import Footer from "../../components/footer/index";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import HoverCard from "./../../components/hoverCard/index";
+import HoverCard from "../../components/hoverCard/index";
 
 import {
   myroBg,
@@ -20,7 +20,7 @@ import {
   preimoLogo,
   philosophyBg,
   beforeImg,
-} from "./../../assets/imgs";
+} from "../../assets/imgs";
 
 import Image from "next/image";
 
