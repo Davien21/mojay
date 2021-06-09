@@ -7,7 +7,6 @@ const style = {
   position: "fixed",
   top: 0,
   left: 0,
-  zIndex: "101"
 };
 
 const fadeIn = { opacity: 1, transition: { duration: 0.5 } };
@@ -31,7 +30,6 @@ const Overlay = ({ children, isOpen, ...rest }) => {
     <motion.div
       ref={ref}
       onAnimationComplete={() => handleAnimationEnd(ref, isOpen)}
-      onAnimationStart={() => handleAnimationStart(ref, isOpen)}onAnimationComplete={() => handleAnimationEnd(ref, isOpen)}
       onAnimationStart={() => handleAnimationStart(ref, isOpen)}
       initial={{ opacity: 0 }}
       animate={isOpen ? fadeIn : fadeOut}

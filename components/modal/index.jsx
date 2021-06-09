@@ -1,4 +1,4 @@
-import { useRef } from "react";
+import { useRef, useEffect } from "react";
 import { motion } from "framer-motion";
 import Overlay from "./../overlay/index";
 import { CloseButton } from "./../closeButton/index";
@@ -13,15 +13,25 @@ const handleAnimationEnd = (ref, isOpen) => {
 
 function Modal({ children, modalOpen, onModalOpen }) {
   const modalBodyRef = useRef();
+  const modalRef = useRef();
 
+  const handleClickOutside = (e) => {
+    if (modalRef?.current.contains(e.target)) return;
+    console.log("clicked outside");
+    // onModalOpen(false);
+  };
+  useEffect(() => {
+    document.addEventListener("click", handleClickOutside);
+    return () => {
+      document.removeEventListener("click", handleClickOutside);
+    };
+  }, [modalOpen]);
   return (
     <>
       <Overlay
-        className="d-lg-none"
+        
+        className="d-lg-none z-index-100"
         isOpen={modalOpen}
-        onClick={() => {
-          onModalOpen(false);
-        }}
       ></Overlay>
       <motion.div
         ref={modalBodyRef}
@@ -39,10 +49,13 @@ function Modal({ children, modalOpen, onModalOpen }) {
         className="d-lg-none justify-content-center"
       >
         <div
-          className="row justify-content-center
+          className="row
+           justify-content-center
           "
         >
           <div
+            ref={modalRef}
+            initial={{ opacity: 0, y: 0 }}
             style={{
               backgroundColor: "#fff",
               maxHeight: "70vh",

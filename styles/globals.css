@@ -451,3 +451,7 @@ ul.default_setting {
   cursor: pointer;
   background: transparent;
 }
+
+.z-index-100 {
+  z-index: 100
+}
