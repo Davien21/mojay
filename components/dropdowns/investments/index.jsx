@@ -13,10 +13,13 @@ const AboutUsDropDown = ({ isScrolled }) => {
         <DropDownMenu>
           <div className="row">
             <div className="col-lg-4">
-              <h4>Investments</h4>
+              <h4 className="mb-2">Investments</h4>
               <hr className="undertone mt-0" style={{ borderWidth: "3px" }} />
               <div>
-              At Mojay Global Holding, we are always in hunt for innovative projects, business opportunities and entrepreneurs who dare to challenge the status quo and to setup new and higher standards in their industries.
+                At Mojay Global Holding, we are always in hunt for innovative
+                projects, business opportunities and entrepreneurs who dare to
+                challenge the status quo and to setup new and higher standards
+                in their industries.
               </div>
             </div>
             <div className="col">
@@ -42,9 +45,9 @@ const AboutUsDropDown = ({ isScrolled }) => {
                       <Image src={rightArrowIcon} height={12} width={12} />
                     </div>
                     <span style={{ fontSize: "0.7rem" }}>
-                      At Mojay Global Holding, we work collaboratively with our
-                      key stakeholders of the companies to take the businesses
-                      to the next level of profitable growth.
+                      At Mojay Global Holding, we work collaboratively with key
+                      stakeholders of companies to take the businesses to the
+                      next level of profitable growth.
                     </span>
                     <div id=""></div>
                   </DropDownCard>

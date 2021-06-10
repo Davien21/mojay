@@ -78,7 +78,7 @@ const CeoMessage = () => {
                   future.
                 </motion.p>
               </div>
-              <div className="col-lg-6 my-auto">
+              <div className="col-lg-6 pl-lg-5 my-auto">
                 <motion.div
                   initial={{ x: 60, opacity: 0 }}
                   animate={{ x: 0, opacity: 1 }}
