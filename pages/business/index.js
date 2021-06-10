@@ -69,9 +69,12 @@ function OurBusiness() {
   };
   let handleHashRouting = () => {
     let route = window.location.href.split("#")[1];
-    console.log(route);
     if (!route) return;
-    hashRoutes[route].current.scrollIntoView();
+
+    const y = hashRoutes[route].current.offsetTop;
+    const x = hashRoutes[route].current.offsetLeft;
+
+    window.scrollTo(x, y);
   };
   useEffect(() => {
     handleHashRouting();

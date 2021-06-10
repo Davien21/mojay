@@ -63,7 +63,7 @@ const InvestmentProcesses = () => {
           </div>
         </ImageBackground>
         <section id="processes" className="clear-nav-margin">
-          <div className="def-container-lg my-5 py-5 px-2">
+          <div className="def-container-lg my-5">
             <div className="col-lg">
               <div className="mb-5">
                 <p className="def_text_red">LEARN ABOUT</p>
@@ -92,19 +92,19 @@ const InvestmentProcesses = () => {
               style={{ maxWidth: "1200px" }}
             >
               <div className="row mx-auto justify-content-center justify-content-lg-start">
-                <div className="col d-flex process-card justify-content-center my-4">
+                <div className="col process-card justify-content-center my-4">
                   <img src={promoterImage} alt="" />
                 </div>
-                <div className="col d-flex process-card justify-content-center my-4">
+                <div className="col process-card justify-content-center my-4">
                   <img src={mghlExecutiveImage} alt="" />
                 </div>
-                <div className="col d-flex process-card justify-content-center my-4">
+                <div className="col process-card justify-content-center my-4">
                   <img src={mghlComplianceImage} alt="" />
                 </div>
-                <div className="col d-flex process-card my-4">
+                <div className="col process-card my-4">
                   <img src={mghlInvestmentImage} alt="" />
                 </div>
-                <div className="col d-flex process-card my-4">
+                <div className="col process-card my-4">
                   <img src={mghlEntrepreneurImage} alt="" />
                 </div>
               </div>
