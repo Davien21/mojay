@@ -172,7 +172,7 @@ function Home() {
           </div>
         </section>
         <section id="investment-portfolio">
-          <div className="def-container-lg my-5 text-center py-5 px-2">
+          <div className="def-container-lg my-5 text-center py-5">
             <div className="col-lg">
               <div className="mb-5">
                 <p className="def_text_red">TAKE A LOOK AT</p>
@@ -267,7 +267,7 @@ function Home() {
           </div>
         </section>
         <section id="philosophy">
-          <div className="def-container-lg my-5 text-center py-5 px-2">
+          <div className="def-container-lg my-5 text-center py-5">
             <div className="col-lg">
               <div className="mb-5">
                 <p className="def_text_red">LEARN ABOUT</p>

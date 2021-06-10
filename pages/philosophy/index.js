@@ -26,7 +26,7 @@ const OurPhilosophy = () => {
           </div>
         </ImageBackground>
         <section id="philosophy" className="clear-nav-margin">
-          <div className="def-container-lg my-5 py-5 px-2">
+          <div className="def-container-lg my-5 py-5">
             <div className="col-lg justify-content-center-6">
               <div className="mb-5">
                 <p className="def_text_red">LEARN ABOUT</p>

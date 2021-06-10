@@ -35,6 +35,7 @@ export default function Header() {
       window.removeEventListener("scroll", handleScroll);
     };
   }, [isScrolled]);
+
   return (
     <motion.nav
       className={styles.container}
