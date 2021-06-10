@@ -40,7 +40,13 @@ const DropDownMenu = (props) => {
     >
       <motion.div
         className="app-container"
-        style={{ padding: "50px 100px", maxWidth: "1520px" }}
+        style={{
+          padding: "20px 100px",
+          maxWidth: "1520px",
+          display: "flex",
+          minHeight: "280px",
+          alignItems: "center",
+        }}
       >
         {children}
       </motion.div>

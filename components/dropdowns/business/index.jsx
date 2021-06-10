@@ -16,10 +16,10 @@ const AboutUsDropDown = ({ isScrolled }) => {
               <h4>Business</h4>
               <hr className="undertone mt-0" style={{ borderWidth: "3px" }} />
               <div>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta
-                enim deleniti beatae temporibus facere architecto iste vitae
-                officia pariatur, facilis soluta blanditiis eos, eveniet aliquam
-                voluptatum ea atque quia quo.
+                Mojay Global Holding Limited is involved in several businesses
+                and has acquired several companies since it's launch in July,
+                2020. We are steadily building an ecosystem of businesses that
+                challenge the status quo.
               </div>
             </div>
             <div className="col">
@@ -33,25 +33,13 @@ const AboutUsDropDown = ({ isScrolled }) => {
                       <img src={rightArrowIcon} height={12} width={12} />
                     </div>
                     <span style={{ fontSize: "0.7rem" }}>
-                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                      Consectetur facilis harum sunt
+                      Preimo Urban Mobility represents the next generation of
+                      what chauffeur-driven limousine services should feel like.
                     </span>
                     <div id=""></div>
                   </DropDownCard>
                 </div>
-                <div className="py-1 pl-lg-0 col-lg-6">
-                  <DropDownCard route="/business#myro">
-                    <div className="">
-                      <span className="pr-2 hover_target">Myro</span>
-                      <img src={rightArrowIcon} height={12} width={12} />
-                    </div>
-                    <span style={{ fontSize: "0.7rem" }}>
-                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                      Consectetur facilis harum sunt
-                    </span>
-                    <div id=""></div>
-                  </DropDownCard>
-                </div>
+
                 <div className="py-1 col-lg-6">
                   <DropDownCard route="/business#eternal-robotics">
                     <div className="">
@@ -61,8 +49,24 @@ const AboutUsDropDown = ({ isScrolled }) => {
                       <img src={rightArrowIcon} height={12} width={12} />
                     </div>
                     <span style={{ fontSize: "0.7rem" }}>
-                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                      Consectetur facilis harum sunt
+                      Eternal Robotics is a technology-driven company based in
+                      India, that provides a wide range of engineering services.
+                    </span>
+                    <div id=""></div>
+                  </DropDownCard>
+                </div>
+                <div className="py-1 col-lg-6">
+                  <DropDownCard route="/business#myro">
+                    <div className="">
+                      <span className="pr-2 hover_target">
+                        Myro International
+                      </span>
+                      <img src={rightArrowIcon} height={12} width={12} />
+                    </div>
+                    <span style={{ fontSize: "0.7rem" }}>
+                      A robotics company that is solving complex, monotonous
+                      problems around human productivity and workplace
+                      innovation.
                     </span>
                     <div id=""></div>
                   </DropDownCard>

@@ -16,20 +16,23 @@ const AboutUsDropDown = ({ isScrolled }) => {
         <DropDownMenu>
           <div className="row">
             <div className="col-lg-4">
-              <Link href="/about-us">Go to About us Page</Link>
-              <hr className="undertone mt-0" style={{ borderWidth: "3px" }} />
+              <h4>Business</h4>
               <div>
                 Mojay Global holding limited is a value-driven organisation
                 established in July 2020, to embrace several existing businesses
                 and to nurture new investment opportunities
               </div>
-              <div className="my-4">
-                <Link href="/ceo-message">
-                  <div>
+              <div className="my-2">
+                <div>
+                  <Link href="/ceo-message">
                     <span className="def_call-to-action">View CEO Message</span>
-                    <img src={rightArrowIcon} height={12} width={12} />
-                  </div>
-                </Link>
+                  </Link>
+                </div>
+                <div>
+                  <Link href="/about-us">
+                    <span className="def_call-to-action">Learn About Us</span>
+                  </Link>
+                </div>
               </div>
             </div>
             <div className="col">

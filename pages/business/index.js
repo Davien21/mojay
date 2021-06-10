@@ -105,8 +105,8 @@ function OurBusiness() {
           <motion.h2 variants={fadeInUp} className="py-3">
             We Are Always Exploring and Expanding
           </motion.h2>
-          <motion.div className="row">
-            <motion.article className="col-md-12">
+          <motion.div className="">
+            <motion.article className="">
               <motion.article variants={fadeInUp} className="def-line-height">
                 Mojay Global Holding Limited is a diversified organisation
                 having its presence across the areas of Technology &amp;
@@ -117,7 +117,7 @@ function OurBusiness() {
               </motion.article>
             </motion.article>
           </motion.div>
-          <motion.section className="my-5" variants={stagger}>
+          <motion.section className="my-5 def-container" variants={stagger}>
             <InView triggerOnce threshold={0.5}>
               {({ ref, inView }) => (
                 <motion.div
@@ -153,13 +153,13 @@ function OurBusiness() {
                   </motion.div>
                   <motion.div className="px-0 col-md-5 order-1 order-md-2">
                     <motion.img
-                      variants={ImageSlideIn}
+                      // variants={ImageSlideIn}
                       src={preimoLogo}
                       className="img-fluid"
                     />
                   </motion.div>
                   <motion.div
-                    className=" pb-4 px-0 col-12 order-3"
+                    className=" pb-4 px-0 col-12 order-3 def-container"
                     variants={fadeInUp}
                   >
                     <div className="row">
@@ -229,7 +229,7 @@ function OurBusiness() {
                     </motion.div>
                   </motion.div>
                   <motion.div
-                    className=" py-4 px-0 col-12 order-3"
+                    className=" py-4 px-0 col-12 order-3 def-container-lg"
                     variants={fadeInUp}
                   >
                     <div className="row">
@@ -297,7 +297,7 @@ function OurBusiness() {
                     />
                   </motion.div>
                   <motion.div
-                    className=" py-4 px-0 col-12 order-3"
+                    className=" py-4 px-0 col-12 order-3 def-container-lg"
                     variants={fadeInUp}
                   >
                     <div className="row">

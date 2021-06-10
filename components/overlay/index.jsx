@@ -3,7 +3,7 @@ import { useEffect, useRef } from "react";
 
 const style = {
   height: "100vh",
-  width: "100vw",
+  width: "100%",
   backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9))",
   position: "fixed",
   top: 0,

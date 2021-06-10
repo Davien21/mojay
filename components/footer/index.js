@@ -50,7 +50,7 @@ const Footer = () => {
                     <Link href="/investment/sectors">Sectors</Link>
                   </li>
                   <li className="py-2">
-                    <Link href="/investment/processes">Processes</Link>
+                    <Link href="/investments/processes">Processes</Link>
                   </li>
                   <li className="py-2">
                     <Link href="/ideas">Ideas</Link>

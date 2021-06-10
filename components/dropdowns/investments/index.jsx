@@ -16,10 +16,7 @@ const AboutUsDropDown = ({ isScrolled }) => {
               <h4>Investments</h4>
               <hr className="undertone mt-0" style={{ borderWidth: "3px" }} />
               <div>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta
-                enim deleniti beatae temporibus facere architecto iste vitae
-                officia pariatur, facilis soluta blanditiis eos, eveniet aliquam
-                voluptatum ea atque quia quo.
+              At Mojay Global Holding, we are always in hunt for innovative projects, business opportunities and entrepreneurs who dare to challenge the status quo and to setup new and higher standards in their industries.
               </div>
             </div>
             <div className="col">
@@ -31,8 +28,9 @@ const AboutUsDropDown = ({ isScrolled }) => {
                       <Image src={rightArrowIcon} height={12} width={12} />
                     </div>
                     <span style={{ fontSize: "0.7rem" }}>
-                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                      Consectetur facilis harum sunt
+                      Mojay Global Holding Limited is a diversified organisation
+                      having its presence across many sectors. Find out what we
+                      are involved in.
                     </span>
                     <div id=""></div>
                   </DropDownCard>
@@ -44,8 +42,9 @@ const AboutUsDropDown = ({ isScrolled }) => {
                       <Image src={rightArrowIcon} height={12} width={12} />
                     </div>
                     <span style={{ fontSize: "0.7rem" }}>
-                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                      Consectetur facilis harum sunt
+                      At Mojay Global Holding, we work collaboratively with our
+                      key stakeholders of the companies to take the businesses
+                      to the next level of profitable growth.
                     </span>
                     <div id=""></div>
                   </DropDownCard>
