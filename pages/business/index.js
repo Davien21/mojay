@@ -70,8 +70,9 @@ function OurBusiness() {
   let handleHashRouting = () => {
     let route = window.location.href.split("#")[1];
     if (!route) return;
-
-    const y = hashRoutes[route].current.offsetTop;
+    let yPad = window.innerHeight * 0.1;
+    console.log(yPad);
+    const y = hashRoutes[route].current.offsetTop - yPad;
     const x = hashRoutes[route].current.offsetLeft;
 
     window.scrollTo(x, y);
