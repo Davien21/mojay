@@ -4,7 +4,6 @@ import { raulImage, bg14 } from "./../../assets/imgs";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import ImageBackground from "./../../components/imageBackground/index";
-import Link from "next/link";
 
 const easing = [0.6, -0.05, 0.01, 0.99];
 
@@ -84,10 +83,14 @@ const CeoMessage = () => {
                   initial={{ x: 60, opacity: 0 }}
                   animate={{ x: 0, opacity: 1 }}
                   transition={{ delay: 0.4 }}
-                  className="mb-4 bg-white paper-box-shadow pointer"
+                  className="mb-4"
                 >
                   <div className={`w-100 mt-4`}>
-                    <img src={raulImage} alt="" className="img-fluid" />
+                    <img
+                      src={raulImage}
+                      alt=""
+                      className="img-fluid paper-box-shadow"
+                    />
                   </div>
                 </motion.div>
               </div>

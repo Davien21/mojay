@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import Link from "next/link";
 import Footer from "./../../../components/footer/index";
 import {
   bg4,
@@ -63,9 +62,9 @@ const InvestmentProcesses = () => {
             </div>
           </div>
         </ImageBackground>
-        <section id="philosophy" className="clear-nav-margin">
+        <section id="processes" className="clear-nav-margin">
           <div className="def-container-lg my-5 py-5 px-2">
-            <div className="col-lg justify-content-center-6">
+            <div className="col-lg">
               <div className="mb-5">
                 <p className="def_text_red">LEARN ABOUT</p>
                 <h3>OUR INVESTMENT PROCESS</h3>
@@ -76,7 +75,7 @@ const InvestmentProcesses = () => {
               <p>Here is a step by step breakdown of how we run investments</p>
             </div>
             <div className="row px-3">
-              <div className="col-8 mx-auto mb-5">
+              <div className="col-md-10 col-lg-8 mx-auto mb-5">
                 <img src={processesIcon} alt="" className="img-fluid w-100" />
               </div>
             </div>
@@ -92,7 +91,7 @@ const InvestmentProcesses = () => {
               className="row mx-auto justify-content-center"
               style={{ maxWidth: "1200px" }}
             >
-              <div className="row mx-auto ">
+              <div className="row mx-auto justify-content-center justify-content-lg-start">
                 <div className="col d-flex process-card justify-content-center my-4">
                   <img src={promoterImage} alt="" />
                 </div>

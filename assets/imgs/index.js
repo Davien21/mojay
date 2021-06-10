@@ -13,6 +13,11 @@ import ideasImage from "./svgs/ideas.svg";
 import beforeImg from "./svgs/before-image.svg";
 import processesIcon from "./svgs/processes.svg";
 import ideasIcon from "./svgs/idea.svg";
+import callIcon from "./svgs/call.svg";
+import leftArrowAltIcon from "./svgs/left-arrow_alt.svg";
+import rightArrowIcon from "./svgs/right-arrow.svg";
+import emailIcon from "./svgs/email.svg";
+import locationIcon from "./svgs/location.svg";
 
 import aboutUsImage3 from "./about-us-2.jpg";
 
@@ -70,11 +75,6 @@ import myroLogo from "./Logo_Myro-final-05.png";
 import eternalRoboticsLogo from "./eternal-robotics-logo-2.webp";
 import preimoLogo from "./preimo-logo.png";
 
-import callIcon from "./svgs/call.svg";
-import leftArrowAltIcon from "./svgs/left-arrow_alt.svg";
-import rightArrowIcon from "./svgs/right-arrow.svg";
-import emailIcon from "./svgs/email.svg";
-import locationIcon from "./svgs/location.svg";
 
 export {
   downArrow,
