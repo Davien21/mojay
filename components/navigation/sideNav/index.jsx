@@ -66,8 +66,6 @@ export default function SideNav() {
         className=""
         isOpen={isOpen}
         onClick={() => {
-          console.log("clicked overlay");
-          console.log("Overlay", isOpen);
           toggleOpen(false);
           toggleSideMenu(false);
         }}

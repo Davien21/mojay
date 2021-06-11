@@ -28,7 +28,7 @@ export default function Header() {
     if (window.pageYOffset > 80) setIsScrolled(true);
     if (window.pageYOffset < 80) setIsScrolled(false);
   };
-
+  
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
     return () => {

@@ -6,18 +6,28 @@ import style from "./drop_down_menu.module.css";
 const easing = [0.6, -0.05, 0.01, 0.99];
 const transition = { duration: 0.5, ease: easing };
 
-const fadeIn = { opacity: 1, y: 10, display: "block", transition };
-const fadeOut = { opacity: 0, y: 60, display: "none", transition };
+const fadeIn = { opacity: 1, y: 10, transition };
+const fadeOut = { opacity: 0, y: 60, transition };
 
 const DropDownMenu = (props) => {
   const { isDropped, children, onDropDown, dropDownArrowRef } = props;
   router.events.on("routeChangeStart", () => onDropDown(false));
 
-  const ref = useRef();
+  const handleAnimationStart = (ref, isDropped) => {
+    if (!isDropped) return;
+    ref.current.style.display = "block";
+  };
+
+  const handleAnimationEnd = (ref, isDropped) => {
+    if (isDropped) return;
+    ref.current.style.display = "none";
+  };
+
+  const dropDownMenuRef = useRef();
   const handleClickOutside = (e) => {
     if (
-      ref.current &&
-      !ref.current.contains(e.target) &&
+      dropDownMenuRef.current &&
+      !dropDownMenuRef.current.contains(e.target) &&
       !dropDownArrowRef.current.contains(e.target)
     ) {
       onDropDown(false);
@@ -33,7 +43,9 @@ const DropDownMenu = (props) => {
 
   return (
     <motion.div
-      ref={ref}
+      ref={dropDownMenuRef}
+      onAnimationComplete={() => handleAnimationEnd(dropDownMenuRef, isDropped)}
+      onAnimationStart={() => handleAnimationStart(dropDownMenuRef, isDropped)}
       initial={{ opacity: 0, y: 60 }}
       animate={isDropped ? fadeIn : fadeOut}
       className={`${style.drop_section} paper-box-shadow text-black`}

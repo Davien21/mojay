@@ -12,11 +12,11 @@ import DropDown from "./../index";
 const AboutUsDropDown = ({ isScrolled }) => {
   return (
     <div>
-      <DropDown isScrolled={isScrolled} dropDownName="About Us">
+      <DropDown isScrolled={isScrolled} dropDownName="About">
         <DropDownMenu>
           <div className="row">
             <div className="col-lg-4">
-              <h4 className="mb-2">About Us</h4>
+              <h4 className="mb-2">About</h4>
               <div>
                 Mojay Global holding limited is a value-driven organisation
                 established in July 2020, to embrace several existing businesses

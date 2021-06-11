@@ -159,12 +159,7 @@ function Home() {
                 </ul>
               </div>
               <div className="col-lg justify-content-center d-flex align-items-center  top-margin">
-                <img
-                  style={{ display: "none" }}
-                  src={teamImage}
-                  alt=""
-                  className="img-fluid"
-                />
+                <img src={teamImage} alt="" className="img-fluid" />
               </div>
             </div>
           </div>
