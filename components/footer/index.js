@@ -47,7 +47,7 @@ const Footer = () => {
                 <header className="text-white">Business</header>
                 <ul className="default_links_list">
                   <li className="pb-2 pt-3">
-                    <Link href="/investment/sectors">Sectors</Link>
+                    <Link href="/investments/sectors">Sectors</Link>
                   </li>
                   <li className="py-2">
                     <Link href="/investments/processes">Processes</Link>

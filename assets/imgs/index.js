@@ -18,6 +18,7 @@ import leftArrowAltIcon from "./svgs/left-arrow_alt.svg";
 import rightArrowIcon from "./svgs/right-arrow.svg";
 import emailIcon from "./svgs/email.svg";
 import locationIcon from "./svgs/location.svg";
+import mojayLogoHorizontal from "./svgs/logo-horizontal.svg";
 
 import aboutUsImage3 from "./about-us-2.jpg";
 
@@ -74,7 +75,6 @@ import abrahamicBusinessCircleLogo from "./abrahamic-business-circle.png";
 import myroLogo from "./Logo_Myro-final-05.png";
 import eternalRoboticsLogo from "./eternal-robotics-logo-2.webp";
 import preimoLogo from "./preimo-logo.png";
-
 
 export {
   downArrow,
@@ -143,4 +143,5 @@ export {
   preimoLogo,
   aboutUsImage3,
   mojayFavicon,
+  mojayLogoHorizontal,
 };
