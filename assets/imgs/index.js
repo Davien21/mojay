@@ -28,24 +28,24 @@ import preimoBg from "./preimo-bg.webp";
 import empathyImg from "./search/kulli-kittus-KQfxVDHGCUg-unsplash.jpg";
 import respectImg from "./search/wonderlane-MAQ1dcCn-Jc-unsplash.jpg";
 import integrityImg from "./search/mY2SqQyG9d.jpg";
-import innovationImg from "./search/vOgohgC46w.webp";
-import performanceImg from "./search/CemqGWttHM.webp";
+import innovationImg from "./search/vOgohgC46w.jpg";
+import performanceImg from "./search/CemqGWttHM.jpg";
 
 import bg1 from "./search/GHyouzpqwL.jpg";
 import bg2 from "./search/gB5gO0iLAT.jpg";
-import bg3 from "./search/0pDQltjO1d.webp";
+import bg3 from "./search/0pDQltjO1d.jpg";
 import bg4 from "./search/tIG9hc7Tfb.jpg";
 import bg5 from "./search/FIo0QatFtH.jpg";
 import bg6 from "./search/amy-hirschi-K0c8ko3e6AA-unsplash.jpg";
-import bg7 from "./search/scott-graham-OQMZwNd3ThU-unsplash.webp";
+import bg7 from "./search/scott-graham-OQMZwNd3ThU-unsplash.jpg";
 import bg14 from "./search/DVoYwJRFMR.jpg";
 
 import aiImage from "./search/0Bplk7kVmS.jpg";
 import roboticsImage from "./search/7IaPLlSWSS.jpg";
 import carImage from "./search/e7m9mqBi77.jpg";
-import fmcgImage from "./search/7cpvk0vhN4.webp";
-import realEstateImage from "./search/Q2yAtIhAIf.webp";
-import financeAssetsImage from "./search/sHVrz4FChm.webp";
+import fmcgImage from "./search/7cpvk0vhN4.jpg";
+import realEstateImage from "./search/Q2yAtIhAIf.jpg";
+import financeAssetsImage from "./search/sHVrz4FChm.jpg";
 
 import philosophyBg from "./search/X31yyllyrd.jpg";
 import philosophyBg2 from "./search/NjXaBpaPRu.jpg";

@@ -13,7 +13,7 @@ const AboutUsDropDown = ({ isScrolled }) => {
         <DropDownMenu>
           <div className="row">
             <div className="col-lg-4">
-              <h4 className="mb-2">Business</h4>
+              <h4>Business</h4>
               <hr className="undertone mt-0" style={{ borderWidth: "3px" }} />
               <div>
                 Mojay Global Holding Limited is involved in several businesses
