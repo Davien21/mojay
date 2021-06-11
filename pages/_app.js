@@ -15,7 +15,10 @@ import routers from "next/router";
 function MyApp({ Component, pageProps, router }) {
   const [routeChanging, setIsRouteChanging] = useState(false);
   useEffect(() => {
-    const routeChangeStartHandler = () => setIsRouteChanging(true);
+    const routeChangeStartHandler = (route) => {
+      console.log(route);
+      setIsRouteChanging(true);
+    };
 
     const routeChangeEndHandler = () => setIsRouteChanging(false);
 
@@ -51,7 +54,8 @@ function MyApp({ Component, pageProps, router }) {
               y: 20,
               transition: {
                 duration: 1,
-                yoyo: Infinity,
+                repeat: Infinity,
+                repeatType: "reverse",
               },
             }}
             style={{ marginTop: "-10%" }}

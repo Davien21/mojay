@@ -63,7 +63,6 @@ function Home() {
             <div className="row justify-content-lg-between mx-auto">
               <div className="partner-logo col-6 col-md-4 py-4 col-lg justify-content-center justify-content-lg-start pl-lg-0 d-flex align-items-center ">
                 <Image
-                loading="eager"
                   width={80}
                   height={60}
                   src={deloitteLogo}
@@ -73,7 +72,6 @@ function Home() {
               </div>
               <div className="partner-logo col-6 col-md-4 py-4 col-lg justify-content-center d-flex align-items-center">
                 <Image
-                loading="eager"
                   width={138}
                   height={60}
                   src={pkfLogo}
@@ -83,7 +81,6 @@ function Home() {
               </div>
               <div className="partner-logo col-6 col-md-4 py-4 col-lg justify-content-center d-flex align-items-center ">
                 <Image
-                loading="eager"
                   width={158}
                   height={35}
                   src={almtLogo}
@@ -93,7 +90,6 @@ function Home() {
               </div>
               <div className="partner-logo col-6 col-md-4 py-4 col-lg justify-content-center d-flex align-items-center">
                 <Image
-                loading="eager"
                   width={46}
                   height={46}
                   src={bsaLogo}
@@ -103,7 +99,6 @@ function Home() {
               </div>
               <div className="partner-logo col-6 col-md-4 py-4 col-lg justify-content-center d-flex align-items-center ">
                 <Image
-                loading="eager"
                   width={60}
                   height={60}
                   src={thomasFamilyLogo}
@@ -113,7 +108,6 @@ function Home() {
               </div>
               <div className="partner-logo col-6 col-md-4 py-4 col-lg justify-content-center d-flex align-items-center">
                 <Image
-                loading="eager"
                   width={127}
                   height={39}
                   src={abrahamicBusinessCircleLogo}
@@ -165,14 +159,11 @@ function Home() {
                 </ul>
               </div>
               <div className="col-lg justify-content-center d-flex align-items-center  top-margin">
-                <Image
-                loading="eager"
-                  width={520}
-                  height={406}
+                <img
                   style={{ display: "none" }}
                   src={teamImage}
                   alt=""
-                  className=""
+                  className="img-fluid"
                 />
               </div>
             </div>
@@ -195,7 +186,6 @@ function Home() {
                     className={`w-100 d-flex align-items-center border-bottom`}
                   >
                     <Image
-                    loading="eager"
                       width={438}
                       height={216}
                       src={preimoLogo}
@@ -222,7 +212,6 @@ function Home() {
                 <HoverCard flex isHoverable={false}>
                   <div className={`w-100 bg-white`}>
                     <Image
-                    loading="eager"
                       width={438}
                       height={438}
                       src={eternalRoboticsLogo}
@@ -250,7 +239,6 @@ function Home() {
                 <HoverCard flex isHoverable={false}>
                   <div className={`w-100 bg-white`}>
                     <Image
-                    loading="eager"
                       width={438}
                       height={438}
                       src={myroLogo}
@@ -288,7 +276,6 @@ function Home() {
             <div className="row px-3">
               <div className="col-12 mb-5 col-md-6">
                 <Image
-                loading="eager"
                   width={438}
                   height={292}
                   src={philosophyBg}

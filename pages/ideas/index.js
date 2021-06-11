@@ -52,7 +52,7 @@ function ContactUs() {
         exit={{ opacity: 0 }}
         initial="initial"
         animate="animate"
-        className="def-container py-5"
+        className="def-container py-5 clear-nav-margin"
       >
         <motion.div variants={stagger} className="row">
           <motion.div className="col-lg-6 py-5 px-4">
