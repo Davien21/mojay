@@ -20,11 +20,43 @@ import {
   preimoLogo,
   philosophyBg,
   beforeImg,
+  techIcon2,
+  mobilityIcon,
+  realEstateIcon,
+  fmgcIcon,
+  financeIcon,
+  bg5,
+  aboutUsImage3,
 } from "../../assets/imgs";
+import OurBrief from "../../components/brief/index";
 
 import Image from "next/image";
 
 const easing = [0.6, -0.05, 0.01, 0.99];
+const transition1 = {
+  duration: 0.6,
+  ease: easing,
+};
+
+const fadeInUp = {
+  initial: {
+    y: 60,
+    opacity: 0,
+  },
+  animate: {
+    y: 0,
+    opacity: 1,
+    transition: transition1,
+  },
+};
+
+const stagger = {
+  animate: {
+    transition: {
+      staggerChildren: 0.05,
+    },
+  },
+};
 
 function Home() {
   return (
@@ -118,8 +150,124 @@ function Home() {
             </div>
           </div>
         </section>
+        <motion.section
+          exit={{ opacity: 0 }}
+          initial="initial"
+          animate="animate"
+          className="def-container my-5"
+        >
+          <motion.div variants={stagger} className=" text-center text-md-left">
+            <motion.h3 variants={fadeInUp} className="py-3">
+              We are Mojay Global Holding
+            </motion.h3>
+            <motion.div className="row">
+              <motion.article className="col-lg-12">
+                <motion.article variants={fadeInUp} className="def-line-height">
+                  Mojay Global holding limited is a value-driven organisation
+                  established in July 2020, to embrace several existing
+                  businesses and to nurture new investment opportunities
+                </motion.article>
+                <motion.article
+                  variants={fadeInUp}
+                  className="py-4 def-line-height"
+                >
+                  It is registered and headquartered in DIFC-Dubai International
+                  Financial Centre as a Private Investment Holding Company and,
+                  since then, it has been expanding across diverse business
+                  sectors, majorly focusing on 5 strategic verticals:
+                </motion.article>
+              </motion.article>
+            </motion.div>
+            <motion.article className="text-center mt-5 pb-4 text-md-left">
+              <motion.h3 variants={fadeInUp}>
+                Diverse Business sectors
+              </motion.h3>
+              <motion.hr
+                variants={fadeInUp}
+                className="undertone mx-auto mx-md-0"
+              />
+            </motion.article>
+            <motion.ul
+              variants={fadeInUp}
+              className="row justify-content-between flex-wrap"
+            >
+              <div className="offset-2 d-md-none"></div>
+              <li className="col-4 col-md-2 py-2 mx-auto mx-md-0 text-center">
+                <Image src={techIcon2} height={50} width={50} alt="" />
+                <p>Technology and Robotics</p>
+              </li>
+              <li className="col-4 col-md-2 py-2 mx-auto mx-md-0 text-center">
+                <Image src={mobilityIcon} height={50} width={50} alt="" />
+                <p>Mobility</p>
+              </li>
+              <div className="offset-2 d-md-none"></div>
+              <li className="col-4 col-md-2 py-2 text-center">
+                <Image src={realEstateIcon} height={50} width={50} alt="" />
+                <p>Real Estate</p>
+              </li>
+              <li className="col-4 col-md-2 py-2 text-center">
+                <Image src={fmgcIcon} height={50} width={50} alt="" />
+                <p>FMGC</p>
+              </li>
+              <li className="col-4 col-md-2 py-2 text-center">
+                <Image src={financeIcon} height={50} width={50} alt="" />
+                <p>Financial Assets</p>
+              </li>
+            </motion.ul>
+          </motion.div>
+        </motion.section>
+        <motion.section
+          exit={{ opacity: 0 }}
+          initial="initial"
+          animate="animate"
+          className="def-container my-5"
+        >
+          <motion.article className="text-center mt-5 pb-4 text-md-left">
+            <motion.h3 variants={fadeInUp}>Company Brief</motion.h3>
+            <motion.hr
+              variants={fadeInUp}
+              className="undertone mx-auto mx-md-0"
+            />
+          </motion.article>
+          <OurBrief />
+          <div className="row d-md-none text-center">
+            <div className="col-md-12">
+              <motion.div variants={fadeInUp} className=" mb-5">
+                <h4>Our Name</h4>
+                <hr className="undertone mx-auto" />
+                <p>
+                  <p>
+                    Mojay is more than just a name; it is a portmanteau of our
+                    founder children’s names.
+                  </p>
+                </p>
+              </motion.div>
+              <motion.div variants={fadeInUp} className=" mb-5">
+                <h4>Our Belief</h4>
+                <hr className="undertone mx-auto" />
+                <p>
+                  We believe that the keystone of any good relationship is
+                  nurturing.
+                </p>
+              </motion.div>
+              <motion.div variants={fadeInUp} className="">
+                <h4>Our Foundation</h4>
+                <hr className="undertone mx-auto" />
+                <p>
+                  Invest, Advise and Manage companies with accelerated growth
+                  potential.
+                </p>
+                <p>
+                  We look to constantly create value to our diverse
+                  stakeholders, through innovation - bringing a new enterprise
+                  and end-user engagement.
+                </p>
+              </motion.div>
+            </div>
+          </div>
+        </motion.section>
         <section id="who-we-are">
-          <div className="def-container-lg my-5 text-center py-5">
+          <div className="def-container-lg my-5 text-center text-md-left py-5">
             <div className="row">
               <div className="col-lg">
                 <div className="mb-4">
@@ -158,18 +306,18 @@ function Home() {
                   </li>
                 </ul>
               </div>
-              <div className="col-lg justify-content-center d-flex align-items-center  top-margin">
+              <div className="col-lg justify-content-center d-flex align-items-center top-margin">
                 <img src={teamImage} alt="" className="img-fluid" />
               </div>
             </div>
           </div>
         </section>
         <section id="investment-portfolio">
-          <div className="def-container-lg my-5 text-center py-5">
+          <div className="def-container-lg my-5 text-center text-md-left py-5">
             <div className="col-lg">
               <div className="mb-5">
                 <p className="def_text_red">TAKE A LOOK AT</p>
-                <h3>OUR INVESTMENT PORTFOLIO</h3>
+                <h3>OUR BUSINESS PORTFOLIO</h3>
                 <hr className="undertone mx-auto mx-lg-0" />
               </div>
             </div>
@@ -260,7 +408,7 @@ function Home() {
           </div>
         </section>
         <section id="philosophy">
-          <div className="def-container-lg my-5 text-center py-5">
+          <div className="def-container-lg my-5 text-center text-md-left py-5">
             <div className="col-lg">
               <div className="mb-5">
                 <p className="def_text_red">LEARN ABOUT</p>

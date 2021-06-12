@@ -43,8 +43,8 @@ const briefs = {
 };
 
 const OurBrief = () => {
-  const [currentBrief, setCurrentBrief] = useState(foundation);
-  const [currentBriefName, setCurrentBriefName] = useState("foundation");
+  const [currentBrief, setCurrentBrief] = useState(name);
+  const [currentBriefName, setCurrentBriefName] = useState("name");
 
   function toggleBrief(brief) {
     setCurrentBrief(briefs[brief]);

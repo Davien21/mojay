@@ -26,6 +26,7 @@ const DropDownMenu = (props) => {
   const dropDownMenuRef = useRef();
   const handleClickOutside = (e) => {
     if (
+      dropDownMenuRef.current &&
       !dropDownMenuRef?.current.contains(e.target) &&
       !dropDownArrowRef?.current.contains(e.target)
     ) {
