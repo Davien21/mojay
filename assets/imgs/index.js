@@ -25,18 +25,18 @@ import aboutUsImage3 from "./about-us-2.jpg";
 import myroBg from "./myro-bg.webp";
 import preimoBg from "./preimo-bg.webp";
 
-import empathyImg from "./search/kulli-kittus-KQfxVDHGCUg-unsplash.jpg";
-import respectImg from "./search/wonderlane-MAQ1dcCn-Jc-unsplash.jpg";
-import integrityImg from "./search/mY2SqQyG9d.jpg";
+import empathyImg from "./search/kulli-kittus-KQfxVDHGCUg-unsplash.webp";
+import respectImg from "./search/wonderlane-MAQ1dcCn-Jc-unsplash.webp";
+import integrityImg from "./search/mY2SqQyG9d.webp";
 import innovationImg from "./search/vOgohgC46w.webp";
 import performanceImg from "./search/CemqGWttHM.webp";
 
-import bg1 from "./search/GHyouzpqwL.jpg";
-import bg2 from "./search/gB5gO0iLAT.jpg";
+import bg1 from "./search/GHyouzpqwL.webp";
+import bg2 from "./search/gB5gO0iLAT.webp";
 import bg3 from "./search/0pDQltjO1d.webp";
-import bg4 from "./search/tIG9hc7Tfb.jpg";
-import bg5 from "./search/FIo0QatFtH.jpg";
-import bg6 from "./search/amy-hirschi-K0c8ko3e6AA-unsplash.jpg";
+import bg4 from "./search/tIG9hc7Tfb.webp";
+import bg5 from "./search/FIo0QatFtH.webp";
+import bg6 from "./search/amy-hirschi-K0c8ko3e6AA-unsplash.webp";
 import bg7 from "./search/scott-graham-OQMZwNd3ThU-unsplash.webp";
 import bg14 from "./search/DVoYwJRFMR.jpg";
 
@@ -48,7 +48,7 @@ import realEstateImage from "./search/Q2yAtIhAIf.webp";
 import financeAssetsImage from "./search/sHVrz4FChm.webp";
 
 import philosophyBg from "./search/X31yyllyrd.jpg";
-import philosophyBg2 from "./search/NjXaBpaPRu.jpg";
+import philosophyBg2 from "./search/NjXaBpaPRu.webp";
 
 import sunilImage from "./sunil.jpg";
 import candiImage from "./candi.jpg";
