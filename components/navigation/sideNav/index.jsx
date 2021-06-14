@@ -37,7 +37,6 @@ const handleBoxAnimationStart = (ref, isOpen) => {
   ref.current.style.height = "100vh";
   let elems = Array.from(ref.current.children);
   const listIndex = elems.findIndex((elem) => elem.localName === "ul");
-  console.log(elems, listIndex);
   ref.current.children[listIndex].style.display = "block";
 };
 

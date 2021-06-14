@@ -1,11 +1,10 @@
 import Link from "next/link";
-import { mojayLogo, mojayFavicon } from "../../../assets/imgs";
+import { mojayFavicon } from "../../../assets/imgs";
 
 import Image from "next/image";
 import AboutUsDropDown from "../../dropdowns/aboutUs";
 import BusinessDropDown from "../../dropdowns/business";
 import InvestmentsDropDown from "../../dropdowns/investments";
-import styles from "./top_nav.module.css";
 
 const TopNav = ({ isScrolled }) => {
   return (

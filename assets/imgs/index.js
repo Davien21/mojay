@@ -20,7 +20,7 @@ import emailIcon from "./svgs/email.svg";
 import locationIcon from "./svgs/location.svg";
 import mojayLogoHorizontal from "./svgs/logo-horizontal.svg";
 
-import aboutUsImage3 from "./about-us-2.jpg";
+import aboutUsImage3 from "./about-us-2.webp";
 
 import myroBg from "./myro-bg.webp";
 import preimoBg from "./preimo-bg.webp";
@@ -38,23 +38,23 @@ import bg4 from "./search/tIG9hc7Tfb.webp";
 import bg5 from "./search/FIo0QatFtH.webp";
 import bg6 from "./search/amy-hirschi-K0c8ko3e6AA-unsplash.webp";
 import bg7 from "./search/scott-graham-OQMZwNd3ThU-unsplash.webp";
-import bg14 from "./search/DVoYwJRFMR.jpg";
+import bg14 from "./search/DVoYwJRFMR.webp";
 
-import aiImage from "./search/0Bplk7kVmS.jpg";
-import roboticsImage from "./search/7IaPLlSWSS.jpg";
-import carImage from "./search/e7m9mqBi77.jpg";
+import aiImage from "./search/0Bplk7kVmS.webp";
+import roboticsImage from "./search/7IaPLlSWSS.webp";
+import carImage from "./search/e7m9mqBi77.webp";
 import fmcgImage from "./search/7cpvk0vhN4.webp";
 import realEstateImage from "./search/Q2yAtIhAIf.webp";
 import financeAssetsImage from "./search/sHVrz4FChm.webp";
 
-import philosophyBg from "./search/X31yyllyrd.jpg";
+import philosophyBg from "./search/X31yyllyrd.webp";
 import philosophyBg2 from "./search/NjXaBpaPRu.webp";
 
 import sunilImage from "./sunil.jpg";
-import candiImage from "./candi.jpg";
-import khanImage from "./khan.jpg";
-import raulImage from "./raul.jpg";
-import arunImage from "./arun.jpg";
+import candiImage from "./candi.webp";
+import khanImage from "./khan.webp";
+import raulImage from "./raul.webp";
+import arunImage from "./arun.webp";
 import shahImage from "./shah.jpg";
 import teamImage from "./team.png";
 

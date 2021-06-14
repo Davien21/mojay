@@ -229,13 +229,13 @@ textarea.default_style:focus {
 }
 
 .app-container {
-  /* max-width: 2400px; */
+  /* max-width: 3820px; */
   margin-left: auto;
   margin-right: auto;
 }
 
 .body-container {
-  max-width: 2400px;
+  max-width: 3820px;
   margin-left: auto;
   margin-right: auto;
 }

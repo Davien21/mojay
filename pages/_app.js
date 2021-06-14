@@ -1,26 +1,20 @@
 import "../styles/bootstrap.css";
-
-// import "../styles.scss";
 import "../styles/globals.css";
 
 import "../styles/extra-responsive.css";
-import { motion, AnimatePresence } from "framer-motion";
+import { AnimatePresence } from "framer-motion";
 import Header from "./../components/header/index";
-import Image from "next/image";
-import { mojayFavicon, mojayLogoHorizontal } from "../assets/imgs";
 import { useState, useEffect } from "react";
 
-import routers from "next/router";
+import PageTransition from "./../components/pageTransition/index";
 
 function MyApp({ Component, pageProps, router }) {
-  const [routeChanging, setIsRouteChanging] = useState(false);
-  useEffect(() => {
-    const routeChangeStartHandler = (route) => {
-      console.log(route);
-      setIsRouteChanging(true);
-    };
+  const [routeChanging, setRouteChanging] = useState(false);
 
-    const routeChangeEndHandler = () => setIsRouteChanging(false);
+  useEffect(() => {
+    const routeChangeStartHandler = () => setRouteChanging(true);
+
+    const routeChangeEndHandler = () => setRouteChanging(false);
 
     router.events.on("routeChangeStart", routeChangeStartHandler);
     router.events.on("routeChangeComplete", routeChangeEndHandler);
@@ -30,45 +24,12 @@ function MyApp({ Component, pageProps, router }) {
       router.events.off("routeChangeComplete", routeChangeEndHandler);
       router.events.off("routeChangeError", routeChangeEndHandler);
     };
-  }, []);
+  }, [routeChanging]);
 
   return (
     <>
       {routeChanging ? (
-        <motion.div
-          exit={{ opacity: 0 }}
-          style={{
-            backgroundColor: "white",
-            position: "fixed",
-            width: "100vw",
-            height: "100vh",
-            zIndex: "10000",
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-          }}
-        >
-          <motion.div
-            initial={{ y: 0 }}
-            animate={{
-              y: 20,
-              transition: {
-                duration: 1,
-                repeat: Infinity,
-                repeatType: "reverse",
-              },
-            }}
-            style={{ marginTop: "-10%" }}
-          >
-            <Image
-              src={mojayFavicon}
-              className="img-fluid"
-              width={77}
-              height={84}
-              alt=""
-            />
-          </motion.div>
-        </motion.div>
+        <PageTransition />
       ) : (
         <>
           <Header />

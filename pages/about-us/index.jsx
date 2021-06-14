@@ -68,7 +68,6 @@ function AboutUs() {
         <div className={`image_bg_content mt-5 text-shadow`}>
           <div className="def-container my-5 pt-md-5">
             <h1>About Us</h1>
-            
           </div>
         </div>
       </ImageBackground>
@@ -78,64 +77,59 @@ function AboutUs() {
         animate="animate"
         className="def-container"
       >
-        <motion.div variants={fadeInUp} className="my-4"></motion.div>
-        <motion.div variants={stagger} className=" text-center text-md-left">
-          <motion.h3 variants={fadeInUp} className="py-3">
-            We are Mojay Global Holding
-          </motion.h3>
-          <motion.div className="row">
-            <motion.article className="col-lg-12">
-              <motion.article variants={fadeInUp} className="def-line-height">
-                Mojay Global holding limited is a value-driven organisation
-                established in July 2020, to embrace several existing businesses
-                and to nurture new investment opportunities
-              </motion.article>
-              <motion.article
-                variants={fadeInUp}
-                className="py-4 def-line-height"
-              >
-                It is registered and headquartered in DIFC-Dubai International
-                Financial Centre as a Private Investment Holding Company and,
-                since then, it has been expanding across diverse business
-                sectors, majorly focusing on 5 strategic verticals:
-              </motion.article>
-            </motion.article>
-          </motion.div>
-          <motion.article className="text-center mt-5 pb-4 text-md-left">
-            <motion.h3 variants={fadeInUp}>Diverse Business sectors</motion.h3>
-            <motion.hr
-              variants={fadeInUp}
-              className="undertone mx-auto mx-md-0"
-            />
-          </motion.article>
-          <motion.ul
-            variants={fadeInUp}
-            className="row justify-content-between flex-wrap"
-          >
-            <div className="offset-2 d-md-none"></div>
-            <li className="col-4 col-md-2 py-2 mx-auto mx-md-0 text-center">
-              <Image src={techIcon2} height={50} width={50} alt="" />
-              <p>Technology and Robotics</p>
-            </li>
-            <li className="col-4 col-md-2 py-2 mx-auto mx-md-0 text-center">
-              <Image src={mobilityIcon} height={50} width={50} alt="" />
-              <p>Mobility</p>
-            </li>
-            <div className="offset-2 d-md-none"></div>
-            <li className="col-4 col-md-2 py-2 text-center">
-              <Image src={realEstateIcon} height={50} width={50} alt="" />
-              <p>Real Estate</p>
-            </li>
-            <li className="col-4 col-md-2 py-2 text-center">
-              <Image src={fmgcIcon} height={50} width={50} alt="" />
-              <p>FMGC</p>
-            </li>
-            <li className="col-4 col-md-2 py-2 text-center">
-              <Image src={financeIcon} height={50} width={50} alt="" />
-              <p>Financial Assets</p>
-            </li>
-          </motion.ul>
-        </motion.div>
+        <div className="my-5">
+          <div className="def-container ">
+            <article className="text-center text-md-left">
+              <h3>Our Story</h3>
+              <hr className="undertone" />
+            </article>
+          </div>
+          <div className="def-container my-5">
+            <div className="wrapped-text-div">
+              <div className="col-12 col-md-5 p-md-0">
+                <img
+                  src={ideasImage}
+                  alt=""
+                  className="img-fluid def-rounded"
+                />
+              </div>
+              <article className="text-justify p-3 p-md-0">
+                <p>
+                  What started as an idea is now turned into a growing business.
+                  <br />
+                  In the past few years we we have crossed many milestones and
+                  turned around businesses.
+                </p>
+
+                <p>
+                  From traditional business models, innovation came through
+                  changes in Ideology, Scalability of Deliverables, Process
+                  re-design and Talent re-assessment.
+                </p>
+                <p>
+                  This has reinforced our Philosophy and has put us on a clear
+                  path of expansion on a global platform.
+                </p>
+                <p>
+                  Now we are confident that our expertise spanning across the
+                  areas of Technology &amp; Robotics, Mobility, Real Estate and
+                  FMCG are fit for growth, ready to move into the Global Arena.
+                </p>
+                <p>
+                  We work collaboratively with the Key Stakeholders of the
+                  companies to take the businesses to the next level of
+                  profitable growth.
+                </p>
+                <p>
+                  Our approach begins with active, strategic involvement at all
+                  levels while helping the company to scale–by leveraging our
+                  resources which are industry-specific, led by senior
+                  experienced Management teams.
+                </p>
+              </article>
+            </div>
+          </div>
+        </div>
       </motion.section>
       <motion.section
         exit={{ opacity: 0 }}
@@ -143,53 +137,10 @@ function AboutUs() {
         animate="animate"
         className="def-container my-5"
       >
-        <motion.article className="text-center mt-5 pb-4 text-md-left">
-          <motion.h3 variants={fadeInUp}>Company Brief</motion.h3>
-          <motion.hr
-            variants={fadeInUp}
-            className="undertone mx-auto mx-md-0"
-          />
-        </motion.article>
-        <OurBrief />
-        <div className="row d-md-none text-center">
-          <div className="col-md-12">
-            <motion.div variants={fadeInUp} className=" mb-5">
-              <h4>Our Name</h4>
-              <hr className="undertone mx-auto" />
-              <p>
-                <p>
-                  Mojay is more than just a name; it is a portmanteau of our
-                  founder children’s names.
-                </p>
-              </p>
-            </motion.div>
-            <motion.div variants={fadeInUp} className=" mb-5">
-              <h4>Our Belief</h4>
-              <hr className="undertone mx-auto" />
-              <p>
-                We believe that the keystone of any good relationship is
-                nurturing.
-              </p>
-            </motion.div>
-            <motion.div variants={fadeInUp} className="">
-              <h4>Our Foundation</h4>
-              <hr className="undertone mx-auto" />
-              <p>
-                Invest, Advise and Manage companies with accelerated growth
-                potential.
-              </p>
-              <p>
-                We look to constantly create value to our diverse stakeholders,
-                through innovation - bringing a new enterprise and end-user
-                engagement.
-              </p>
-            </motion.div>
-          </div>
-        </div>
         <motion.section>
           <motion.div
             variants={fadeInUp}
-            className="row my-5 py-4 text-center text-md-left"
+            className="d-flex my-5 py-4 text-center text-md-left justify-content-around"
           >
             <motion.div className={`w-100 col-lg-6`} variants={fadeInUp}>
               <Image
@@ -199,7 +150,7 @@ function AboutUs() {
                 className="img-fluid def-rounded"
               />
             </motion.div>
-            <motion.div variants={fadeInUp} className="col-lg-6 ">
+            <motion.div variants={fadeInUp} className="col-lg-5 ">
               <motion.div className="">
                 <div className="mb-5 my-5 pb-3">
                   <h5>Vision</h5>

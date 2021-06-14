@@ -80,8 +80,8 @@ function Privacy({}) {
               <span className="font-weight-bold">your</span>”).
             </p>
             <p>
-              This privacy policy (this 
-              “<span className="font-weight-bold">Policy</span>”) aims to provide
+              This privacy policy (this “
+              <span className="font-weight-bold">Policy</span>”) aims to provide
               Data Subjects with an understanding regarding how we handle their
               data, including our data collection practices. We aim to provide
               clarification, through this Policy, about the methods through
@@ -324,8 +324,8 @@ function Privacy({}) {
                 </li>
                 <li>
                   Data pertaining to your education, skills, certifications,
-                  employment history, curriculum vitae, training requirements,
-                  training history, course completed/needed, performance
+                  employment story, curriculum vitae, training requirements,
+                  training story, course completed/needed, performance
                   evaluations/reviews and data relating to the recruiting
                   process.
                 </li>
@@ -506,7 +506,7 @@ function Privacy({}) {
                   Email addresses and IP addresses to which the IT device was
                   sending, or from which it was receiving, data.
                 </li>
-                <li>Website browsing history.</li>
+                <li>Website browsing story.</li>
                 <li>
                   Folders and files, including downloaded/uploaded folders and
                   files.

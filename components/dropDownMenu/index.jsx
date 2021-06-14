@@ -54,7 +54,7 @@ const DropDownMenu = (props) => {
         className="app-container"
         style={{
           padding: "20px 100px",
-          maxWidth: "1520px",
+          maxWidth: "1200px",
           display: "flex",
           minHeight: "280px",
           alignItems: "center",

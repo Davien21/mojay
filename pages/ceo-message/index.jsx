@@ -46,7 +46,7 @@ const CeoMessage = () => {
             <div className="def-container-lg my-5 pt-md-5">
               <h1>CEO Message</h1>
               <div className="mt-4 ">
-                <p>Here is a message from the CEO</p>
+                <p>A message from the CEO</p>
               </div>
             </div>
           </div>

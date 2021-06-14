@@ -24,11 +24,6 @@ const AboutUsDropDown = ({ isScrolled }) => {
               </div>
               <div className="my-2">
                 <div>
-                  <Link href="/ceo-message">
-                    <span className="def_call-to-action">View CEO Message</span>
-                  </Link>
-                </div>
-                <div>
                   <Link href="/about-us">
                     <span className="def_call-to-action">Learn About Us</span>
                   </Link>
@@ -38,9 +33,9 @@ const AboutUsDropDown = ({ isScrolled }) => {
             <div className="col">
               <div className="row">
                 <div className="py-1 col-lg-6">
-                  <DropDownCard route="/history">
+                  <DropDownCard route="/story">
                     <div className="">
-                      <span className="pr-2 hover_target ">Our History</span>
+                      <span className="pr-2 hover_target ">Our Story</span>
                       <img src={rightArrowIcon} height={12} width={12} />
                     </div>
                     <span style={{ fontSize: "0.7rem" }}>
@@ -62,21 +57,22 @@ const AboutUsDropDown = ({ isScrolled }) => {
                   </DropDownCard>
                 </div>
                 <div className="py-1 col-lg-6">
-                  <DropDownCard route="/philosophy">
+                  <DropDownCard route="/ceo-message">
                     <div className="">
-                      <span className="pr-2 hover_target">Our Philosophy</span>
+                      <span className="pr-2 hover_target">
+                        View CEO Message
+                      </span>
                       <img src={rightArrowIcon} height={12} width={12} />
                     </div>
                     <span style={{ fontSize: "0.7rem" }}>
-                      Challenging, Innovating, Nurturing. Click to find out more
-                      about our philosophy.
+                      Discover what makes us tick by reading our CEO's message.
                     </span>
                   </DropDownCard>
                 </div>
                 <div className="py-1 col-lg-6 pl-lg-0">
                   <DropDownCard route="/people">
                     <div className="">
-                      <span className="pr-2 hover_target">Our People</span>
+                      <span className="pr-2 hover_target">Our Leadership</span>
                       <img src={rightArrowIcon} height={12} width={12} />
                     </div>
                     <span style={{ fontSize: "0.7rem" }}>

@@ -7,7 +7,7 @@ const AboutUsSideMenu = () => {
   return (
     <ul className={`${styles.ul} side_nav_links`}>
       <MenuItem>
-        <Link href="/history">Our History</Link>
+        <Link href="/story">Our Story</Link>
       </MenuItem>
 
       <MenuItem>

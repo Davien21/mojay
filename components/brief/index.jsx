@@ -51,6 +51,7 @@ const OurBrief = () => {
     setCurrentBriefName(brief);
   }
 
+
   return (
     <div className="row d-none d-md-flex" style={{ minHeight: "154px" }}>
       <div className="col-md-4 ">

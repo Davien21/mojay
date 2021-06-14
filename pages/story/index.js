@@ -1,20 +1,16 @@
-import {
-  respectImg,
-  bg6,
-  bg7,
-  bg2,
-  bg3,
-  ideasImage,
-} from "./../../assets/imgs";
-
+import { motion } from "framer-motion";
 import Image from "next/image";
 
+import {
+  bg2,
+  ideasImage,
+} from "../../assets/imgs";
+
 import ImageBackground from "../../components/imageBackground";
-import Footer from "./../../components/footer/index";
-import { motion } from "framer-motion";
+import Footer from "../../components/footer/index";
 const easing = [0.6, -0.05, 0.01, 0.99];
 
-function OurHistory() {
+function OurStory() {
   return (
     <motion.section
       exit={{ opacity: 0 }}
@@ -25,7 +21,7 @@ function OurHistory() {
         <img src={bg2} alt="" className="img-fluid" />
         <div className={`image_bg_content mt-5 text-shadow`}>
           <div className="def-container-lg my-5 pt-md-5">
-            <h1>Our History</h1>
+            <h1>Our Story</h1>
             <div className="mt-4 ">
               <p>Discover how we started this journey.</p>
             </div>
@@ -35,9 +31,9 @@ function OurHistory() {
       <section className="clear-nav-margin">
         <div className="my-5">
           <div className="def-container ">
-            <article className="text-center ">
-              <h3>We live by Our History</h3>
-              <hr className="undertone ml-auto" />
+            <article className="text-center text-md-left">
+              <h3>Our Story</h3>
+              <hr className="undertone" />
             </article>
           </div>
           <div className="def-container my-5">
@@ -92,4 +88,4 @@ function OurHistory() {
   );
 }
 
-export default OurHistory;
+export default OurStory;
