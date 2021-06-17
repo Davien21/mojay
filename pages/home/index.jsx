@@ -72,15 +72,16 @@ function Home() {
               animationDelay={3000}
               images={[myroBg, preimoBg]}
             />
-            <div className={`absolute image_bg_content mt-5 text-shadow`}>
-              <div className="def-container-lg my-5 pt-md-5 row">
-                <div className="col-md-6 d-flex flex-column">
-                  <div className="row mt-5">
+            <div
+              className={`absolute text-md-center image_bg_content mt-5 text-shadow`}
+            >
+              <div className="def-container-lg my-5 pt-md-5">
+                <div className="d-flex flex-column">
+                  <div className="mt-5">
                     <span className="col-auto h2">Challenging,</span>
                     <span className="col-auto font-weight-bold h2 px-3 px-md-0 def_text_red">
                       Innovating,
                     </span>
-                    <br />
                     <span className="col-auto h2">Nurturing</span>
                   </div>
 
@@ -90,10 +91,10 @@ function Home() {
             </div>
           </ImageBackground>
         </section>
-        <section id="partners" className="clear-nav-margin bg-white">
+        <section id="partners" className="partners-section bg-white">
           <div className="def-container-lg ">
             <div className="row justify-content-lg-between mx-auto">
-              <div className="partner-logo col-6 col-md-4 py-4 col-lg justify-content-center justify-content-lg-start pl-lg-0 d-flex align-items-center ">
+              <div className="partner-logo col-6 col-md-4 py-4 col-lg justify-content-center justify-content-lg-start d-flex align-items-center ">
                 <Image
                   width={80}
                   height={60}
