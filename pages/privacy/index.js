@@ -40,9 +40,6 @@ function Privacy({}) {
         <div className={`image_bg_content mt-5 text-shadow`}>
           <div className="def-container-lg my-5 pt-md-5">
             <h1>Our Privacy policy</h1>
-            <div className="mt-4 ">
-              {/* <p>Meet the team that makes things happen.</p> */}
-            </div>
           </div>
         </div>
       </ImageBackground>

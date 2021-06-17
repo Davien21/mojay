@@ -30,9 +30,9 @@ const Footer = () => {
           <div className="col-lg-6 ">
             <div className="row justify-content-around">
               <div className="col-md-3 py-4">
-                <header className="text-white">Company</header>
+                <header className="text-white mb-3">Company</header>
                 <ul className="default_links_list">
-                  <li className="pb-2 pt-3">
+                  <li className="py-2">
                     <Link href="/">Home</Link>
                   </li>
                   <li className="py-2">
@@ -44,9 +44,9 @@ const Footer = () => {
                 </ul>
               </div>
               <div className="col-md-3 py-4">
-                <header className="text-white">Business</header>
+                <header className="text-white mb-3">Business</header>
                 <ul className="default_links_list">
-                  <li className="pb-2 pt-3">
+                  <li className="py-2">
                     <Link href="/investments/sectors">Sectors</Link>
                   </li>
                   <li className="py-2">
@@ -58,17 +58,23 @@ const Footer = () => {
                 </ul>
               </div>
               <div className="col-md-3 py-4">
-                <header className="text-white">Legal</header>
+                <header className="text-white mb-3">Legal</header>
                 <ul className="default_links_list">
-                  <li className="pb-2 pt-3">
+                  <li className="py-2">
                     <Link href="/privacy">Privacy</Link>
+                  </li>
+                  <li className="py-2">
+                    <Link href="/terms-of-use">Terms of Use</Link>
+                  </li>
+                  <li className="py-2">
+                    <Link href="/cookie-policy">Cookie Policy</Link>
                   </li>
                 </ul>
               </div>
               <div className="col-md-3 py-4">
                 <header className="text-white">Socials</header>
                 <ul className="default_links_list">
-                  <li className="pb-2 pt-3">
+                  <li className="py-2">
                     <Link href="/">LinkedIn</Link>
                   </li>
                   <li className="py-2">

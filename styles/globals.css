@@ -19,6 +19,12 @@ a {
   text-decoration: none !important;
 }
 
+a.web-default {
+  color: #007bff;
+  text-decoration: none;
+  background-color: transparent;
+}
+
 * {
   box-sizing: border-box;
   /* -webkit-transition: 0.3s all ease-in-out;

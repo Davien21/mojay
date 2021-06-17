@@ -47,6 +47,7 @@
   .short::after,
   .short img {
     height: calc(44vh + 56px);
+    max-height: 600px;
   }
 }
 
